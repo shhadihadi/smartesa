@@ -1,0 +1,52 @@
+.faq2{
+    margin:40px ;
+    align-items: center;
+    background:  #6573f0;
+    border-radius:4px ;
+  
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+
+}
+.h2{
+    align-items: center;
+}
+
+/* edit new blog form*/
+.edit{
+    max-width: 90%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+  }
+  .edit label{
+    text-align: left;
+    display: block;
+  }
+  .edit h2{
+    font-size: 20px;
+    color: #644de2;
+    margin-bottom: 30px;
+  }
+  
+  .edit input, .edit textarea, .edit select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .edit textarea{
+    height: 200px;
+  }
+  .edit button{
+    background: #3e52a8;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
