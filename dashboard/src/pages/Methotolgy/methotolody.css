@@ -1,0 +1,120 @@
+.mainmetho{
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.methmaidev{
+  width: 310px;
+  /* height: 170px; */
+  background-color: rgb(255, 255, 255);
+  margin-top: 35px;
+  border: 2px solid rgb(42,98,147);;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.imgreight{
+  height: 88px;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  text-align: center;
+  border-bottom: 2px solid rgb(42,98,147);;
+  
+}
+.imgleft{
+  height: 90px;
+  width: 50%;
+  background-color: rgb(42,98,147);
+  justify-content: center;
+  text-align: center;
+
+}
+.imgleft img{
+  object-fit: cover;
+  /* position: relative; */
+  width: 70px !important;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4px;
+ }
+.methmaidev p{
+  width: 100%;
+  padding: 6px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding-left: 20px;
+  line-height: 15px;
+  font-size: 15px;
+  margin-top: -5px;
+}
+.methmaidev h3{
+  width: 100%;
+  padding: 6px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding-left: 20px;
+  line-height: 15px;
+  font-size: 15px;
+}
+.fisrtdivedit{
+  height: 40px;
+  width: 50%;
+  /* background-color: brown; */
+  border-top: 2px solid brown;
+  margin-bottom: -2px;
+  /* margin-right: 1px; */
+  /* margin-bottom: -4px; */
+  margin-top: 3px;
+  color: brown;
+
+}
+.fisrtdivedit:hover{
+  background-color: brown;
+  color: aliceblue;
+  transition: 1ms;
+  background-color: rgb(42,98,147);;
+}
+.seconddevdelet{
+  height: 40px;
+  width: 50%;
+  /* background-color: rgb(63, 21, 131); */
+  border-top: 2px solid rgb(158, 240, 7);
+  margin-top: 3px;
+  color: rgb(158, 240, 7);;
+}
+.seconddevdelet:hover{
+  background-color: rgb(158, 240, 7);
+  color: rgb(255, 255, 255);
+  background-color: rgb(42,98,147);
+
+}
+.imgreight img{
+  object-fit: cover;
+  /* position: relative; */
+  width: 70px !important;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.seconddevdelet{
+  height: 40px;
+  width: 50%;
+  /* background-color: rgb(63, 21, 131); */
+  border-top: 2px solid rgb(158, 240, 7);
+  margin-top: 3px;
+  /* margin-bottom: -4px; */
+  
+  
+  /* margin-bottom: -4px; */
+}
+
+@media screen and (max-width:  544px) {
+  .methmaidev{
+    margin-left: -10px;
+  }
+}
