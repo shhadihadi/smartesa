@@ -19,6 +19,10 @@ import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
 import AboutEdit from "./pages/About us/AboutEdit";
 import FaqEdit from "./pages/FAQ/FaqEdit";
+import Methotology from "./pages/Methotolgy/methotology"
+import UpdateformMetho from "./pages/Methotolgy/updatemetho/updateformMetho";
+import Createmetho from "./pages/Methotolgy/createmetho/Createmetho";
+import Allinone from "./pages/headsAll/Allinone";
 
 
 function App() {
@@ -73,6 +77,18 @@ function App() {
               <Route index element={<ContactUs />} />
 
               </Route>
+              <Route path="methotology">
+              <Route index element={<Methotology />} />
+
+              </Route>
+              <Route path="allinnone">
+              <Route index element={<Allinone />} />
+
+              </Route>
+              <Route path="/metho/new">
+              <Route index element={<Createmetho />} />
+
+              </Route>
             <Route path="apply">
               <Route index element={<Apply />} />
 
@@ -83,6 +99,11 @@ function App() {
               </Route>
             <Route path="/aboutEdit/:id">
               <Route index element={<AboutEdit />} />
+               {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
+
+               </Route>
+               <Route path="/MethoEdit/:id">
+              <Route index element={<UpdateformMetho />} />
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
 
                </Route>
