@@ -87,6 +87,18 @@ const Sidebar = () => {
             <span>CONTACT US</span>
           </li>
           </Link>
+          <Link to="/methotology" style={{ textDecoration: "none" }}>
+          <li>
+            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <span>Methotogy</span>
+          </li>
+          </Link>
+          <Link to="/allinnone" style={{ textDecoration: "none" }}>
+          <li>
+            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <span>Heards</span>
+          </li>
+          </Link>
           <p className="title">USER</p>
           <Link to="/apply" style={{ textDecoration: "none" }}>
           <li>
