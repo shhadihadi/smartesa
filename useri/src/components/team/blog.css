@@ -1,0 +1,93 @@
+.blog img {
+  width: 100%;
+  
+}
+.btn-Cent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.load-more{
+  width: 250px;
+  margin-top: 40px;
+}
+
+.blog-card-img {
+  width: 100% !important;
+  height: 400px; 
+  object-fit: cover;
+}
+.paddi{
+  padding-top: 5px;
+}
+
+.blog .text {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.blog h1 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+.blog h1:hover {
+  color: rgb(42,98,147);
+  cursor: pointer;
+}
+.blog span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(42,98,147);
+}
+.blog span label {
+  margin-left: 10px;
+  color: grey;
+  font-size: 14px;
+}
+.blog span:nth-last-child(1) label {
+  color: rgb(42,98,147);
+}
+.blog p {
+  color: grey;
+}
+
+.blog-card-img-btn{
+  width: 100%;
+}
+
+.video-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  max-width: 800px;
+  max-height: 600px;
+  margin: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
