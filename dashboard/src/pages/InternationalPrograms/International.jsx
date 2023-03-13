@@ -63,7 +63,7 @@ const International = () => {
           <div></div>
         </div>
         <div className="hadiiternationalCard">
-          7t85t6y78
+          
           <Intercard />
 
         </div>
