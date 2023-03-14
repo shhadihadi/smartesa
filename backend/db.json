@@ -27,7 +27,7 @@
       "title": "OURCOMMUNITY",
       "Paragraphs": [
         "Smart ESA has an established reputation in the startup ecosystem, having worked with more than 90 emerging companies and partnered with 70 experienced coaches.",
-        "Additionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale."
+      "Additionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale."   
       ]
     }
   ],
@@ -36,7 +36,9 @@
       "id": 1,
       "title": "Contact",
       "Paragraphs": [
-        "Smart ESA has worked with +90 startups, partnered with 70 coaches and developed strategic partnerships with some of the best companies in France, Lebanon, USA and all over the world"
+        "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.",
+      " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"
+    
       ]
     }
   ],
@@ -45,9 +47,11 @@
       "id": 1,
       "title": "About Us",
       "Paragraphs": [
-        "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success. Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs",
-        "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. In addition, many have won some of the most prestigious competitions in the MENA region such as GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School and the MIT Enterprise Forum Pan Arab competition.",
-        "Smart ESA's methodology is anchored in practical entrepreneurship expertise."
+        "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success. ",
+        "Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs",
+        "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. ",
+        "In addition, many have won some of the most prestigious competitions in the MENA region such as GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School and the MIT Enterprise Forum Pan Arab competition. Smart ESA's methodology is anchored in practical entrepreneurship expertise."
+      
       ]
     }
   ],
@@ -55,14 +59,19 @@
     {
       "id": 1,
       "title": "Smart Talk",
-      "Paragraphs": []
+      "Paragraphs": ["Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
+      " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
+      "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
+      ]
     }
   ],
   "EventsHome": [
     {
       "id": 1,
       "title": "Events",
-      "Paragraphs": []
+      "Paragraphs": ["Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.",
+      " Now, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
+      ]
     }
   ],
   "awrapper": [
@@ -348,42 +357,66 @@
   ],
   "team": [
     {
-      "cover": "./images/team/t1.webp",
-      "name": "Ph.D Adrian Molises",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"1",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "https://www.youtube.com/watch?v=IBw79MByBWk",
+      "date":"JAN. 18, 2021",
+      "name": "Tatiana Hag",
+      "work": "Season 2 Episode 4"
     },
     {
-      "cover": "./images/team/t2.webp",
-      "name": "Ph.D Arthur MaGregor",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"2",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t2.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Fadi Bizri",
+      "work": "Season 2 Episode 3"
     },
     {
-      "cover": "./images/team/t3.webp",
-      "name": "Ph.D Anna Hanzen",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"3",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t3.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Elsa Aoun",
+      "work": "Season 2 Episode 2"
     },
     {
-      "cover": "./images/team/t4.webp",
-      "name": "Ph.D Brian Wooden",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"4",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t4.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Sami Bou Saab",
+      "work": "Season 2 Episode 1"
     },
     {
-      "cover": "./images/team/t5.webp",
-      "name": "Ph.D Adrian Molises",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"5",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t5.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Roy Baladi",
+      "work": "Episode 14"
     },
     {
-      "cover": "./images/team/t6.webp",
-      "name": "Ph.D Arthur MaGregor",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"6",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t6.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Maroun Chammas",
+      "work": "Episode 13(part2)"
     },
     {
-      "cover": "./images/team/t7.webp",
-      "name": "Ph.D Anna Hanzen",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
+      "id":"7",
+     "thumbnail":"./images/team/1.jpg",
+     "cover": "./images/team/t7.webp",
+      "date":"JAN. 18, 2021",
+      "name": "Maroun Chammas",
+      "work": "Episode 13(part1)"
     },
     {
-      "cover": "./images/team/t8.webp",
+      "id":"8",
+     " thumbnail":"./images/team/1.jpg",
+     " cover": "./images/team/t8.webp",
+      "date":"JAN. 18, 2021",
       "name": "Ph.D Brian Wooden",
       "work": "DEVELOPER AND LEAD INSTRUCTOR"
     }
