@@ -5,11 +5,12 @@ import Navbar from "../../components/navbar/Navbar"
 
 import useFetch from '../../useFetch';
 import { Link } from 'react-router-dom';
-import { Grid , Paper} from '@mui/material';
+import { CardContent, Grid , Paper} from '@mui/material';
 
-import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
+import {CardGiftcard, DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
+import './events.scss'
 
 
 
@@ -18,7 +19,7 @@ import CardHeader from '@mui/material/CardHeader'
 
 
 const Articles = () => {
-  const { error, isPending, data: Articles} = useFetch('http://localhost:8000/Articles')
+  const { error, isPending, data:Blogs} = useFetch('http://localhost:8000/Blogs')
   
  
   return (
@@ -28,12 +29,20 @@ const Articles = () => {
         
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {Articles&&
-           Articles.map(val =>(
+        {Blogs&&
+           Blogs.map(val =>(
+            
               
-              <Grid item key={val.id} xs={12} md={6} lg={4}>
-           
+              <Grid item key={val.id} xs={12} md={6} lg={4}
+              
+              >
+          
                <Paper>
+              
+                
+                
+              
+                
                <CardHeader 
           action={
             <IconButton >
@@ -42,20 +51,23 @@ const Articles = () => {
           < EditOutlined />
            </Link>
             </IconButton>
+            
           }
           title={val.title}
         //   subheader={val.Paragraph}
         />
-                
                
-                <h4 >{val.Paragraph} </h4>
-                {/* <h4 >{val.Paragraph1} </h4>
-                <h4 >{val.Paragraph2} </h4>
-                <h4 >{val.Paragraph3} </h4>
-                <h4 >{val.Paragraph4} </h4> */}
-              
+               
+                <h4 >{val.Paragraphs} </h4>
+               
+              <Link >Article</Link>
+              <div className="imgreight">
+                    <img src={val.cover} alt="Cover" />
+                  </div>
+               
           
             </Paper>
+            
           </Grid>
           
          

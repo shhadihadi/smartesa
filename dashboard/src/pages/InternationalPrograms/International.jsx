@@ -30,7 +30,7 @@ const International = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-     
+     <h2>International Programes</h2>
      
        <div className='details'> 
        <div>

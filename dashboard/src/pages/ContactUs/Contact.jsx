@@ -38,7 +38,7 @@ const Contact = () => {
             <TableCell className="tableCell">Subject</TableCell>
             <TableCell className="tableCell">Email</TableCell>
             <TableCell className="tableCell">Message</TableCell>
-            <TableCell className="tableCell">Action</TableCell>
+            {/* <TableCell className="tableCell">Action</TableCell> */}
         
           </TableRow>
         </TableHead>
@@ -60,14 +60,14 @@ const Contact = () => {
               <TableCell className="tableCell">{row.subject}</TableCell>
               <TableCell className="tableCell">{row.email}</TableCell>
               <TableCell className="tableCell">{row.message}</TableCell>
-              <TableCell className="tableCell">
+              {/* <TableCell className="tableCell">
                 <IconButton>
               <DeleteOutlined />
               <Link to={`/aboutEdit/${row.id}`}>
           < EditOutlined />
            </Link>
             </IconButton>
-              </TableCell>
+              </TableCell> */}
             
             </TableRow>
           ))} 

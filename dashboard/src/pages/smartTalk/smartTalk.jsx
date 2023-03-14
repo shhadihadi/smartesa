@@ -12,7 +12,7 @@ import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 
 
-const smartTalk = () => {
+const SmartTalk = () => {
   const { error, isPending, data: SamartTalkHome } = useFetch('http://localhost:8000/SamartTalkHome')
   return (
     <div className="list">
@@ -67,4 +67,4 @@ const smartTalk = () => {
   )
 }
 
-export default  smartTalk
+export default  SmartTalk

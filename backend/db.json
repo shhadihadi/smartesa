@@ -2,17 +2,14 @@
   "homeAbout": [
     {
       "id": 1,
-      
       "desc": "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success. Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs"
     },
     {
       "id": 2,
-      
       "desc": "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. In addition, many have won some of the most prestigious competitions in the MENA region such as GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School and the MIT Enterprise Forum Pan Arab competition."
     },
     {
       "id": 3,
-
       "desc": "Smart ESA's methodology is anchored in practical entrepreneurship expertise."
     }
   ],
@@ -60,7 +57,9 @@
     {
       "id": 1,
       "title": "Smart Talk",
-      "Paragraphs": []
+      "Paragraphs": [
+        "SmarTalk is the first Web TV focused on entrepreneurship in Lebanon and the Arab world. Meet entrepreneurs, investors and ecosystem experts to get valuable insights on building successful businesses that last."
+      ]
     }
   ],
   "EventsHome": [
@@ -283,7 +282,7 @@
       "com": "5 COMMENTS ",
       "title": "Build your Dream Software & Engineering Career",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/2.png"
+      "cover": "../public/images/blog/2.png"
     },
     {
       "id": 3,
@@ -445,9 +444,9 @@
   ],
   "faq": [
     {
-      "id": 1,
       "title": "How to Enroll This Online Courses?",
-      "desc": "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+      "desc": "This is walaa the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      "id": 1
     },
     {
       "id": 2,
