@@ -2,15 +2,14 @@ import React, { useState } from "react"
 import Back from "../common/back/Back"
 import BlogCard from "./BlogCard"
 import "./blog.css"
-import {team} from "../../dummydata"
 import useFetch from "../../components/useFetch";
 
 const Blog = () => {
 
-  const { error, isPending, data: SmartTalkHome } = useFetch('http://localhost:8000/SmartTalkHome');
+  const { error, isPending, data: SamartTalkHome } = useFetch('http://localhost:8000/SamartTalkHome');
 
   // extract the "Paragraphs" array from the first object in the "" array
-  const paragraphs = SmartTalkHome && SmartTalkHome.length > 0 ? SmartTalkHome[0].Paragraphs : null;
+  const paragraphs = SamartTalkHome && SamartTalkHome.length > 0 ? SamartTalkHome[0].Paragraphs : null;
 
   const [numPosts, setNumPosts] = useState(6);
 
@@ -19,7 +18,7 @@ const Blog = () => {
   };
 
 
-  const allPostsDisplayed = SmartTalkHome ? numPosts >= SmartTalkHome.length : false;
+  const allPostsDisplayed = SamartTalkHome ? numPosts >= SamartTalkHome.length : false;
 
   return (
     <>
@@ -28,7 +27,7 @@ const Blog = () => {
       { isPending && <div>Loading...</div> }
       { paragraphs && (
         <Back 
-          title= {SmartTalkHome[0].title}
+          title= {SamartTalkHome[0].title}
           paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
         />
       )}
