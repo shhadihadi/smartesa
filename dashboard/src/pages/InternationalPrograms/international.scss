@@ -56,7 +56,7 @@
   justify-content: space-between;
 }
 .suball{
-  width: 48%;
+  width: 49%;
   // height: 370px;
   // background-color: #3d0b0b;
   display: flex;
@@ -83,21 +83,25 @@
 
 .imgproviderseen{
   display: flex;
-  height: 25px;
+  // max-height: 75px;
   // background-color: rgb(167, 24, 90);
   width: 92.5%;
-  justify-content: space-between;
-  // display: flex;
+  justify-content: space-around;
+  display: flex;
   padding: 20px;
   background-size: cover;
   background-attachment: fixed;
   
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: 1px dashed;
 }
 
 .imgproviderseen img{
-  background-size: cover;
-  background-attachment: fixed;
+  // background-size: cover;
+  // background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
 }
 
 .ditailsAhadi{
@@ -108,6 +112,8 @@
   justify-content: space-between;
   display: flex;
   border-bottom: 1px dashed;
+  
+  margin-top: 10px;
 
 }
 .listdathadi{
@@ -181,6 +187,35 @@
   justify-content: center;
   margin-top: 10px;
   // margin-bottom: auto;
+}
+.editoptioncard{
+  color: #665913;
+}
+.editoptioncard:hover{
+  color: #ffffff;
+  background-color:#665913; 
+  border-radius: 30%;
+}
+.deletoptioncard{
+  color: brown;
+
+}
+.deletoptioncard:hover{
+  // color: brown;
+  color: #ffffff;
+  background-color:brown;
+  border-radius: 30%;
+
+}
+
+
+@media screen and (max-width: 970px){
+  .suball{width: 80%;}
+  
+}
+@media screen and (max-width: 800px){
+  .suball{width: 100%;}
+  
 }
 
 

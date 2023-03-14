@@ -120,7 +120,9 @@ function UpdateformMetho() {
                     onChange={handleHoverCoverChange}
                   />
                 </div>
+                <div className="flexrowhadi">
                 <button>submit</button>
+                </div>
               </div>
             </form>
           </div>

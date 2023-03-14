@@ -26,6 +26,8 @@ input[type=file]::file-selector-button:hover {
 .textoutputdisplay{
   margin-top: 100px;
   margin-right: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .textoutputdisplay p{
@@ -44,7 +46,20 @@ input[type=file]::file-selector-button:hover {
     }
   .flexrowhadi{
     display: flex;
+    width: 80% !important;
   } 
+  .flexrowhadi button{
+    margin-left: 90px;
+    margin-top: 25px;
+    width: 180px;
+    background: #03C9D7;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 560px)  {
     .textoutputdisplay p{

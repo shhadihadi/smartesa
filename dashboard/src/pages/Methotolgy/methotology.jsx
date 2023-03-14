@@ -4,6 +4,11 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import useFetch from "../../../../dashboard/src/useFetch";
 import "./methotolody.css";
 import { Link } from "react-router-dom";
+import DeleteIcon from "@mui/icons-material/Delete";
+import Grid from "@mui/material/Grid";
+// import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import EditIcon from "@mui/icons-material/Edit";
+// import Typography from '@mui/material/Typography';
 
 function Methotology() {
   const {
@@ -34,40 +39,45 @@ function Methotology() {
                 Add New
               </Link>
             </div>
-        
-          <div className="mainmetho">
-            {error && <div>{error}</div>}
-            {isPending && <div>Loading...</div>}
-            {online &&
-              online.map((val) => (
-                <div className="methmaidev" key={val.id}>
-                  <div className="imgreight">
-                    <img src={val.cover} alt="Cover" />
-                  </div>
-                  <div className="imgleft">
-                    <img src={val.hoverCover} alt="Hover Cover" />
-                  </div>
-                  <h3>{val.courseName}</h3>
-                  <p>{val.course}</p>
-                  <div
-                    className="fisrtdivedit"
-                    onClick={() => handledelete(val.id)}
-                  >
-                    <i className="fa-solid fa-trash"></i>
-                  </div>
 
-                  <div className="seconddevdelet">
+            <div className="mainmetho">
+              {error && <div>{error}</div>}
+              {isPending && <div>Loading...</div>}
+              {online &&
+                online.map((val) => (
+                  <div className="methmaidev" key={val.id}>
+                    <div className="imgreight">
+                      <img src={val.cover} alt="Cover" />
+                    </div>
+                    <div className="imgleft">
+                      <img src={val.hoverCover} alt="Hover Cover" />
+                    </div>
+                    <h3>{val.courseName}</h3>
+                    <p>{val.course}</p>
+                    <div
+                      className="fisrtdivedit"
+                      onClick={() => handledelete(val.id)}
+                    >
+                      <Grid item xs={8}>
+                        <DeleteIcon />
+                      </Grid>
+                      {/* <FontAwesomeIcon icon="fa-solid fa-trash-can" /> */}
+                    </div>
+                    <div className="seconddevdelet">
                     <Link to={`/MethoEdit/${val.id}`}>
-                      <i className="fa-solid fa-pen-to-square"></i>
-                      fyugiyou90i-o=
+                      <div className="hadiediticon">
+                        <Grid item xs={8}>
+                          <EditIcon />
+                        </Grid>
+                      </div>
                     </Link>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </div>
       </div>
-        </div>
     </>
   );
 }
