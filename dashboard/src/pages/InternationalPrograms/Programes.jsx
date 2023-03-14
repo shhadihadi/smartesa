@@ -18,7 +18,7 @@ import CardHeader from '@mui/material/CardHeader'
 
 
 const Programes = () => {
-  const { error, isPending, data: internationaProgramHome1} = useFetch('http://localhost:8000/internationaProgramHome1')
+  const { error, isPending, data: internationaProgramHome} = useFetch('http://localhost:8000/internationaProgramHome')
   
  
   return (
@@ -28,8 +28,8 @@ const Programes = () => {
         
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {internationaProgramHome1&&
-           internationaProgramHome1.map(val =>(
+        {internationaProgramHome&&
+           internationaProgramHome.map(val =>(
               
               <Grid item key={val.id} xs={12} md={6} lg={4}>
            

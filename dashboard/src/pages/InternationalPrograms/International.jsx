@@ -26,43 +26,42 @@ const International = () => {
     <div className="list">
       <Sidebar />
       <div className="listContainer">
-        <Navbar />
 
-        <div className="details">
-          <div>
-            <Grid container spacing={5}>
-              {error && <div>{error}</div>}
-              {isPending && <div>Loading...</div>}
-              {internationaProgramHome &&
-                internationaProgramHome.map((val) => (
-                  <Grid item key={val.id} xs={12} md={12} lg={12}>
-                    <Paper>
-                      <CardHeader
-                        action={
-                          <IconButton>
-                            <DeleteOutlined />
-                            <Link to={`/aboutEdit/${val.id}`}>
-                              <EditOutlined />
-                            </Link>
-                          </IconButton>
-                        }
-                        title={val.title}
-                        //   subheader={val.Paragraph}
-                      />
+        <Navbar/>
+     <h2>International Programes</h2>
+     
+       <div className='details'> 
+       <div>
+        
+        
+      <Grid container   spacing={5}>
+        
+        { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
+        {internationaProgramHome &&
+            internationaProgramHome.map(val =>(
+              
+              <Grid item key={val.id} xs={12} md={12} lg={12}>
+           
+               <Paper>
+               <CardHeader 
+          action={
+            <IconButton >
+              <DeleteOutlined />
+              <Link to={`/aboutEdit/${val.id}`}>
+          < EditOutlined />
+           </Link>
+            </IconButton>
+          }
+          title={val.title}
+        //   subheader={val.Paragraph}
+        />
+                
+               
+                <h4 >{val.Paragraphs} </h4>
+              
 
-                      <h4>{val.Paragraphs} </h4>
-                    </Paper>
-                  </Grid>
-                ))}
-            </Grid>
-          </div>
-        </div>
 
-        <div className="details1">
-          <Programes />
-          <div></div>
-        </div>
-        <div className="hadiiternationalCard">
           
           <Intercard />
 
