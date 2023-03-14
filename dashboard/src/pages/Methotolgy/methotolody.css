@@ -69,13 +69,16 @@
   /* margin-bottom: -4px; */
   margin-top: 3px;
   color: brown;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4px;
 
 }
 .fisrtdivedit:hover{
   background-color: brown;
   color: aliceblue;
   transition: 1ms;
-  background-color: rgb(42,98,147);;
+  /* background-color: rgb(42,98,147);; */
 }
 .seconddevdelet{
   height: 40px;
@@ -83,13 +86,22 @@
   /* background-color: rgb(63, 21, 131); */
   border-top: 2px solid rgb(158, 240, 7);
   margin-top: 3px;
-  color: rgb(158, 240, 7);;
+  color: rgb(158, 240, 7);
+  text-align: center;
+  padding-top: 4px;
 }
 .seconddevdelet:hover{
   background-color: rgb(158, 240, 7);
   color: rgb(255, 255, 255);
-  background-color: rgb(42,98,147);
+  /* background-color: rgb(42,98,147); */
 
+}
+.hadiediticon{
+  color: rgb(158, 240, 7);
+}
+.hadiediticon:hover{
+  background-color: rgb(158, 240, 7);
+  color: #fff;
 }
 .imgreight img{
   object-fit: cover;
