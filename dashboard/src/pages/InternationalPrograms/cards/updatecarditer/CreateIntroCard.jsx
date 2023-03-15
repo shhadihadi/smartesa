@@ -8,7 +8,7 @@ import './updatecard.css'
 function CreateIntroCard() {
   const [coursesName, setcoursesName] = useState(""); 
   const [cover, setcover] = useState(null);
-  const [courTeacher, setcourTeacher] = useState(null);
+  const [courTeacher, setcourTeacher] = useState([null]);
   const [TARGET, setTARGET] = useState("");
   const [SECTOR, setSECTOR] = useState("");
   const [OBJECTIVE, setOBJECTIVE] = useState("");

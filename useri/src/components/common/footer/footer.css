@@ -24,12 +24,32 @@
   border: none;
   outline: none;
   height: 30px;
+  margin-top: -10px;
 }
 .newletter i {
   padding: 12px;
   color: rgb(42,98,147);
   background-color: #fff;
+  margin-top: -10px;
 }
+.eroormessagehadi{
+margin-top:60px !important;
+margin-left: 100px ;
+margin-right: -400px;
+color:#FFf;
+font-size:14px;
+letter-spacing:1px;
+/* display: flex; */
+
+}
+/* .eroormessagehadi span{
+  margin-top:120px !important;
+  margin-left:100px;
+  margin-right:-400px;
+  color:#FFf;
+  font-size:14px;
+  letter-spacing:1px
+  } */
 footer {
   background-color: rgb(54, 59, 63);
   /* border-top: 1px solid #fff; */
@@ -49,8 +69,39 @@ footer .container {
     grid-gap: 30px;
     justify-content: space-between;
   }
-
 }
+  @media screen and (max-width: 500px)    {  
+      .eroormessagehadi{
+        margin-top: 150px !important;
+  
+      margin-left:-400px !important;
+      /* margin-right:'-200px' !important; */
+      color:#FFf;
+      font-size:14px;
+      letter-spacing:1px;
+      }
+      
+      .newletter input {
+        margin-top: 60px;
+        width: 171% !important;
+        margin-left: -150px;
+      }
+      .newletter i {
+        margin-top: 60px;
+        width: 27% !important;
+        /* margin-left: -150px; */
+      }
+     .hadiiiiiiiiiiiiiiii span {
+        width: 200% !important;
+      }
+      .spanfooterstyle{
+        width: 270% !important;
+        display: flex;
+      }
+    
+    }
+
+
 footer .logo span {
   color: #e0e0e0;
   font-size: 14px;

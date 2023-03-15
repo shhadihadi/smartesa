@@ -64,9 +64,9 @@ const CoursesCard = () => {
 
               </div>
               <Link to={`/coursesCard/${val.id}`}>
-                <div className="buttonDown">
+                {/* <div className="buttonDown"> */}
               <button className='outline-btn'>KNOW MORE !</button>
-              </div>
+              {/* </div> */}
               </Link>
             </div>
           ))}

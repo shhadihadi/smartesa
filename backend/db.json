@@ -1,7 +1,6 @@
 {
   "homeAbout": [
     {
-
       "id": 1,
       "Paragraphs": [
         "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.",
@@ -9,7 +8,6 @@
         "Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.",
         "The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
       ]
-
     }
   ],
   "internationaProgramHome": [
@@ -59,12 +57,10 @@
     {
       "id": 1,
       "title": "Smart Talk",
-
       "Paragraphs": [
         "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
         " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
         "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
-
       ]
     }
   ],
@@ -227,8 +223,15 @@
   ],
   "online": [
     {
+      "id": 1,
+      "cover": "../images/courses/online/o1.png",
+      "hoverCover": "../images/courses/online/o1.1.png",
+      "courseName": "DIAGNOSIS",
+      "course": "Follow up on the development of the SU"
+    },
+    {
       "id": 2,
-      "cover": "../",
+      "cover": "./images/courses/online/o2.png",
       "hoverCover": "./images/courses/online/o2.1.png",
       "courseName": "PITCHING",
       "course": "Pitching on a Regular Basis"
@@ -241,11 +244,11 @@
       "course": "Coaching on horizontal functions"
     },
     {
-      "courseName": "SUPPORThfwsss",
-      "course": "strategy one-on-one meetings",
+      "id": 4,
       "cover": "./images/courses/online/o6.png",
       "hoverCover": "./images/courses/online/o6.1.png",
-      "id": 4
+      "courseName": "SUPPORT",
+      "course": "strategy one-on-one meetings"
     },
     {
       "id": 5,
@@ -284,7 +287,6 @@
       "desc": "A small river named uden flows by their place and supplies it with the necessary regelialia. ",
       "cover": "../images/blog/2.png",
       "id": 2
-
     },
     {
       "id": 3,
@@ -552,6 +554,14 @@
     {
       "email": "hadi_shouman@hotmail.com",
       "id": 3
+    },
+    {
+      "email": "hadi_shouman@hotmai.coml",
+      "id": 4
+    },
+    {
+      "email": "hadi_shouman@homai.com",
+      "id": 5
     }
   ],
   "upload": [

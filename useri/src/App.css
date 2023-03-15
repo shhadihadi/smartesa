@@ -32,8 +32,9 @@ body {
   transition: 0.5s;
 }
 .start{
-  background-color: rgb(42,98,147) !important;
-  background-color: rgb(42,98,147) !important;
+
+  
+  background-color: #1D2E74 !important;
   
 }
 .icon:hover {
