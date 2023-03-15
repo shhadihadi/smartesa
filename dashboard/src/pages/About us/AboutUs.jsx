@@ -28,22 +28,24 @@ const AboutUs = () => {
       <div className="listContainer">
         <Navbar/>
      
-     
+     <h2 >About Us</h2>
        <div className='details'> 
+       
        <div>
         
         
-      <Grid container   spacing={5}>
+      <Grid container   spacing={5} >
         
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
         {homeAbout &&
             homeAbout.map(val =>(
               
-              <Grid item key={val.id} xs={12} md={6} lg={4}>
+              <Grid item key={val.id} xs={12} md={12} lg={12}>
            
                <Paper>
                <CardHeader 
+               
           action={
             <IconButton >
               <DeleteOutlined />
@@ -57,7 +59,7 @@ const AboutUs = () => {
         />
                 
                
-                <h4 >{val.desc} </h4>
+                <h4 >{val.Paragraphs} </h4>
               
           
             </Paper>

@@ -18,13 +18,13 @@ import {ImageListItem, ImageList,ImageListItemBar ,ListSubheader} from'@mui/mate
 
 
 
-const Articles = () => {
+const SmartVideo = () => {
   const { error, isPending, data: blogs} = useFetch('http://localhost:8000/blogs')
   
  
   return (
   
-       
+        
       // <Grid container   spacing={3}>
         
       //   { error && <div>{ error }</div> }
@@ -65,10 +65,10 @@ const Articles = () => {
             
       //      </Grid>
                
-      
-      <ImageList sx={{ width: 1100, height: 450 }}>
+        
+      <ImageList sx={{ width: 1000, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Events </ListSubheader>
+        <ListSubheader component="div">Events</ListSubheader>
       </ImageListItem>
       {blogs &&
       blogs.map((item) => (
@@ -106,4 +106,4 @@ const Articles = () => {
   )
 }
 
-export default Articles
+export default smartVideo

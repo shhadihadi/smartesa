@@ -38,7 +38,7 @@ const Contact = () => {
             <TableCell className="tableCell">Subject</TableCell>
             <TableCell className="tableCell">Email</TableCell>
             <TableCell className="tableCell">Message</TableCell>
-            <TableCell className="tableCell">Action</TableCell>
+            {/* <TableCell className="tableCell">Action</TableCell> */}
         
           </TableRow>
         </TableHead>

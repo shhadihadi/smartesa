@@ -1,13 +1,9 @@
 {
   "homeAbout": [
     {
-      "id": 1,
-      "Paragraphs": [
-        "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.",
-        "The program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.",
-        "Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.",
-        "The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
-      ]
+      "title": "About Us",
+      "Paragraphs": "Smart  ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.,The program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.,Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.,The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond.",
+      "id": 1
     }
   ],
   "internationaProgramHome": [
@@ -27,7 +23,7 @@
       "title": "OURCOMMUNITY",
       "Paragraphs": [
         "Smart ESA has an established reputation in the startup ecosystem, having worked with more than 90 emerging companies and partnered with 70 experienced coaches.",
-      "Additionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale."   
+        "Additionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale."
       ]
     }
   ],
@@ -37,8 +33,7 @@
       "title": "Contact",
       "Paragraphs": [
         "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.",
-      " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"
-    
+        " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"
       ]
     }
   ],
@@ -51,7 +46,6 @@
         "Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs",
         "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. ",
         "In addition, many have won some of the most prestigious competitions in the MENA region such as GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School and the MIT Enterprise Forum Pan Arab competition. Smart ESA's methodology is anchored in practical entrepreneurship expertise."
-      
       ]
     }
   ],
@@ -59,9 +53,10 @@
     {
       "id": 1,
       "title": "Smart Talk",
-      "Paragraphs": ["Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
-      " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
-      "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
+      "Paragraphs": [
+        "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
+        " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
+        "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
       ]
     }
   ],
@@ -69,8 +64,9 @@
     {
       "id": 1,
       "title": "Events",
-      "Paragraphs": ["Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.",
-      " Now, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
+      "Paragraphs": [
+        "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.",
+        " Now, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
       ]
     }
   ],
@@ -274,13 +270,10 @@
       "cover": "../images/blog/b1.webp"
     },
     {
-      "id": 2,
-      "type": "admin",
-      "date": "API. 25, 2022",
-      "com": "5 COMMENTS ",
       "title": "Build your Dream Software & Engineering Career",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/2.png"
+      "desc": "A small river named uden flows by their place and supplies it with the necessary regelialia. ",
+      "cover": "../images/blog/2.png",
+      "id": 2
     },
     {
       "id": 3,
@@ -357,66 +350,66 @@
   ],
   "team": [
     {
-      "id":"1",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "https://www.youtube.com/watch?v=IBw79MByBWk",
-      "date":"JAN. 18, 2021",
+      "id": "1",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "https://www.youtube.com/watch?v=IBw79MByBWk",
+      "date": "JAN. 18, 2021",
       "name": "Tatiana Hag",
       "work": "Season 2 Episode 4"
     },
     {
-      "id":"2",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t2.webp",
-      "date":"JAN. 18, 2021",
+      "id": "2",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t2.webp",
+      "date": "JAN. 18, 2021",
       "name": "Fadi Bizri",
       "work": "Season 2 Episode 3"
     },
     {
-      "id":"3",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t3.webp",
-      "date":"JAN. 18, 2021",
+      "id": "3",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t3.webp",
+      "date": "JAN. 18, 2021",
       "name": "Elsa Aoun",
       "work": "Season 2 Episode 2"
     },
     {
-      "id":"4",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t4.webp",
-      "date":"JAN. 18, 2021",
+      "id": "4",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t4.webp",
+      "date": "JAN. 18, 2021",
       "name": "Sami Bou Saab",
       "work": "Season 2 Episode 1"
     },
     {
-      "id":"5",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t5.webp",
-      "date":"JAN. 18, 2021",
+      "id": "5",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t5.webp",
+      "date": "JAN. 18, 2021",
       "name": "Roy Baladi",
       "work": "Episode 14"
     },
     {
-      "id":"6",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t6.webp",
-      "date":"JAN. 18, 2021",
+      "id": "6",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t6.webp",
+      "date": "JAN. 18, 2021",
       "name": "Maroun Chammas",
       "work": "Episode 13(part2)"
     },
     {
-      "id":"7",
-     "thumbnail":"./images/team/1.jpg",
-     "cover": "./images/team/t7.webp",
-      "date":"JAN. 18, 2021",
+      "id": "7",
+      "thumbnail": "./images/team/1.jpg",
+      "cover": "./images/team/t7.webp",
+      "date": "JAN. 18, 2021",
       "name": "Maroun Chammas",
       "work": "Episode 13(part1)"
     },
     {
-      "id":"8",
-     " thumbnail":"./images/team/1.jpg",
-     " cover": "./images/team/t8.webp",
-      "date":"JAN. 18, 2021",
+      "id": "8",
+      " thumbnail": "./images/team/1.jpg",
+      " cover": "./images/team/t8.webp",
+      "date": "JAN. 18, 2021",
       "name": "Ph.D Brian Wooden",
       "work": "DEVELOPER AND LEAD INSTRUCTOR"
     }

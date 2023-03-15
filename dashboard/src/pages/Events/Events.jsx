@@ -4,7 +4,7 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import './events.scss'
 // import useFetch from '../../useFetch';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { Grid , Paper} from '@mui/material';
 
 // import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
@@ -19,11 +19,17 @@ const Events = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <div className='events'>
-          <h2>EVENTS</h2>
-          
-        </div>
+        <div className="datatable">
+            <div className="datatableTitle">
+              Add New Articles
+              <Link to="/addArticles" className="link">
+                Add New
+              </Link>
+            </div>
+           
+       
         <div className='events1'>
+          
             
       {/* <Grid container   spacing={5}>
         
@@ -63,7 +69,7 @@ const Events = () => {
                <Articles />
          </div>
        
-            
+             </div>
        
        
       </div>

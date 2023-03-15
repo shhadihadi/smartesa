@@ -11,17 +11,17 @@ const AboutEdit = () => {
    
     
     const { id }  = useParams();
-    const { data:AboutJs, error, isPending } = useFetch('http://localhost:8000/AboutJs/' +(id));
+    const { data:homeAbout, error, isPending } = useFetch('http://localhost:8000/homeAbout/' +(id));
  
    
     
     useEffect(() => {
-      fetch(`http://localhost:8000/AboutJs/${id}`).then((res) => {
+      fetch(`http://localhost:8000/homeAbout/${id}`).then((res) => {
         return res.json();
       }).then((res) => {
         // idchange(res.id);
         titlechange(res.title);
-        paragraphchange(res.Paragraph);
+        paragraphchange(res.Paragraphs);
       }).catch((err) => {
         console.log(err.message);
       })
@@ -30,17 +30,17 @@ const AboutEdit = () => {
  const [aboutEdit, aboutChange] = useState('');
     // const[id,idchange]=useState("");
     const[title,titlechange]=useState();
-    const[Paragraph,paragraphchange]=useState("stdyfugihopo089t78");
+    const[Paragraphs,paragraphchange]=useState("stdyfugihopo089t78");
 
 
    
 
     const handlesubmit=(e)=>{
       e.preventDefault();
-     const aboutdata={title,Paragraph};
+     const aboutdata={title,Paragraphs};
       
 
-      fetch(`http://localhost:8000/AboutJs/${id}`,{
+      fetch(`http://localhost:8000/homeAbout/${id}`,{
         method:"PUT",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(aboutdata)
@@ -77,7 +77,7 @@ const AboutEdit = () => {
 
                                
        <label>Paragraph</label>
-      <textarea width="100%" value={Paragraph} onChange={e=>paragraphchange(e.target.value)}></textarea>
+      <textarea width="100%" value={Paragraphs} onChange={e=>paragraphchange(e.target.value)}></textarea>
        <button  type="submit">Save</button>
       <Link to="/">Back</Link>                                                        
                                         
