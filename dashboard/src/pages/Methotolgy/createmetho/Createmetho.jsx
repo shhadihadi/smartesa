@@ -85,13 +85,13 @@ function Createmetho() {
               <div className="createmetho">
                 <div className="textoutputdisplay" style={{ marginTop: '-28px' }}>
                   <p>Cover</p>
-                  <input type="file" accept="image/*" required onChange={handleCoverChange} />
+                  <input type="file" accept="image/png, image/gif, image/jpeg, image/jpg" required onChange={handleCoverChange} />
                 </div>
                 <div className="textoutputdisplay" style={{ marginTop: '10px' }}>
                   <p>Hover</p>
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/png, image/gif, image/jpeg, image/jpg"
                     required
                     onChange={handleHoverCoverChange}
                   />

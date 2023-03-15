@@ -49,10 +49,16 @@ function CourseCardId() {
               ))}
             </div>
             <div className="texttoUpp">
-              {/* <p>{coursesCard.priceAll}</p> */}
-              {coursesCard.text.map((p, index) =>(
-                <p>{p}</p>
-              ))}
+            {coursesCard.text.map((p, index) => (
+  <p key={index}>
+    {p.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ))}
+  </p>
+))}
             </div>
           </div>
         )}

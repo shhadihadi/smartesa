@@ -4,6 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Grid from "@mui/material/Grid";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Icon from '@mui/material/Icon';
+import { Link } from "react-router-dom";
 
 function Intercard() {
   const { error, isPending, data: coursesCard } = useFetch('http://localhost:8000/coursesCard')
@@ -18,7 +19,13 @@ function Intercard() {
   };
   return (
     <>
-     <Icon baseClassName="fas" className="fa-plus-circle" fontSize="small" />
+      <div className="datatableTitle">
+              Add New Item
+              <Link to="/intro/new" className="link">
+                Add New
+              </Link>
+            </div>
+     {/* <Icon baseClassName="fas" className="fa-plus-circle" fontSize="small" /> */}
     <div className='intercardallinone'>
     
       
@@ -35,11 +42,13 @@ function Intercard() {
                   </div>
           <h4>{val.coursesName}</h4>
           <div className="optiontoolsabcdef">
+          <Link to={`/updateCard/${val.id}`}>
             <div className="editoptioncard">
             <Grid item xs={8}>
                           <EditIcon />
                         </Grid>
             </div>
+            </Link>
             <div className="deletoptioncard" onClick={() => handledelete(val.id)}>
             {/* <Grid item xs={8}> */}
                           <DeleteIcon  />
@@ -90,8 +99,18 @@ function Intercard() {
         </div>
         <div className="abouttextinine">
           
-            {val.text.map((p) => 
-              ( <p>{p}</p> ))}
+          
+
+{val.text.map((p, index) => (
+  <p key={index}>
+    {p.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ))}
+  </p>
+))}
               
         </div>
 

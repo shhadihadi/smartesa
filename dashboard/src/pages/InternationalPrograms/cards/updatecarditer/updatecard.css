@@ -1,0 +1,70 @@
+.formstyle{
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  height: 500px;
+  /* background-color:aqua; */
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.formallupdate{
+  width: 96%;
+  height: 500px;
+  /* background-color:rgb(84, 92, 92); */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.asoneRowHadi{
+  display: flex;
+  margin-bottom: 15px;
+}
+.asoneRowHadi h3 {
+  width: 18%;
+}
+
+.asoneRowHadi input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #03C9D7;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+.asoneRowHadi input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.asoneRowHadi input{
+  width: 350px;
+  height: 35px;
+}
+
+.asoneRowHadi textarea {
+  display: block;
+  padding: .5rem;
+  background: transparent;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: .95rem;
+  min-width: 80%;
+  min-height: 200px;
+  margin-bottom: 50px;
+  }
+  .asoneRowHadi button{
+    margin-left: 160px;
+    width: 150px;
+    background-color: #d7b003;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
