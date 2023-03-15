@@ -26,6 +26,20 @@
   grid-gap: 55px;
 }
 
+
+  @media screen and (max-width: 680px) {
+  .gridP {
+    grid-template-columns: repeat(2, 1fr);
+  
+  }  
+}
+@media screen and (max-width: 660px) {
+  .gridP {
+    grid-template-columns: repeat(1, 1fr);
+  
+  }  
+}
+
 /*--------------faq-------------*/
 .faq .container {
   max-width: 70%;

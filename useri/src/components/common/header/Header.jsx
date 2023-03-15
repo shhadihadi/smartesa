@@ -19,25 +19,25 @@ const Header = () => {
             </li>
             <li  className="MaxTrasform">
               {/* <Link to='/courses'>All Courses</Link> */}
-                <Link to='/courses'>INTERNATIONAL PROGRAMS</Link>
+                <Link to='/PROGRAMS'>INTERNATIONAL PROGRAMS</Link>
               
             </li>
             <li className="smallTrasform">
               {/* <Link to='/courses'>All Courses</Link> */}
-                <Link  to='/courses'>PROGRAMS</Link>
+                <Link  to='/PROGRAMS'>PROGRAMS</Link>
               
             </li>
             <li>
               <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='/team'>SmarTalk</Link>
+              <Link to='/SmarTalk'>SmarTalk</Link>
             </li>
             <li className="displayourCom">
-              <Link to='/pricing'>Our Community</Link>
+              <Link to='/OurCommunity'>Our Community</Link>
             </li>
             <li className="nondisplayourCom">
-              <Link to='/pricing'>Community</Link>
+              <Link to='/OurCommunity'>Community</Link>
             </li>
             <li>
               <Link to='/events'>Events</Link>

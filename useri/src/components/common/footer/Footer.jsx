@@ -53,9 +53,11 @@ const Footer = () => {
         <div className='container flexSB'>
           <div className='left row'>
             <h1>SUBSCRIBE</h1>
-            <span>Would you like to learn more about the news of Smart ESA</span>
+            <span className="spanfooterstyle">Would you like to learn more about the news of Smart ESA</span>
           </div>
-          <span style={{marginTop:'90px',marginLeft:"100px",marginRight:'-400px',color:'#FFf',fontSize:"14px",letterSpacing:'1px'}}>{erroreEmail}</span>
+          {/* <div className="eroormessagehadi"> */}
+          <span  className="eroormessagehadi">{erroreEmail}</span>
+          {/* </div> */}
           <div className='right row'>
           
           <input
