@@ -45,6 +45,7 @@ const AboutUs = () => {
            
                <Paper>
                <CardHeader 
+               
           action={
             <IconButton >
               <DeleteOutlined />
@@ -58,7 +59,7 @@ const AboutUs = () => {
         />
                 
                
-                <h4 >{val.desc} </h4>
+                <h4 >{val.Paragraphs} </h4>
               
           
             </Paper>

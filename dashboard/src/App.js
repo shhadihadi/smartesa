@@ -23,8 +23,13 @@ import Methotology from "./pages/Methotolgy/methotology"
 import UpdateformMetho from "./pages/Methotolgy/updatemetho/updateformMetho";
 import Createmetho from "./pages/Methotolgy/createmetho/Createmetho";
 import Allinone from "./pages/headsAll/Allinone";
+
 import Updatecardinter from "./pages/InternationalPrograms/cards/updatecarditer/updatecardinter";
 import CreateIntroCard from "./pages/InternationalPrograms/cards/updatecarditer/CreateIntroCard";
+
+import ArticleEdit from "./pages/Events/ArticleEdit";
+import AddArticles from "./pages/Events/AddArticles"
+
 
 
 function App() {
@@ -121,7 +126,14 @@ function App() {
             <Route path="/faqEdit/:id">
               <Route index element={<FaqEdit />} />
 
-            
+              </Route>
+            <Route path="/articleEdit/:id">
+              <Route index element={<ArticleEdit />} />
+
+              </Route>
+            <Route path="/addArticles">
+              <Route index element={<AddArticles />} />
+
             </Route>
             </Route>
           
