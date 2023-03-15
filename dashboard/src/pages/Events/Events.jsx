@@ -4,8 +4,10 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import './events.scss'
 // import useFetch from '../../useFetch';
+
 import { Link } from 'react-router-dom';
 // import { Grid , Paper} from '@mui/material';
+
 
 // import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 // import IconButton from '@mui/material/IconButton'
@@ -14,6 +16,7 @@ import Articles from'./Articles'
 
 
 const Events = () => {
+  
   return (
     <div className="list">
       <Sidebar/>
@@ -31,42 +34,28 @@ const Events = () => {
         <div className='events1'>
           
             
-      {/* <Grid container   spacing={5}>
+      <Grid container   spacing={5}>
         
-        { error && <div>{ error }</div> }
+        {/* { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {AboutJs &&
-            AboutJs.map(val =>(
+        {Blogs &&
+            Blogs.map(val =>(
               
-              <Grid item key={val.id} xs={12} md={12} lg={12}>
-           
-               <Paper>
-               <CardHeader 
-          action={
-            <IconButton >
-              <DeleteOutlined />
-              <Link to={`/aboutEdit/${val.id}`}>
-          < EditOutlined />
-           </Link>
-            </IconButton>
-          }
-          title={val.title}
-        //   subheader={val.Paragraph}
-        />
-                
+            <div>
+              <div className="imgreight">
+                    <img src={val.cover} alt="Cover" />
+                  </div>
+               <Articles />
                
-                <h4 >{val.Paragraph} </h4>
-              
-          
-            </Paper>
-          </Grid>
+            </div>
           
          
-            ))
+            )) */}
         
-            }  
-           </Grid> */}
-               <Articles />
+            {/* }   */}
+            <Articles />
+           </Grid>
+              
          </div>
        
              </div>

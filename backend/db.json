@@ -1,9 +1,16 @@
 {
   "homeAbout": [
     {
-      "title": "About Us",
-      "Paragraphs": "Smart  ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.,The program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.,Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.,The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond.",
-      "id": 1
+
+      "id": 1,
+      "Paragraphs": [
+        "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.",
+        "The program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.",
+        "Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.",
+        "The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
+      ]
+
+
     }
   ],
   "internationaProgramHome": [
@@ -53,10 +60,12 @@
     {
       "id": 1,
       "title": "Smart Talk",
+
       "Paragraphs": [
         "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
         " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
         "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
+
       ]
     }
   ],
@@ -274,6 +283,7 @@
       "desc": "A small river named uden flows by their place and supplies it with the necessary regelialia. ",
       "cover": "../images/blog/2.png",
       "id": 2
+
     },
     {
       "id": 3,
@@ -459,9 +469,9 @@
   ],
   "faq": [
     {
-      "id": 1,
       "title": "How to Enroll This Online Courses?",
-      "desc": "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+      "desc": "This is walaa the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+      "id": 1
     },
     {
       "id": 2,
