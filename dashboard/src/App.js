@@ -13,7 +13,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/smartTalk/SmartTalk'
+import SmartTalk from './pages/SmartTalk/SmartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -23,8 +23,13 @@ import Methotology from "./pages/Methotolgy/methotology"
 import UpdateformMetho from "./pages/Methotolgy/updatemetho/updateformMetho";
 import Createmetho from "./pages/Methotolgy/createmetho/Createmetho";
 import Allinone from "./pages/headsAll/Allinone";
+
+import Updatecardinter from "./pages/InternationalPrograms/cards/updatecarditer/updatecardinter";
+import CreateIntroCard from "./pages/InternationalPrograms/cards/updatecarditer/CreateIntroCard";
+
 import ArticleEdit from "./pages/Events/ArticleEdit";
 import AddArticles from "./pages/Events/AddArticles"
+
 
 
 function App() {
@@ -109,6 +114,15 @@ function App() {
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
 
                </Route>
+
+               <Route path="/updateCard/:id">
+              <Route index element={<Updatecardinter />} />
+               </Route>
+
+               <Route path="/intro/new">
+              <Route index element={<CreateIntroCard />} />
+               </Route>
+
             <Route path="/faqEdit/:id">
               <Route index element={<FaqEdit />} />
 

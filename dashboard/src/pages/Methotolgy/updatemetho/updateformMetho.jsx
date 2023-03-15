@@ -108,7 +108,7 @@ function UpdateformMetho() {
                   <p>Cover</p>
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/png, image/gif, image/jpeg, image/jpg"
                     onChange={handleCoverChange}
                   />
                 </div>
@@ -116,7 +116,7 @@ function UpdateformMetho() {
                   <p>Hover</p>
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/png, image/gif, image/jpeg, image/jpg"
                     onChange={handleHoverCoverChange}
                   />
                 </div>
