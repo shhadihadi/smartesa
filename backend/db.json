@@ -40,10 +40,12 @@
     {
       "id": 1,
       "title": "Contact",
+      "address":"289 rue Clemenceau, Beirut, Lebanon",
+      "phone":"+961 1 373 373",
+      "email":"smartesa@esa.edu.lb", 
       "Paragraphs": [
         "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.",
-      " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"
-    
+      " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"    
       ]
     }
   ],
@@ -277,94 +279,115 @@
   ],
   "blogs": [
     {
-      "id": 1,
-      "type": "admin",
+      "id": 1,  
       "date": "JAN. 18, 2021",
-      "com": "3 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/b1.webp"
+      "title": "Prix Entrepreneur ESA - HEC Paris 2021",
+      "desc": [
+        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers. In second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.",
+
+        "Special thank you to the competition’s supporters, sponsors and all the finalists."],
+
+      "cover": "../images/blog/b1.webp",
+      "paragraphs":[ 
+        "Another successful edition of the Prix Entrepreneur ESA - HEC Paris competition, an initiative by the ESA Business School and HEC Paris.",
+        "The winning startups receive an exceptional prize to be sent over to the HEC Incubateur in Station F, Paris - all expenses paid, for six months, with free travel tickets by Air France."]
     },
     {
       "id": 2,
-      "type": "admin",
       "date": "API. 25, 2022",
-      "com": "5 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Ed'Innov Launch",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/2.png"
+      "cover": "../images/blog/2.png",
+      "paragraphs":[""]
     },
     {
       "id": 3,
-      "type": "user",
       "date": "MAY. 15, 2022",
-      "com": "10 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Global Innovation & Enterprise",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/3.jpg"
+      "cover": "../images/blog/3.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 4,
-      "type": "admin",
       "date": "JAN. 02, 2022",
-      "com": "3 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Demo Day 2020",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/4.jpg"
+      "cover": "../images/blog/4.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 5,
-      "type": "admin",
       "date": "DEC. 14, 2022",
-      "com": "3 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "ESA Coding Lab",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/5.jpg"
+      "cover": "../images/blog/5.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 6,
-      "type": "user",
       "date": "JAN. 18, 2021",
-      "com": "12 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Prix ESA-HEC Paris 2020",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/6.jpg"
+      "cover": "../images/blog/6.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 7,
-      "type": "user",
       "date": "JAN. 18, 2021",
-      "com": "12 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Hackathon La Mode en 2050",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/7.jpg"
+      "cover": "../images/blog/7.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 8,
-      "type": "user",
       "date": "JAN. 18, 2021",
-      "com": "12 COMMENTS ",
       "title": "Build your Dream Software & Engineering Career",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/8.jpg"
+      "cover": "../images/blog/8.jpg",
+      "paragraphs":[""]
     },
     {
       "id": 9,
-      "type": "user",
       "date": "JAN. 18, 2021",
-      "com": "12 COMMENTS ",
-      "titl": "Build your Dream Software & Engineering Career",
+      "titl": "Hack The City",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/9.jpg"
+      "cover": "../images/blog/9.jpg",
+      "paragraphs":[""]
+
     },
     {
       "id": 10,
-      "type": "user",
       "date": "JAN. 18, 2021",
-      "com": "12 COMMENTS ",
-      "title": "Build your Dream Software & Engineering Career",
+      "title": "Demo Day 2018",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/10.jpg"
+      "cover": "../images/blog/10.jpg",
+      "paragraphs":[""]
+    },
+    {
+      "id": 11,
+      "date": "JAN. 18, 2021",
+      "title": "Demo Day",
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "cover": "../images/blog/10.jpg",
+      "paragraphs":[""]
+    },
+    {
+      "id": 12,
+      "date": "JAN. 18, 2021",
+      "title": "Social Economic Award",
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "cover": "../images/blog/10.jpg",
+      "paragraphs":[""]
+    },
+    {
+      "id": 13,
+      "date": "JAN. 18, 2021",
+      "title": "CMA CGM Partnership Agreement",
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "cover": "../images/blog/10.jpg",
+      "paragraphs":[""]
     }
   ],
   "team": [

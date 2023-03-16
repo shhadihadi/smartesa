@@ -1,0 +1,141 @@
+.backId-title{
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+  .marginId {
+    margin-top: 27.3%;
+  }
+  .backId {
+    background-image: url("../../../../public/images/backId.jpg");
+    /* background-size: cover; */
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* width: 100%;  height: auto; */
+    /* width: 120; */
+    padding-top: 30%;
+    padding-right: 600px;
+    color: #fff;
+    text-align: center;
+  }
+  .backId h1 {
+    font-size: 450px;
+    font-weight: 400;
+    margin-left: 150px;
+  }
+  .backId h2 {
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .backId p {
+    /* font-weight: 300; */
+    font-size: 22px;
+    /* text-transform: uppercase; */
+    margin-left: 150px;
+    margin-top: 14px;
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1461px)  {
+    .backId {
+      
+      background-position: center;
+      background-size: cover;
+      padding-top: 480px;
+      padding-left: 100px;
+       height: 75vh;
+      /*width: 100% !important; */
+    }
+    .backId h1 {
+      font-size: 43px;
+      font-weight: 300;
+      width: 100%;
+      margin-top: -270px;
+      
+    }
+    .backId p {
+      /* font-weight: 300; */
+      /* font-size: 17px; */
+      /* text-transform: uppercase; */
+      margin-left: 50px;
+      margin-top: 4px;
+      width: 122%;
+      margin-bottom: 10px !important;
+      text-align: left;
+      line-height: 30px
+    }
+  
+  }
+  @media screen and (max-width: 1460px)  {
+    .backId {
+      
+      background-position: center;
+      background-size: cover;
+      padding-top: 480px;
+      padding-left: 100px;
+      height: 99vh;
+      width: 100% !important;
+    }
+    .backId h1 {
+      font-size: 43px;
+      font-weight: 300;
+      width: 100%;
+      margin-top: -270px;
+      margin-left: -80px;
+    }
+    .backId p {
+      /* font-weight: 300; */
+      /* font-size: 17px; */
+      /* text-transform: uppercase; */
+      margin-left: 50px;
+      margin-top: 4px;
+      width: 122%;
+      margin-bottom: 10px !important;
+      text-align: left;
+      line-height: 30px
+    }
+  }
+  @media screen and (max-width: 1161px)  {
+    .backId {
+      
+      background-position: center;
+      background-size: cover;
+      padding-top: 480px;
+      padding-left: 100px;
+      height: 99vh;
+      width: 100% !important;
+    }
+    .backId h1 {
+      font-size: 43px;
+      font-weight: 300;
+      width: 140%;
+      margin-top: -270px;
+      margin-left: -80px;
+    }
+    .backId p {
+      /* font-weight: 300; */
+      /* font-size: 17px; */
+      /* text-transform: uppercase; */
+      margin-left: 50px;
+      margin-top: 4px;
+      width: 182%;
+      margin-bottom: 10px !important;
+      text-align: left;
+      line-height: 30px
+    }
+  }
+  @media screen and (max-width: 1150px) and (min-width: 769px ){
+    .backId {
+      
+      background-position: center;
+      padding-top: 200px;
+      padding-left: 100px;
+      height: 100vh;
+      width: 120%;
+    }
+}

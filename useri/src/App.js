@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import CourseCardId from "./components/allcourses/coursecartById/coursecardid"
+import Event from "./components/byID/event/Event"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path='/events' element ={<Blog />} />
           <Route exact path='/contact' element ={<Contact />} />
           <Route exact path="/coursesCard/:id" element ={<CourseCardId />} />
+          <Route exact path="/Event/:id" element ={<Event />} />
           
         </Routes>
         <Footer />
