@@ -551,5 +551,19 @@
     {
       "id": 2
     }
+  ],
+  "ApplyNowHome":[
+    {"id": 1,
+      "title":"Apply Now",
+      "cover":"",
+      "Paragraphs":[
+        "Smart ESA's  International Programs For Start-Ups are carefully designed in partnership with our international experts and partners. Our workshops are dedicated to support the best generation of early-stage and growth-driven companies. Providing entrepreneurs with an unsurpassed methodology, offering workshops, one-on-one mentoring, extensive access to high-profile and international experts.",
+        "For entrepreneurs with just an idea at the beginning of their journey, looking forward to create a business and transform their idea into a potential and successful business;  our Create Program is the right one for you !",
+        "For start-ups with a Minimum Viable Product (MVP) and early traction, our Boost Program is aiming to grow your company and improve your sale.",
+        "Our application process is simple and will tell us more about your project - it should take only a few minutes to complete. ",
+        "The Smart ESA team will contact you and will select the right program for you."
+      ]
+  }
+
   ]
 }

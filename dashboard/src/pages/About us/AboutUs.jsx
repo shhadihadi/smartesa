@@ -28,7 +28,7 @@ const AboutUs = () => {
       <div className="listContainer">
         <Navbar/>
      
-     <h2 >About Us</h2>
+    
        <div className='details'> 
        
        <div>

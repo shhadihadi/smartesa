@@ -58,8 +58,8 @@ const International = () => {
           </div>
         </div>
 
-        <div className="details1">
-          <Programes />
+        <div >
+        
           <div></div>
         </div>
         <div className="hadiiternationalCard">

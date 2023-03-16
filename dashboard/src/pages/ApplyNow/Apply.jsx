@@ -2,6 +2,7 @@ import React from 'react'
 
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
+import Back from "../../components/comon/Back"
 import './apply.scss'
 import Table from '../../components/tableApply/tableApply'
 import useFetch from '../../useFetch'
@@ -13,7 +14,8 @@ import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 
 const Apply = () => {
-  const { error, isPending, data: ApplyNow } = useFetch('http://localhost:8000/ApplyNow')
+  const { error, isPending, data: ApplyNowHome } = useFetch('http://localhost:8000/ApplyNowHome')
+  const paragraphs = ApplyNowHome ? ApplyNowHome[0].Paragraphs : null;
   return (
     <div className="list">
       <Sidebar/>
@@ -21,43 +23,56 @@ const Apply = () => {
         <Navbar/>
         <div className='Apply'>
         <Grid container elevation={3}  spacing={5}>
-        
+          
+          
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {ApplyNow &&
-            ApplyNow.map(val =>(
-              
-              <Grid item key={val.id} xs={12} md={12} lg={12}>
-           
-               <Paper>
-               <CardHeader 
-          action={
-            <IconButton >
-              <DeleteOutlined />
-              <Link to={`/aboutEdit/${val.id}`}>
-          < EditOutlined />
-           </Link>
-            </IconButton>
-          }
-          title={val.title}
-        //   subheader={val.Paragraph}
-        />
-                
-               
-                <h4 >{val.Paragraph} </h4>
-                <h4 >{val.Paragraph1} </h4>
-                <h4 >{val.Paragraph2} </h4>
-                <h4 >{val.Paragraph3} </h4>
-              
-          
-            </Paper>
-          </Grid>
-          
+      { paragraphs && (
+      <div>
+         <Grid item   key={paragraphs.id} xs={12} md={12} lg={12}> 
+           <Paper>
+        <Back 
+          title= {ApplyNowHome[0].title}
+          paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
          
-            ))
         
-            }  
-           </Grid>
+        />
+          <CardHeader 
+               
+               action={
+                 <IconButton >
+                   <DeleteOutlined />
+                   <Link to={`/aboutEdit/${paragraphs.id}`}>
+               < EditOutlined />
+                </Link>
+                 </IconButton>
+               }
+            
+            /> 
+           
+            </Paper>
+          </Grid>   </div>
+            )}
+       
+    
+     
+     </Grid>
+       
+              
+           
+           
+              
+              
+            
+               
+               
+               
+              
+          
+           
+         
+             
+           
            </div>
           <div className='Apply1'>
           <Table />

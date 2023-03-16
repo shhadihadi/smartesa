@@ -66,7 +66,7 @@ const Articles = () => {
       //      </Grid>
                
       
-      <ImageList sx={{ width: 1100, height: 450 }}>
+      <ImageList sx={{ width: 900, height: 450 ,whiteSpace:2}}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div">Events </ListSubheader>
       </ImageListItem>
