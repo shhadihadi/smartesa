@@ -3,7 +3,7 @@ import React from 'react'
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import './smartTalk.scss'
-import useFetch from '../../useFetch';
+import useFetch from '../../useFetch'
 import { Link } from 'react-router-dom';
 import { Grid , Paper} from '@mui/material';
 

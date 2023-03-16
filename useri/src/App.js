@@ -19,13 +19,14 @@ function App() {
         <Header />
         <Routes>
           <Route exact path='/' element ={<Home />} />
-          <Route exact path='/about' element ={< About />} />
-          <Route exact path='/courses' element ={< InterNationalProgram />} />
-          <Route exact path='/team' element ={< Team />} />
-          <Route exact path='/pricing' element ={<Pricing />} />
-          <Route exact path='/events' element ={<Blog />} />
-          <Route exact path='/contact' element ={<Contact />} />
-          <Route exact path="/coursesCard/:id" element ={<CourseCardId />} />
+
+          <Route  path='/about' element ={< About />} />
+          <Route  path='/PROGRAMS' element ={< InterNationalProgram />} />
+          <Route  path='/SmarTalk' element ={< Team />} />
+          <Route  path='/OurCommunity' element ={<Pricing />} />
+          <Route  path='/events' element ={<Blog />} />
+          <Route  path='/contact' element ={<Contact />} />
+          <Route  path="/coursesCard/:id" element ={<CourseCardId />} />
           <Route exact path="/Event/:id" element ={<Event />} />
           
         </Routes>

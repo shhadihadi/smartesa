@@ -11,10 +11,71 @@
 .events1{
     margin:40px ;
     align-items: center;
-    background:  #d8cbcb;
+    background: white;
     border-radius:4px ;
   
     padding: 20px;
     position: relative;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
+.imgreight{
+
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 2px solid rgb(42,98,147);
+    // object-fit: cover;
+    
+
+    
+  }
+
+  /* edit new blog form*/
+.edit{
+    max-width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+  }
+  .edit label{
+    text-align: left;
+    display: block;
+  }
+  .edit h2{
+    font-size: 20px;
+    color: #644de2;
+    margin-bottom: 30px;
+  }
+  
+  .edit input, .edit textarea, .edit select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .edit textarea{
+    height: 200px;
+  }
+  .edit button{
+    background: #3e52a8;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+
+    height: 10px;
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid rgb(42,98,147);;
+    
+  }
+

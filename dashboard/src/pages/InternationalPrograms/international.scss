@@ -9,6 +9,12 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 
 }
+h2{
+  
+    margin-top: 20px;
+    text-align: center;
+    
+}
 .international1{
     margin:40px ;
     align-items: center;
@@ -20,3 +26,205 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ......................card ........................................//
+.hadiiternationalCard{
+  margin-top: 20px;
+  margin: auto;
+  max-width: 95%;
+  // height: 600px;
+  // background-color: #dbf065;
+  margin-bottom: 20px;
+  padding: 20px;
+
+}
+
+.intercardallinone{
+  // margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.suball{
+  width: 49%;
+  // height: 370px;
+  // background-color: #3d0b0b;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 20px;
+  
+}
+.fisrtupone{
+  height: 25px;
+  // background-color: aqua;
+  width: 92.5% ;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+}
+.fisrtupone h4{
+  font-size: 14px;
+}
+
+.optiontoolsabcdef{
+  display:flex;
+}
+
+.imgproviderseen{
+  display: flex;
+  // max-height: 75px;
+  // background-color: rgb(167, 24, 90);
+  width: 92.5%;
+  justify-content: space-around;
+  display: flex;
+  padding: 20px;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  flex-wrap: wrap;
+  border-bottom: 1px dashed;
+}
+
+.imgproviderseen img{
+  // background-size: cover;
+  // background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+}
+
+.ditailsAhadi{
+  display: flex;
+  height: 100px;
+  // background-color: rgb(82, 67, 74);
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px dashed;
+  
+  margin-top: 10px;
+
+}
+.listdathadi{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  // background-color: #6573f0;
+  justify-content: center;
+}
+
+.flextohaveOnLine{
+  width: 90%;
+  display: flex;
+  // justify-content: space-evenly;
+  text-align: center;
+  padding-left: 8px;
+
+}
+.flextohaveOnLine h3{
+  // padding-left: 8px;
+  display: inline-block;
+  color: #8a8a8a;
+  text-transform: uppercase;
+  font-weight: 600;
+  // width: 30%;
+  float: left;
+  font-size: 18px;
+}
+.flextohaveOnLine p{
+  // padding-left: 8px;
+  display: inline-block;
+  // color: #8a8a8a;
+  // text-transform: uppercase;
+  // font-weight: 600;
+  // width: 30%;
+  // float: left;
+  font-size: 15px;
+  margin-top: 2PX;
+  float: right;
+  padding-left: 5px;
+  // line-height: 16px;
+}
+
+.abouttextinine{
+  width: 100%;
+  // background-color: rgb(82, 67, 74);
+  // height: 130px;
+
+}
+.abouttextinine p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ .imggetted {
+  width: 50px;
+  height: 50px;
+  // margin: auto;
+  // position: relative;
+  background-color: #6573f0;
+  margin-top: -10px;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 46%;
+
+}
+
+.imggetted img{
+  width: 30px;
+  justify-content: center;
+  margin-top: 10px;
+  // margin-bottom: auto;
+}
+.editoptioncard{
+  color: #665913;
+}
+.editoptioncard:hover{
+  color: #ffffff;
+  background-color:#665913; 
+  border-radius: 30%;
+}
+.deletoptioncard{
+  color: brown;
+
+}
+.deletoptioncard:hover{
+  // color: brown;
+  color: #ffffff;
+  background-color:brown;
+  border-radius: 30%;
+
+}
+
+
+@media screen and (max-width: 970px){
+  .suball{width: 80%;}
+  
+}
+@media screen and (max-width: 800px){
+  .suball{width: 100%;}
+  
+}
+
+

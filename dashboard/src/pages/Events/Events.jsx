@@ -4,8 +4,10 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import './events.scss'
 // import useFetch from '../../useFetch';
-// import { Link } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 // import { Grid , Paper} from '@mui/material';
+
 
 // import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 // import IconButton from '@mui/material/IconButton'
@@ -14,56 +16,49 @@ import Articles from'./Articles'
 
 
 const Events = () => {
+  
   return (
     <div className="list">
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <div className='events'>
-          <h2>EVENTS</h2>
-          
-        </div>
-        <div className='events1'>
-            
-      {/* <Grid container   spacing={5}>
-        
-        { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-        {AboutJs &&
-            AboutJs.map(val =>(
-              
-              <Grid item key={val.id} xs={12} md={12} lg={12}>
+        <div className="datatable">
+            <div className="datatableTitle">
+              Add New Articles
+              <Link to="/addArticles" className="link">
+                Add New
+              </Link>
+            </div>
            
-               <Paper>
-               <CardHeader 
-          action={
-            <IconButton >
-              <DeleteOutlined />
-              <Link to={`/aboutEdit/${val.id}`}>
-          < EditOutlined />
-           </Link>
-            </IconButton>
-          }
-          title={val.title}
-        //   subheader={val.Paragraph}
-        />
-                
-               
-                <h4 >{val.Paragraph} </h4>
-              
+       
+        <div className='events1'>
           
-            </Paper>
-          </Grid>
+            
+      <Grid container   spacing={5}>
+        
+        {/* { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
+        {Blogs &&
+            Blogs.map(val =>(
+              
+            <div>
+              <div className="imgreight">
+                    <img src={val.cover} alt="Cover" />
+                  </div>
+               <Articles />
+               
+            </div>
           
          
-            ))
+            )) */}
         
-            }  
-           </Grid> */}
-               <Articles />
+            {/* }   */}
+            <Articles />
+           </Grid>
+              
          </div>
        
-            
+             </div>
        
        
       </div>
