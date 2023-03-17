@@ -73,8 +73,9 @@ const Articles = () => {
       {blogs &&
       blogs.map((item) => (
         //  <Link to={`/aboutEdit/${item.id}`}>
-        <ImageListItem key={item.cover}> 
         
+        <ImageListItem key={item.cover}> 
+        <p>{item.date}</p>
           <img
             src={`${item.cover}?w=248&fit=crop&auto=format`}
             srcSet={`${item.cover}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -95,10 +96,11 @@ const Articles = () => {
           < EditOutlined />
            </Link>
               </IconButton>
-          
+      
            
             }
           />
+          
         </ImageListItem>
       ))}
     </ImageList>

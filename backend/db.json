@@ -511,14 +511,6 @@
       "date": "JAN. 18, 2021",
       "name": "Maroun Chammas",
       "work": "Episode 13(part1)"
-    },
-    {
-      "id": "8",
-      " thumbnail": "./images/team/1.jpg",
-      " cover": "./images/team/t8.webp",
-      "date": "JAN. 18, 2021",
-      "name": "Ph.D Brian Wooden",
-      "work": "DEVELOPER AND LEAD INSTRUCTOR"
     }
   ],
   "testimonal": [
@@ -602,6 +594,7 @@
       "id": 6
     }
   ],
+  
   "contact": [
     {
       "id": 1,
