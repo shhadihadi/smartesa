@@ -12,7 +12,7 @@ import { DeleteOutlined, EditOutlined } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import CardHeader from "@mui/material/CardHeader";
 
-import Programes from "./Programes";
+
 import Intercard from "./cards/intercard";
 
 const International = () => {
@@ -41,7 +41,7 @@ const International = () => {
                         action={
                           <IconButton>
                             <DeleteOutlined />
-                            <Link to={`/aboutEdit/${val.id}`}>
+                            <Link to={`/editInter/${val.id}`}>
                               <EditOutlined />
                             </Link>
                           </IconButton>
@@ -59,7 +59,7 @@ const International = () => {
         </div>
 
         <div >
-        
+
           <div></div>
         </div>
         <div className="hadiiternationalCard">

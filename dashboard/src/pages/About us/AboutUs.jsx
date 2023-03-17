@@ -27,11 +27,24 @@ const AboutUs = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
+<<<<<<< Updated upstream
      
     
        <div className='details'> 
        
        <div>
+=======
+        <div className="datatable">
+            <div className="datatableTitle">
+              Add Text to About Us
+              <Link to="/addArticles" className="link">
+                Add New
+              </Link>
+            </div>
+           
+     <div className='details'>
+    
+>>>>>>> Stashed changes
         
         
       <Grid container   spacing={5} >
@@ -70,27 +83,14 @@ const AboutUs = () => {
         
             }  
            </Grid>
-               
+               </div>
         </div> 
 
 </div>
       
-      {/* <Container>
-      <Grid container spacing={3}>
-      { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-        {AboutJs &&
-            AboutJs.map(val =>(
-          <Grid item xs={12} md={6} lg={4} key={val.id}>
-            <AboutCard AboutJs={val}  />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-       */}
+    
      </div>
-     </div> 
-     
+    
    
   )
 }

@@ -25,6 +25,7 @@ import Createmetho from "./pages/Methotolgy/createmetho/Createmetho";
 import Allinone from "./pages/headsAll/Allinone";
 import ArticleEdit from "./pages/Events/ArticleEdit";
 import AddArticles from "./pages/Events/AddArticles"
+import EditInter from'./pages/InternationalPrograms/EditInter'
 
 
 function App() {
@@ -115,6 +116,12 @@ function App() {
               </Route>
             <Route path="/articleEdit/:id">
               <Route index element={<ArticleEdit />} />
+
+              
+              </Route>
+            <Route path="/editInter/:id">
+              <Route index element={<EditInter />} />
+
 
               </Route>
             <Route path="/addArticles">
