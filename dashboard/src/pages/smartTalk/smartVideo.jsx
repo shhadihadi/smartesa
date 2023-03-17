@@ -19,65 +19,26 @@ import {ImageListItem, ImageList,ImageListItemBar ,ListSubheader} from'@mui/mate
 
 
 const SmartVideo = () => {
-  const { error, isPending, data: blogs} = useFetch('http://localhost:8000/blogs')
+  const { error, isPending, data: team} = useFetch('http://localhost:8000/team')
   
  
   return (
   
-        
-      // <Grid container   spacing={3}>
-        
-      //   { error && <div>{ error }</div> }
-      // { isPending && <div>Loading...</div> }
-      //   {Blogs&&
-      //      Blogs.map(val =>(
-              
-      //         <Grid item key={val.id} xs={12} md={6} lg={4}>
-             
-              
-      //            <Paper>
-      //          <div className="imgreight">
-      //               <img src={val.cover} alt="Cover" />
-      //             </div>
-      //             <CardHeader 
-      //     action={
-      //       <IconButton >
-      //         <DeleteOutlined />
-      //         <Link to={`/aboutEdit/${val.id}`}>
-      //     < EditOutlined />
-      //      </Link>
-      //       </IconButton>
-      //     }
-      //     title={val.title}
-      //   //   subheader={val.Paragraph}
-      //   />
-      //     </Paper>
-          
-      //     </Grid>
-         
-            
-      //     )) 
       
-      //    } 
-         
-            
-        
-            
-      //      </Grid>
                
         
-      <ImageList sx={{ width: 1000, height: 450 }}>
+      <ImageList sx={{ width: 1100, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div">Events</ListSubheader>
       </ImageListItem>
-      {blogs &&
-      blogs.map((item) => (
+      {team &&
+      team.map((item) => (
         //  <Link to={`/aboutEdit/${item.id}`}>
-        <ImageListItem key={item.cover}> 
+        <ImageListItem key={item.thumbnail}> 
         
           <img
-            src={`${item.cover}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.cover}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.thumbnail}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.thumbnail}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
           />
@@ -88,7 +49,7 @@ const SmartVideo = () => {
             
               <IconButton
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
+                aria-label={`info about ${item.name}`}
               >
                  <DeleteOutlined />
               <Link to={`/articleEdit/${item.id}`}>
@@ -106,4 +67,4 @@ const SmartVideo = () => {
   )
 }
 
-export default smartVideo
+export default SmartVideo
