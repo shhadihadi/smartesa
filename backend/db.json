@@ -52,8 +52,7 @@
       "Paragraphs": [
         "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success. ",
         "Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs",
-        "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. ",
-        "In addition, many have won some of the most prestigious competitions in the MENA region such as GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School and the MIT Enterprise Forum Pan Arab competition. Smart ESA's methodology is anchored in practical entrepreneurship expertise."
+        "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. "
       ]
     }
   ],
@@ -340,13 +339,14 @@
       "course": "Weekly Workshops"
     }
   ],
+  
   "blogs": [
     {
       "id": 1,  
-      "date": "JAN. 18, 2021",
+      "date": "28, June, 2021 ",
       "title": "Prix Entrepreneur ESA - HEC Paris 2021",
       "desc": [
-        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers. In second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.",
+        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers.\nIn second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.",
 
         "Special thank you to the competition’s supporters, sponsors and all the finalists."],
 
@@ -358,16 +358,20 @@
     {
 
       "id": 2,
-      "date": "API. 25, 2022",
+      "date": "7, june, 2021",
       "title": "Ed'Innov Launch",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "desc": ["Devant une centaine de participants en présentiel et en ligne, Mme Grillo a rappelé l’engagement de la France en faveur de l’éducation au Liban. Elle a appelé de ses vœux une mobilisation commune en faveur d’une dynamique d’avenir pour préserver, grâce à l’innovation, l’excellence de l’éducation francophone au Liban, tout en soulignant l’exemplarité d’un système éducatif qui tire sa force de son pluralisme, de sa diversité et de sa capacité à jouer un rôle fondamental pour la cohésion du pays.",
+      "M. Maxence Duault, Directeur de l’ESA Business School, a souligné à son tour le fort potentiel de l’incubateur Smart Esa, qui a jusqu’à présent accompagné une centaine de startups libanaises et s’ouvre de plus en plus au secteur de l’éducation. Les enjeux et les défis sont immenses, tant sur les plans technologique qu’éducatif : Ed’Innov fonctionnera comme un centre de « recherche et développement » collectif, au service de l’éducation au Liban.",
+      "Les prochains rendez-vous :\n\nEn septembre prochain, Ed’Innov démarrera un programme d’accélération de quatre mois, afin d’accompagner les startups libanaises du numérique éducatif au sein de Smart ESA. Un hackathon sera organisé, en novembre, autour de « l’innovation frugale », en réponse aux besoins de solutions éducatives accessibles et peu coûteuses. Enfin une conférence internationale portant sur l’innovation dans le secteur éducatif à Beyrouth viendra clore l’année 2021."],
       "cover": "../images/blog/2.png",
-      "paragraphs":[""]
-
+      "paragraphs":[
+          "L’Ambassade de France au Liban et l’ESA Business School ont lancé Ed’Innov, groupement pour l’innovation dans l’éducation au Liban. Le lancement officiel a eu lieu ce lundi 7 juin à l’ESA Business school, en présence de Mme Anne Grillo, Ambassadrice de France au Liban.",
+          "The Ed'Innov project is a collaboration between the French Embassy in Lebanon and the ESA, aimed at improving the quality of education in Lebanon, especially for French speakers. The project involves education and edtech innovators from Lebanon and France, working together to develop innovative solutions and improve access to them for all. The ultimate goal is to contribute to the economic development of the edtech sector in Lebanon."
+    ]
     },
     {
       "id": 3,
-      "date": "MAY. 15, 2022",
+      "date": "4, March, 2021",
       "title": "Global Innovation & Enterprise",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/3.jpg",
@@ -375,7 +379,7 @@
     },
     {
       "id": 4,
-      "date": "JAN. 02, 2022",
+      "date": "10, December, 2020",
       "title": "Demo Day 2020",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/4.jpg",
@@ -383,7 +387,7 @@
     },
     {
       "id": 5,
-      "date": "DEC. 14, 2022",
+      "date": "01, July, 2020",
       "title": "ESA Coding Lab",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/5.jpg",
@@ -391,7 +395,7 @@
     },
     {
       "id": 6,
-      "date": "JAN. 18, 2021",
+      "date": "14, May, 2020",
       "title": "Prix ESA-HEC Paris 2020",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/6.jpg",
@@ -399,7 +403,7 @@
     },
     {
       "id": 7,
-      "date": "JAN. 18, 2021",
+      "date": "19, October, 2019",
       "title": "Hackathon La Mode en 2050",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/7.jpg",
@@ -407,16 +411,16 @@
     },
     {
       "id": 8,
-      "date": "JAN. 18, 2021",
-      "title": "Build your Dream Software & Engineering Career",
+      "date":"14, October, 2019",
+      "title": "Hack The City",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/8.jpg",
       "paragraphs":[""]
     },
     {
       "id": 9,
-      "date": "JAN. 18, 2021",
-      "titl": "Hack The City",
+      "date":"8, October, 2018",
+      "title": "Demo Day 2018",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/9.jpg",
       "paragraphs":[""]
@@ -424,37 +428,38 @@
     },
     {
       "id": 10,
-      "date": "JAN. 18, 2021",
-      "title": "Demo Day 2018",
+      "date": "10, October, 2017",
+      "title": "Demo Day 2017",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       "cover": "../images/blog/10.jpg",
       "paragraphs":[""]
     },
     {
       "id": 11,
-      "date": "JAN. 18, 2021",
-      "title": "Demo Day",
+      "date":"20, September, 2017",
+      "title": "Social Economic Award",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/10.jpg",
+      "cover": "../images/blog/11.jpg",
       "paragraphs":[""]
     },
     {
       "id": 12,
-      "date": "JAN. 18, 2021",
-      "title": "Social Economic Award",
+      "date": "21, March, 2018",
+      "title": "CMA CGM Partnership Agreement",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/10.jpg",
+      "cover": "../images/blog/12.jpg",
       "paragraphs":[""]
     },
     {
       "id": 13,
-      "date": "JAN. 18, 2021",
-      "title": "CMA CGM Partnership Agreement",
+      "date":"20, April, 2018",
+      "title": "Open Dialogue on Fintech",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/10.jpg",
+      "cover": "../images/blog/13.jpg",
       "paragraphs":[""]
     }
   ],
+
   "team": [
     {
       "id": "1",
@@ -544,24 +549,48 @@
       "cover": "./images/testo/t3.webp"
     }
   ],
-  "price": [
+  "ourcommunity": [
     {
       "id": 1,
-      "name": "STARTUPS",
-      "price": "90+",
-      "desc": "In four years, Smart ESA has helped +40 startups and +50 projects form Lebanese ecosystem within various industries and sectors."
+      "title": "STARTUPS",
+      "nb": "90+",
+      "paragraphs":["In four years, Smart ESA has accelerated +90 startups from different industries. Our startups have won some of the most prestigious awards in Lebanon and the Arab World:\n\nMIT Pan Arab Forum\nGitex\nConsensys Blockchain\nAmadeus Travel Challenge\nSprint Competition\nEuromena Awards\nSeedstarsFintech"],
+      "communityimg":["../images/imagesComm/startup/s1.png","../images/imagesComm/startup/s2.png",
+      "../images/imagesComm/startup/s3.png","../images/imagesComm/startup/s4.png",
+      "../images/imagesComm/startup/s5.png","../images/imagesComm/startup/s6.png",
+      "../images/imagesComm/startup/s7.png","../images/imagesComm/startup/s8.png",
+      "../images/imagesComm/startup/s9.png","../images/imagesComm/startup/s10.png",
+      "../images/imagesComm/startup/s11.png","../images/imagesComm/startup/s12.png",
+      "../images/imagesComm/startup/s13.png","../images/imagesComm/startup/s14.png",
+      "../images/imagesComm/startup/s15.png","../images/imagesComm/startup/s16.png",
+      "../images/imagesComm/startup/s17.png","../images/imagesComm/startup/s18.png",
+      "../images/imagesComm/startup/s19.png","../images/imagesComm/startup/s20.png",
+      "../images/imagesComm/startup/21.png","../images/imagesComm/startup/22.png",
+      "../images/imagesComm/startup/23.png","../images/imagesComm/startup/24.png",
+      "../images/imagesComm/startup/25.png","../images/imagesComm/startup/26.png",
+      "../images/imagesComm/startup/27.png"
+    ]
     },
     {
       "id": 2,
-      "name": "EXPERTS",
-      "price": "70+",
-      "desc": "Smart ESA builds on ESA's national and international network to source some of the best mentors and coaches to help startups grow and succeed."
+      "title": "PARTNERS",
+      "nb": "15",
+      "paragraphs":["Smart ESA relies on different strategic partnerships. The partners support the startups in different ways: financing, material, international market access, expertise, etc."],
+      "communityimg":["../images/imagesComm/partners/p1.png","../images/imagesComm/partners/p2.png",
+      "../images/imagesComm/partners/p3.png","../images/imagesComm/partners/p4.png",
+      "../images/imagesComm/partners/p5.png","../images/imagesComm/partners/p6.png",
+      "../images/imagesComm/partners/p7.png","../images/imagesComm/partners/p8.png",
+      "../images/imagesComm/partners/p9.png","../images/imagesComm/partners/p10.png",
+      "../images/imagesComm/partners/p11.png","../images/imagesComm/partners/p12.png",
+      "../images/imagesComm/partners/p13.png","../images/imagesComm/partners/p14.png",
+      "../images/imagesComm/partners/p15.png"]
     },
     {
       "id": 3,
-      "name": "PARTNERS",
-      "price": "15",
-      "desc": "Smart ESA relies on different strategic partnerships. The partners support the startups in different ways: financing, material, international market access, expertise, etc."
+      "title": "EXPERTS",
+      "nb": "70+",
+      "paragraphs":["Smart ESA builds on ESA's national and international network to source some of the best mentors and coaches to help startups grow and succeed."],
+      "communityimg":[""]
     }
   ],
   "faq": [
@@ -576,30 +605,9 @@
       "desc": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
     },
     {
-      "cover": "./images/courses/online/o4.png",
-      "hoverCover": "./images/courses/online/o4.1.png",
-      "courseName": "COACHING hadi",
-      "course": "Coaching on horizontal functions",
-      "id": 3
-    },
-    {
-      "cover": "./images/courses/online/o6.png",
-      "hoverCover": "./images/courses/online/o6.1.png",
-      "courseName": "SUPPORT",
-      "course": "strategy one-on-one meetings hadii",
-      "id": 4
-    },
-    {
-      "id": 5,
+      "id": 3,
       "title": "Where It is hidden by default, until the collapse?",
       "desc": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
-    },
-    {
-      "cover": "./images/courses/online/o11.png",
-      "hoverCover": "./images/courses/online/o11.1.png",
-      "courseName": "COWORKING SPACE hadi",
-      "course": "Private coworking space with access to various meeting rooms and amenities ",
-      "id": 6
     }
   ],
   "contact": [
