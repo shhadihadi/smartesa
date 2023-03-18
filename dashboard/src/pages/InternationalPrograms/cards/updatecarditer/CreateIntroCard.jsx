@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link, Navigate, useParams,useNavigate, useLocation } from "react-router-dom";
 import Navbar from '../../../../components/navbar/Navbar';
@@ -8,13 +9,13 @@ import './updatecard.css'
 function CreateIntroCard() {
   const [coursesName, setcoursesName] = useState(""); 
   const [cover, setcover] = useState(null);
-  const [courTeacher, setcourTeacher] = useState([null]);
-  const [TARGET, setTARGET] = useState("");
+  const [courTeacher, setcourTeacher] = useState([]);
+    const [TARGET, setTARGET] = useState("");
   const [SECTOR, setSECTOR] = useState("");
   const [OBJECTIVE, setOBJECTIVE] = useState("");
   const [DURATION, setDURATION] = useState("");
   const [TYPE, setTYPE] = useState("");
-  const [text, settext] = useState([]);
+  const [text, settext] = useState();
 
   const handleCoverChange = (e) => {
     const reader = new FileReader();
@@ -24,12 +25,20 @@ function CreateIntroCard() {
     reader.readAsDataURL(e.target.files[0]);
   };
   const handleHoverCoverChange = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      setcourTeacher(reader.result);
-    };
-    reader.readAsDataURL(e.target.files[0]);
+    const files = Array.from(e.target.files);
+    const images = [];  
+    files.forEach((file) => {
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        images.push(reader.result);
+        setcourTeacher([...courTeacher, ...images]);
+      };
+  
+      reader.readAsDataURL(file);
+    });
   };
+  
 
 
   const handleSubmit = (e) => {
@@ -37,7 +46,7 @@ function CreateIntroCard() {
     const intercards = {
       coursesName,
       TARGET,SECTOR,OBJECTIVE,DURATION,TYPE,
-      courTeacher: [courTeacher],
+      courTeacher: courTeacher,
       text: [text],
       cover: cover,
       id: Math.floor(Math.random() * 1000) + 1, // generate a random ID
@@ -57,15 +66,15 @@ function CreateIntroCard() {
       });
 
     // Reset the form fields
-    // setcoursesName('');
-    //  setcover('');
-    //   setcourTeacher('');
-    //    setTARGET('');
-    //     setSECTOR('');
-    //      setOBJECTIVE(''); 
-    //      setDURATION(''); 
-    //      setTYPE(''); 
-    //      settext('');
+    setcoursesName('');
+     setcover('');
+      setcourTeacher('');
+       setTARGET('');
+        setSECTOR('');
+         setOBJECTIVE(''); 
+         setDURATION(''); 
+         setTYPE(''); 
+         settext('');
 
   
   };

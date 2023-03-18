@@ -12,11 +12,11 @@ const Articles = () => {
   const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs');
 
   return (
-    <Grid container spacing={5}>
+    <Grid container spacing={5} style={{marginTop:"0px",marginRight:"-550px"}}>
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
     
-      <ImageList sx={{ width: 1100, height: 450 }}>
+      <ImageList sx={{ width: 1100, height: 450, }}>
         <ImageListItem key="Subheader" cols={2}>
           <ListSubheader component="div">Events </ListSubheader>
         </ImageListItem>

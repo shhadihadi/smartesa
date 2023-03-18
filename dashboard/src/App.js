@@ -29,6 +29,9 @@ import CreateIntroCard from "./pages/InternationalPrograms/cards/updatecarditer/
 
 import ArticleEdit from "./pages/Events/ArticleEdit";
 import AddArticles from "./pages/Events/AddArticles"
+import Createcom from "./pages/Commuinty/crud/Creatcom";
+import Updatecom from "./pages/Commuinty/crud/Updatecom";
+
 
 
 
@@ -118,10 +121,18 @@ function App() {
                <Route path="/updateCard/:id">
               <Route index element={<Updatecardinter />} />
                </Route>
+               
+               <Route path="/updateCommers/:id">
+              <Route index element={<Updatecom />} />
+               </Route>
 
                <Route path="/intro/new">
               <Route index element={<CreateIntroCard />} />
                </Route>
+               <Route path="/createcom">
+              <Route index element={<Createcom />} />
+
+              </Route>
 
             <Route path="/faqEdit/:id">
               <Route index element={<FaqEdit />} />

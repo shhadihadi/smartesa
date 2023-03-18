@@ -1,102 +1,114 @@
-import React from "react";
-import { Link, Navigate, useParams,useNavigate, useLocation } from "react-router-dom";
-import Navbar from '../../../../components/navbar/Navbar';
-import Sidebar from '../../../../components/sidebar/Sidebar';
-import { useState, useEffect } from "react"
-import './updatecard.css'
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Navbar from "../../../../components/navbar/Navbar";
+import Sidebar from "../../../../components/sidebar/Sidebar";
 
 function Updatecardinter() {
   const { id } = useParams();
-  const [coursesName, setcoursesName] = useState("");
-  const [cover, setcover] = useState(null);
-  const [courTeacher, setcourTeacher] = useState(null);
+  const navigate = useNavigate();
+  
+  const [coursesName, setCoursesName] = useState("");
+  const [cover, setCover] = useState(null);
+  const [courTeacher, setCourTeacher] = useState([]);
   const [TARGET, setTARGET] = useState("");
   const [SECTOR, setSECTOR] = useState("");
   const [OBJECTIVE, setOBJECTIVE] = useState("");
   const [DURATION, setDURATION] = useState("");
   const [TYPE, setTYPE] = useState("");
-  const [text, settext] = useState("");
+  const [text, setText] = useState([]);
   const [prevCover, setPrevCover] = useState("");
-  const [prevcourTeacher, setPrevcourTeacher] = useState("");
-  const navigate = useNavigate();
-  const location = useLocation();
+  const [prevCourTeacher, setPrevCourTeacher] = useState([]);
 
-  const handleGoBack = () => {
-    const previousLocation = location.state?.from;
-    if (previousLocation) {
-      navigate(previousLocation);
-    } else {
-      navigate(-1);
-    }
-  };
-
+  // fetch the data for the card with the given id on component mount
   useEffect(() => {
     fetch(`http://localhost:8000/coursesCard/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setcoursesName(data.coursesName);
-        setcover(data.cover);
-        setcourTeacher(data.courTeacher);
+        setCoursesName(data.coursesName);
+        setPrevCover(data.cover);
+        setCover(data.cover);
+        setCourTeacher(data.courTeacher)
+    
         setTARGET(data.TARGET);
         setSECTOR(data.SECTOR);
         setOBJECTIVE(data.OBJECTIVE);
         setDURATION(data.DURATION);
         setTYPE(data.TYPE);
-        settext(data.text);
-        
+        setText(data.text);
       })
-    
       .catch((err) => {
         console.log(err.message);
       });
   }, [id]);
 
+  // handle the changes to the cover image
   const handleCoverChange = (e) => {
     const reader = new FileReader();
     reader.onload = () => {
       setPrevCover(reader.result);
     };
     reader.readAsDataURL(e.target.files[0]);
-    setcover(e.target.files[0]);
+    setCover(e.target.files[0]);
   };
 
-  const handlecourseTeacher = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      setPrevcourTeacher(reader.result);
-    };
-    reader.readAsDataURL(e.target.files[0]);
-    setcourTeacher([e.target.files[0]]);
-  };
+  // handle the changes to the course teacher images
+  const handleHoverCoverChange = (e) => {
+    const files = Array.from(e.target.files);
+    const images = [];
+    // setCommunityimg([null]);
 
+      // Check if there are any new images
+      if (files.length === 0) {
+        return;
+      }
+    files.forEach((file) => {
+      const reader = new FileReader();
+      // setCommunityimg = null;
+      // setCommunityimg([null])
+
+      reader.onload = () => {
+        images.push(reader.result);
+        setCourTeacher([...prevCourTeacher, ...images]);
+      };
+
+      reader.readAsDataURL(file);
+    });
+  };
+  // handle the form submit event
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const updatedinterCard = {
+    const updatedCard = {
       coursesName,
       TARGET,
       SECTOR,
       OBJECTIVE,
       DURATION,
       TYPE,
-      courTeacher: [ prevcourTeacher],
-      text: [text],
+      text: text,
       cover: prevCover,
+      // courTeacher,
+      courTeacher: courTeacher,
     };
 
-    fetch(`http://localhost:8000/coursesCard/${id}`, {
-      method: "PUT",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(updatedinterCard),
-    })
-      .then((res) => {
-        handleGoBack();
-      })
-      .catch((err) => {
-        console.log(err.message);
+    // update the card with the given id on the server
+    try {
+      const response = await fetch(`http://localhost:8000/coursesCard/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedCard),
       });
-  };
 
+      if (!response.ok) {
+        throw new Error("Failed to update card");
+      }
+
+      navigate(`/international`);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  
   
   return (
     <>
@@ -113,13 +125,14 @@ function Updatecardinter() {
                   <input
                     type="text"
                     value={coursesName}
-                    onChange={(e) => setcoursesName(e.target.value)}
+                    onChange={(e) => setCoursesName(e.target.value)}
                   />
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Cover Image</h3>
                 <input
                     type="file"
+                    accept="image/png, image/gif, image/jpeg, image/jpeg0 "
                     // accept="image/*"
                     onChange={handleCoverChange}
                   />
@@ -168,13 +181,13 @@ function Updatecardinter() {
                 <div className="asoneRowHadi">
                 <h3>Images</h3>
                 <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
-                onChange={handlecourseTeacher} />
+                 onChange={handleHoverCoverChange}/>
                 
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
                 <textarea id="message" cols="30" rows="10" placeholder="Message" value={text}
-                onChange={(e) => settext(e.text.value)}
+                onChange={(e) => setText(e.target.value)}
                 
                 ></textarea>
                 </div>
