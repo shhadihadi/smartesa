@@ -10,7 +10,7 @@ import { Grid , Paper} from '@mui/material';
 import {DeleteOutlined,  EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
-import SmartVideo from './SmartVideo'
+import SmartVideo from './smartVideo'
 
 
 const SmartTalk = () => {

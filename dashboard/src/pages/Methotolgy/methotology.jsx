@@ -31,7 +31,7 @@ function Methotology() {
       <div className="list">
         <Sidebar />
         <div className="listContainer">
-          <Navbar />{" "}
+          <Navbar />
           <div className="datatable">
             <div className="datatableTitle">
               Add New ADMIN

@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Sidebar from "../../components/sidebar/Sidebar"
-import Navbar from "../../components/navbar/Navbar"
+
 import './commuinty.scss'
 import useFetch from '../../useFetch';
 import { Link } from 'react-router-dom';
@@ -11,16 +10,11 @@ import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 import Comunitycards from './comunitycards';
-
-const Commuinty = () => {
+function MethoText() {
   const { error, isPending, data: OURCOMMUNITYHome } = useFetch('http://localhost:8000/OURCOMMUNITYHome')
-
   return (
-    <div className="list">
-      <Sidebar/>
-      <div className="listContainer">
-        <Navbar/>
-        <div className='commuinty'>
+    <div>
+      <div className='commuinty'>
         <Grid container   spacing={5}>
         
         { error && <div>{ error }</div> }
@@ -62,19 +56,8 @@ const Commuinty = () => {
         
             }  
            </Grid></div>
-           
-           <div className="counityitems">
-            
-            <Comunitycards />
-           
-
-           </div>
-           
-      
-       
-      </div>
     </div>
   )
 }
 
-export default  Commuinty
+export default MethoText

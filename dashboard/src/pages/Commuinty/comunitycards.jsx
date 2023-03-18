@@ -7,10 +7,10 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { Link } from 'react-router-dom';
 
 function Comunitycards() {
-  const {  error,isPending, data: online,} = useFetch("http://localhost:8000/price");
+  const {  error,isPending, data: online,} = useFetch("http://localhost:8000/ourcommunity");
 
   const handledelete = (id) => {
-    fetch(`http://localhost:8000/price/${id}`, {
+    fetch(`http://localhost:8000/ourcommunity/${id}`, {
       method: "DELETE",
     }).then(() => {
       // history.push('/');
@@ -38,11 +38,29 @@ function Comunitycards() {
           <div className="headercomunity">
           <div className="cardourcomunityrowdisplay">
           <div className="firstcontentcomunity">
-            <h4>{val.price}</h4>
-            <h4>{val.name}</h4>
+            <h4>{val.nb}</h4>
+            <h4>{val.title}</h4>
           </div>
           <div className="secondcomuitydiv">
-            <p>{val.desc}</p>
+
+          {/* {val.paragraphs.map((p, index) => (
+  <p key={index}>
+    {p.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ))}
+  </p>
+))} */}
+  {val.paragraphs?.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ))}
+
+            {/* <p>{val.desc}</p> */}
           </div>
           <div className="proportiesdecs">
           <div className="deletoptioncardcomunuty" onClick={() => handledelete(val.id)}>

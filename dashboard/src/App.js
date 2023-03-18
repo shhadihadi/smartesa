@@ -13,7 +13,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/smartTalk/SmartTalk'
+import SmartTalk from './pages/SmartTalk/SmartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -31,6 +31,8 @@ import ArticleEdit from "./pages/Events/ArticleEdit";
 import AddArticles from "./pages/Events/AddArticles"
 import Createcom from "./pages/Commuinty/crud/Creatcom";
 import Updatecom from "./pages/Commuinty/crud/Updatecom";
+import Internationalid from "./pages/InternationalPrograms/internationalid";
+import ComunityById from "./pages/Commuinty/ComunityById";
 
 
 
@@ -89,6 +91,16 @@ function App() {
               </Route>
               <Route path="methotology">
               <Route index element={<Methotology />} />
+
+              </Route>
+
+              <Route path="international/:id">
+              <Route index element={<Internationalid />} />
+
+              </Route>
+
+              <Route path="comunity/:id">
+              <Route index element={<ComunityById />} />
 
               </Route>
               <Route path="allinnone">

@@ -15,7 +15,7 @@ function Updatecardinter() {
   const [OBJECTIVE, setOBJECTIVE] = useState("");
   const [DURATION, setDURATION] = useState("");
   const [TYPE, setTYPE] = useState("");
-  const [text, setText] = useState([]);
+  const [text, setText] = useState("");
   const [prevCover, setPrevCover] = useState("");
   const [prevCourTeacher, setPrevCourTeacher] = useState([]);
 
@@ -85,7 +85,7 @@ function Updatecardinter() {
       OBJECTIVE,
       DURATION,
       TYPE,
-      text: text,
+      text,
       cover: prevCover,
       // courTeacher,
       courTeacher: courTeacher,
