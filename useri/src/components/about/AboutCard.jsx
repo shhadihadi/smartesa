@@ -18,7 +18,8 @@ const AboutCard = () => {
             <img src='./images/about.webp' alt='' />
           </div>
           <div className='right row'>
-            <Heading  title='ABOUT US' style={{marginTop: "-100px"}}  />
+            <div className="whatever"><Heading  title='ABOUT US' style={{marginTop: "-100px"}}  /></div>
+            
             <div className='items'>
 
             { error && <div>{ error }</div> }

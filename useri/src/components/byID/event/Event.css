@@ -27,16 +27,6 @@
     margin-top: 50px;
   
   }
-  .flexSBE {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-
-  .flexSBE  li:hover{
-    color: rgb(42,98,147) !important;
-  }
-
   .eventHome .item {    
     background-color: #fff;
     margin-top: 30px;
@@ -60,8 +50,8 @@
     color: #999999;
   }
   .eventHome .item:hover {
-    background-color: #1D2E74;
-    background-color: rgb(42,98,147);
+    background-color: #1D2E74!important;
+    background-color: rgb(42,98,147)!important;
     color: #fff;
     cursor: pointer;
     box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
@@ -99,4 +89,29 @@
       height: 300px;
     }
   }
+  
+  @media screen and (max-width: 1292px){
+    .eventHome{
+      padding-top: 400px;
+
+    }
+  }
+@media screen and (max-width: 792px){
+  .medDiv{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  .eventHome .container {
+    flex-direction: column-reverse;
+  }
+  .eventHome .row {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  
+}
+  
   

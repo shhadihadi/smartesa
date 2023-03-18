@@ -1,6 +1,7 @@
 .aboutHome {
   height: auto;
 }
+
 .aboutHome #heading {
   text-align: left;
   padding: 0;
@@ -139,4 +140,9 @@
     border-radius: 50px;
     margin-top: -10px;
 }
+}
+@media screen {
+  .whatever{
+    padding-top: 50px;
+  }
 }

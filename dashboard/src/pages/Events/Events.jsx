@@ -12,6 +12,21 @@ import { Link } from "react-router-dom";
 // import IconButton from '@mui/material/IconButton'
 // import CardHeader from '@mui/material/CardHeader'
 import Articles from "./Articles";
+=======
+import React from 'react'
+import {Grid} from '@mui/material';
+import Sidebar from "../../components/sidebar/Sidebar"
+import Navbar from "../../components/navbar/Navbar"
+import './events.scss'
+
+
+import { Link } from 'react-router-dom';
+
+
+
+
+import Articles from'./Articles'
+
 
 const Events = () => {
   return (
