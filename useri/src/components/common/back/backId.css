@@ -139,3 +139,146 @@
       width: 120%;
     }
 }
+  
+  @media screen and (max-width:  1150px) {
+    
+    .backId {
+      
+      background-position: center;
+      padding-top: 200px;
+      padding-left: 100px;
+      height: 90vh;
+      width: 100%;
+    }
+    .backId h1 {
+      font-size: 35px;
+      font-weight: 270;
+      width: 200%;
+      margin-top: -10px;
+      padding-left: -90px;
+      padding-top: 10px;
+    }
+        
+    .backId p {
+      /* font-weight: 300; */
+      font-size: 15px;
+      /* text-transform: uppercase; */
+      margin-left: -20px;
+      margin-top: 4px;
+      width: 160%;
+      margin-bottom: 16px !important;
+      text-align: left;
+      line-height: 20px;
+    }
+  }
+  @media screen and (max-width: 962px) {
+    .backId h1 {
+      font-size: 35px;
+      font-weight: 270;
+      width: 250%;
+      margin-top: -10px;
+      padding-left: -90px;
+      padding-top: 10px;
+    }
+    /* .back h1 {
+      display: none;
+        } */
+        
+    .back p {
+      /* font-weight: 300; */
+      font-size: 15px;
+      /* text-transform: uppercase; */
+      margin-left: -20px;
+      margin-top: 4px;
+      width: 200%;
+      margin-bottom: 16px !important;
+      text-align: left;
+      line-height: 20px;
+    }
+  
+   }
+  
+   @media screen and (max-width: 927px) {
+    .backId h1{
+      width: 300%;
+      font-size: 35px;
+      margin-left: -160px;
+    }
+    .backId p{
+      width: 300%;
+    }
+  
+   }
+   @media screen and (max-width: 890px) {
+      .backId h1{
+      display: none;
+    }
+   }
+  @media screen and (max-width: 850px) {
+    /* ///////////////////////// */
+      .backId {
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+      background-position: center;
+      padding-top: 200px;
+      padding-left: 100px;
+      height: 95vh;
+      width: 120%;
+      margin-bottom: 100px !important;
+    }
+    
+    .backId p {
+      margin-left: 10px;
+      margin-top: 4px;
+      width: 400%;
+      text-align: left;
+      line-height: 23px;
+    }   
+  }
+  @media screen and (max-width: 830px) {
+  
+  .backId {
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    text-align: center;
+  }
+  }
+  @media screen and (max-width: 819px) {
+    .backId p{
+      width: 500%;
+    }
+   }
+  @media screen and (max-width: 790px) {
+    #heading h3 { margin-top: 47px;}
+    #heading h1 {
+      font-size: 40px;
+      margin: 20px 0;
+      text-transform: capitalize;
+      color: rgb(42,98,147);
+      width:130%;
+    }
+    .backId p{
+      width: 560%;
+    }
+   }
+   @media screen and (max-width: 780px) {
+    #heading h3 { margin-top: 50px;}
+    #heading h1 {
+      font-size: 43px;
+      margin: 20px 0;
+      text-transform: capitalize;
+      color: rgb(42,98,147);
+      width:170%;
+    }
+    .backId p{
+      width: 630%;
+    }
+   }
+   @media screen and (max-width: 769px) {
+    .back p{
+      width: 780%;
+    }
+  
+  }  

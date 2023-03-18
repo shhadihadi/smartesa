@@ -3,7 +3,7 @@ import Back from "../common/back/Back"
 import BlogCard from "./BlogCard"
 import "./blog.css"
 import {blog} from "../../dummydata"
-import useFetch from "../../components/useFetch";
+import useFetch from "../useFetch";
 
 const Blog = () => {
   const { error, isPending, data: EventsHome } = useFetch('http://localhost:8000/EventsHome');

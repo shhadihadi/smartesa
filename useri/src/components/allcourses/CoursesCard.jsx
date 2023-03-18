@@ -1,7 +1,7 @@
 import React from "react"
 import "./courses.css"
 import { coursesCard } from "../../dummydata"
-import useFetch from "../../components/useFetch"
+import useFetch from "../useFetch"
 import { Link } from 'react-router-dom'
 
 const CoursesCard = () => {

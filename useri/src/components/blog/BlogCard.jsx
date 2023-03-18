@@ -6,7 +6,8 @@ const BlogCard = ({ numPosts }) => {
 
   { error && (<div>{ error }</div>) }
   { isPending && (<div>Loading...</div>)}
-  const postsToRender = blogs ? blogs.slice(0, numPosts) : [];
+  const postsToRender = blogs ? blogs.sort((a, b) => new Date(b.date.replace(/,/g, '')) - new Date(a.date.replace(/,/g, ''))).slice(0, numPosts) : [];
+
 
   return (
     <>
@@ -19,22 +20,14 @@ const BlogCard = ({ numPosts }) => {
             <img src={val.cover} alt=''className='blog-card-img' />
           </div>
           <div className='text'>
-            {/* <div className='admin flexSB'>
-              <span>
-                <i className='fa fa-user'></i>
-                <label htmlFor=''>{val.type}</label>
-              </span>
+             <div className='admin flexSB'>
               <span>
                 <i className='fa fa-calendar-alt'></i>
                 <label htmlFor=''>{val.date}</label>
               </span>
-              <span>
-                <i className='fa fa-comments'></i>
-                <label htmlFor=''>{val.com}</label>
-              </span>
-            </div> */}
+            </div> 
             <h1>{val.title}</h1>
-            <p>{val.desc}</p>
+            <p>{val.paragraphs[0]?.substring(0,130) + '...'}</p>
           </div>
         </div>
       ))
