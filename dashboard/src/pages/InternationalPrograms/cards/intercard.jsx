@@ -101,16 +101,15 @@ function Intercard() {
           
           
 
-{val.text.map((p, index) => (
-  <p key={index}>
-    {p.split('\n').map((line, index) => (
-      <React.Fragment key={index}>
-        {line}
-        <br />
-      </React.Fragment>
-    ))}
-  </p>
+
+<p>
+{val.text?.split('\n').map((line, index) => (
+  <React.Fragment key={index}>
+    {line}
+    <br />
+  </React.Fragment>
 ))}
+    </p>
               
         </div>
 
@@ -126,3 +125,5 @@ function Intercard() {
 }
 
 export default Intercard
+
+

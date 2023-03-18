@@ -15,7 +15,7 @@ function CreateIntroCard() {
   const [OBJECTIVE, setOBJECTIVE] = useState("");
   const [DURATION, setDURATION] = useState("");
   const [TYPE, setTYPE] = useState("");
-  const [text, settext] = useState();
+  const [text, settext] = useState("");
 
   const handleCoverChange = (e) => {
     const reader = new FileReader();
@@ -47,7 +47,7 @@ function CreateIntroCard() {
       coursesName,
       TARGET,SECTOR,OBJECTIVE,DURATION,TYPE,
       courTeacher: courTeacher,
-      text: [text],
+      text,
       cover: cover,
       id: Math.floor(Math.random() * 1000) + 1, // generate a random ID
     };
@@ -151,6 +151,7 @@ function CreateIntroCard() {
                 <div className="asoneRowHadi">
                 <h3>Images</h3>
                 <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                
                 onChange={handleHoverCoverChange}
                  />
                 
@@ -158,6 +159,7 @@ function CreateIntroCard() {
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
                 <textarea  cols="30" rows="10" placeholder="Message" 
+                value={text}
                 onChange={(e) =>settext(e.target.value)}
                 
                 ></textarea>

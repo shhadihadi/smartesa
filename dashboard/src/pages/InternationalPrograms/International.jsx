@@ -1,5 +1,5 @@
 //
-
+import React from "react";
 import "./international.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
@@ -40,17 +40,26 @@ const International = () => {
                       <CardHeader
                         action={
                           <IconButton>
-                            <DeleteOutlined />
-                            <Link to={`/aboutEdit/${val.id}`}>
+                            {/* <DeleteOutlined /> */}
+                            <Link to={`/international/${val.id}`}>
                               <EditOutlined />
                             </Link>
                           </IconButton>
                         }
                         title={val.title}
+
+                        
                         //   subheader={val.Paragraph}
                       />
 
-                      <h4>{val.Paragraphs} </h4>
+                      <h4>{val.Paragraphs?.split('\n').map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))} 
+                        </h4>
+
                     </Paper>
                   </Grid>
                 ))}
@@ -58,10 +67,10 @@ const International = () => {
           </div>
         </div>
 
-        <div className="details1">
+        {/* <div className="details1">
           <Programes />
           <div></div>
-        </div>
+        </div> */}
         <div className="hadiiternationalCard">
           
           <Intercard />
