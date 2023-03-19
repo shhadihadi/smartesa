@@ -25,19 +25,19 @@ const AboutCard = () => {
             { error && <div>{ error }</div> }
           { isPending && <div>Loading...</div> }
           { paragraphs && 
-              paragraphs.map((paragraph, index) => (
-              
-                  <div className='item flexSB'>
-                    {/* <div className='img'>
-                      <img src={val.cover} alt='' />
-                    </div> */}
-                    <div className='text'>
-                      
-                      <p key={index}>{paragraph}</p>
-                    </div>
-                  </div>
-                
+              paragraphs?.split('\n').map((line, index) => (
+                <div className='item flexSB'>
+                                  {/* <div className='img'>
+                                    <img src={val.cover} alt='' />
+                                  </div> */}
+                                  <div className='text'>
+                                    
+                                    <p key={index}>{line}</p>
+                                  </div>
+                                </div>
               ))}
+
+
             </div>
           </div>
         </div>

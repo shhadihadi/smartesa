@@ -7,15 +7,16 @@ const Head = () => {
   const handleinstaClick = () => {
     window.open("https://www.instagram.com/smart.esa/", '_blank');
   }
+  const handleTwitterClick = () => {
+    window.open("https://twitter.com/smart_esa", '_blank');
+  }
   const handleYouTubeClick = () => {
     window.open("https://www.youtube.com/@smartesa7734", '_blank');
   }
   const handleLinkInClick = () => {
     window.open("https://www.linkedin.com/company/smart-esa/", '_blank');
   }
-  const handleTwitterClick = () => {
-    window.open("https://twitter.com/smart_esa", '_blank');
-  }
+
   
   return (
     <>
