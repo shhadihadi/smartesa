@@ -34,7 +34,7 @@ const OnlineCourses = () => {
           </div>
         </div>
       </section>
-      <Awrapper />
+      {/* <Awrapper /> */}
     </>
   )
 }

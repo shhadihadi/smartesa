@@ -10,9 +10,12 @@ const Back = ({ title,paragraphs }) => {
         {/* <h2>Home / {location.pathname.split("/")[1]}</h2> */}
         <h1 className='back-title'>{title}</h1>
         <div className="whatever2">
-        {paragraphs.map((paragraph, index) => (
-          <p key={index} className="back-text">{paragraph}</p>
-        ))}
+        {paragraphs?.split('\n').map((line, index) => (
+  <React.Fragment key={index}>
+    {line}
+    <br />
+  </React.Fragment>
+))} 
         </div>
       </section>
       <div className='margin'></div>
@@ -21,3 +24,4 @@ const Back = ({ title,paragraphs }) => {
 }
 
 export default Back
+

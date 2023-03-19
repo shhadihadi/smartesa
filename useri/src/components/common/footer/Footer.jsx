@@ -47,6 +47,15 @@ const Footer = () => {
         });
     }
   };
+  const handleFacebookClick = () => {
+    window.open('https://www.facebook.com/SmartESABooster', '_blank');
+  }
+  const handleinstaClick = () => {
+    window.open("https://www.instagram.com/smart.esa/", '_blank');
+  }
+  const handleTwitterClick = () => {
+    window.open("https://twitter.com/smart_esa", '_blank');
+  }
   return (
     <>
       <section className='newletter'>
@@ -77,9 +86,9 @@ const Footer = () => {
             <span style={{marginLeft:'18px'}}>ONLINE EDUCATION & LEARNING</span>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 
-            <a href="https://www.facebook.com/SmartESABooster"><i className='fab fa-facebook-f icon'></i></a>
-            <a href="https://twitter.com/smart_esa"><i className='fab fa-youtube icon'></i></a>
-            <a href="https://www.instagram.com/smart.esa/"><i className='fab fa-instagram icon'></i></a>
+            <a onClick={handleFacebookClick}><i className='fab fa-facebook-f icon'></i></a>
+            <a onClick={handleinstaClick}><i className='fab fa-instagram icon'></i></a>
+            <a onClick={handleTwitterClick}><i className='fab fa-twitter icon'></i></a>
           </div>
           <div className='box link'>
             <h3>Explore</h3>
