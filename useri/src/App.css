@@ -244,22 +244,23 @@ p {
     width: 100% !important;
   }
   .back h1 {
-    font-size: 43px;
+    font-size: 40px;
     font-weight: 300;
     width: 100%;
     margin-top: -270px;
-    margin-left: -80px;
+    margin-left: -30px;
   }
   .back p {
     /* font-weight: 300; */
     /* font-size: 17px; */
     /* text-transform: uppercase; */
     margin-left: 50px;
-    margin-top: 4px;
-    width: 122%;
+    margin-top: -6px;
+    width: 162%;
     margin-bottom: 10px !important;
     text-align: left;
-    line-height: 30px
+    line-height: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1161px)  {
