@@ -9,14 +9,14 @@ const Back = ({ title,paragraphs }) => {
       <section className='back'>
         {/* <h2>Home / {location.pathname.split("/")[1]}</h2> */}
         <h1 className='back-title'>{title}</h1>
-        <div className="whatever2">
+        {/* <div className="whatever2"> */}
         {paragraphs?.split('\n').map((line, index) => (
-  <React.Fragment key={index}>
+  <p className="back-text">
     {line}
-    <br />
-  </React.Fragment>
+    
+  </p>
 ))} 
-        </div>
+        {/* </div> */}
       </section>
       <div className='margin'></div>
     </>
