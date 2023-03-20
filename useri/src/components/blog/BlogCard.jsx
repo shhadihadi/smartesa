@@ -13,11 +13,11 @@ const BlogCard = ({ numPosts }) => {
     <>
       {postsToRender && postsToRender.map((val) => (
         <div 
-        key={val.id} 
+        key={val.id}
         className='items shadow' 
         style={{boxShadow:'  rgba(0, 0, 0, 0.1) 0px 4px 12px'}}>
           <div className='img'>
-            <img src={val.cover} alt=''className='blog-card-img' />
+            <img src={val.cover[0]} alt=''className='blog-card-img' />
           </div>
           <div className='text'>
              <div className='admin flexSB'>
