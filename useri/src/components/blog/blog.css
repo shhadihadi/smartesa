@@ -25,6 +25,7 @@
 
 .blog .text {
   padding: 40px 30px;
+  text-align: left!important;
 }
 .blog h1 {
   font-weight: 500;
@@ -52,4 +53,5 @@
 }
 .blog p {
   color: grey;
+  text-align: left;
 }

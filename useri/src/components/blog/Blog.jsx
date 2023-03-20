@@ -1,47 +1,46 @@
-import React, { useState } from "react"
-import Back from "../common/back/Back"
-import BlogCard from "./BlogCard"
-import "./blog.css"
-import {blog} from "../../dummydata"
+import React, { useState } from "react";
+import Back from "../common/back/Back";
+import BlogCard from "./BlogCard";
+import "./blog.css";
 import useFetch from "../useFetch";
+import NumPosts from "./numposts";
 
 const Blog = () => {
   const { error, isPending, data: EventsHome } = useFetch('http://localhost:8000/EventsHome');
 
-  // extract the "Paragraphs" array from the first object in the "EventsHome" array
   const paragraphs = EventsHome ? EventsHome[0].Paragraphs : null;
   const [numPosts, setNumPosts] = useState(6);
 
   const loadMore = () => {
-    setNumPosts(numPosts + 3); // Increase the number of posts to display by 3
+    setNumPosts(numPosts + 3);
   };
 
-  const allPostsDisplayed = numPosts >= blog.length;
+  const { NumPosts: totalNumPosts } = NumPosts(); // get the NumPosts value from the returned object
 
   return (
     <>
-    { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-      { paragraphs && (
-        <Back 
-          title= {EventsHome[0].title}
-          paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
-        />
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading...</div>}
+      {paragraphs && (
+        <Back title={EventsHome[0].title} paragraphs={paragraphs} />
       )}
-      <section className='blog padding'>
+      <section className="blog padding">
         <div className="btn-Cent">
-          <div className='container grid2'>
+          <div className="container grid2">
             <BlogCard numPosts={numPosts} />
           </div>
-          {!allPostsDisplayed && (
+          {/* check if there are more posts to display */}
+          {totalNumPosts > numPosts && (
             <div className="text-center">
-              <button className="load-more primary-btn" onClick={loadMore}>Load more</button>
+              <button className="load-more primary-btn" onClick={loadMore}>
+                Load more
+              </button>
             </div>
           )}
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

@@ -4,6 +4,7 @@ import React from "react"
 import BackID from "../../common/back/backByID"
 import useFetch from "../../useFetch";
 import Heading from "../../common/heading/Heading";
+
 //import JSON from 'react-router-dom';
 
 const Event = () => {
@@ -14,9 +15,8 @@ const Event = () => {
     isPending,
   } = useFetch(`http://localhost:8000/blogs/${id}`);
   const paragraphs = blogs ? blogs.paragraphs : null;
-  //const paragraphs=  blogs ? JSON.parse(blogs.paragraphs) : null;
   const desc = blogs ? blogs.desc : null;
-  //const desc = blogs ? JSON.parse(blogs.desc) : null;;
+  const cover = blogs ? blogs.cover : null;
   return (
     <>
     {paragraphs && (
@@ -30,7 +30,9 @@ const Event = () => {
         <Heading  title={blogs.title} style={{paddingTop: "100px",}}  />
         <div className='container flexSBE medDiv'>
           <div className='left row'>
-            <img src={blogs.cover} alt='' />
+            {cover && cover.map((image, index) => (
+                <img key={index} src={image} alt="" />
+              ))}
           </div>
           <div className='right row'>            
             <div className='items'>
