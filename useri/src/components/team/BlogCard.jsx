@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import useFetch from "../useFetch"
+import useFetch from "../useFetch";
+
 
 const VideoPopup = ({ videoUrl, onClose }) => {
   const videoId = videoUrl.split('v=')[1];
@@ -49,12 +50,15 @@ const BlogCard = ({ numPosts }) => {
           className="items shadow"
           style={{ boxShadow: " rgba(0, 0, 0, 0.1) 0px 4px 12px" }}>
      
-          <div className="img">
+          <div className="blog-img">
           <button
-            className="blog-card-img-btn "
+            className="blog-card-img-btn"
             onClick={() => handleVideoClick(val.cover)}
           >
-            <img src={val.thumbnail} alt="" className="blog-card-img" />
+            <div className="thumbnail-container">
+              <img src={val.thumbnail} alt="" className="blog-card-img" />
+              <span className="play-icon"><i className="fas fa-play" style={{color: "#ffffff",}}></i></span>
+            </div>
           </button>
 
           </div>

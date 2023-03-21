@@ -2,12 +2,9 @@
   "homeAbout": [
     {
       "id": 1,
-      "Paragraphs": [
-        "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.",
-        "The program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.",
-        "Smart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.",
-        "The program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
-      ]
+      "Paragraphs": 
+        "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.\nThe program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.\nSmart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.\nThe program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
+      
     }
   ],
   "internationaProgramHome": [
@@ -20,7 +17,7 @@
   "OURCOMMUNITYHome": [
     {
       "title": "OURCOMMUNITY",
-      "Paragraphs": "Smart ESA has an established reputation in the startup ecosystem, having worked with more than 90 emerging companies and partnered with 70 experienced coaches.\nAdditionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale.h",
+      "Paragraphs": "Smart ESA has an established reputation in the startup ecosystem, having worked with more than 90 emerging companies and partnered with 70 experienced coaches.\nAdditionally, they have developed strategic alliances with leading businesses in France, Lebanon, the United States, and beyond, which highlights their dedication to fostering entrepreneurship and innovation on a global scale.",
       "id": 1
     }
   ],
@@ -31,42 +28,35 @@
       "address": "289 rue Clemenceau, Beirut, Lebanon",
       "phone": "+961 1 373 373",
       "email": "smartesa@esa.edu.lb",
-      "Paragraphs": [
-        "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.",
-        " Don't hesitate to reach out and start a conversation - we can't wait to hear from you!"
-      ]
+      "Paragraphs": 
+        "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.\nDon't hesitate to reach out and start a conversation - we can't wait to hear from you!"
+      
     }
   ],
   "AboutUsHome": [
     {
       "id": 1,
       "title": "About Us",
-      "Paragraphs": [
-        "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success. ",
-        "Smart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs",
-        "Founded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. "
-      ]
+      "Paragraphs": 
+        "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success.\nSmart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs\nFounded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. "
+      
     }
   ],
   "SamartTalkHome": [
     {
       "id": 1,
       "title": "Smart Talk",
-      "Paragraphs": [
-        "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time. ",
-        " Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.",
-        "Join us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
-      ]
+      "Paragraphs": 
+        "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time.\n Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.\nJoin us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
+      
     }
   ],
   "EventsHome": [
     {
       "id": 1,
       "title": "Events",
-      "Paragraphs": [
-        "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.",
-        " Now, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
-      ]
+      "Paragraphs": 
+        "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.\nNow, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
     }
   ],
   "awrapper": [
@@ -255,10 +245,17 @@
     },
     {
       "courseName": "WORKSHOPS",
-      "course": "Weekly ",
+      "course": "Weekly Workshops ",
       "cover": "./images/courses/online/o5.png",
       "hoverCover": "./images/courses/online/o5.1.png",
       "id": 7
+    },
+    {
+      "courseName": "COWORKING SPACE",
+      "course": "Private coworking space with access to various meeting rooms and amenities  ",
+      "cover": "./images/courses/online/o5.png",
+      "hoverCover": "./images/courses/online/o5.1.png",
+      "id": 8
     }
   ],
   "blogs": [
@@ -266,168 +263,139 @@
       "id": 1,
       "date": "28, June, 2021 ",
       "title": "Prix Entrepreneur ESA - HEC Paris 2021",
-      "desc": [
-        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers.\nIn second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.",
-        "Special thank you to the competition’s supporters, sponsors and all the finalists."
-      ],
-      "cover": "../images/blog/b1.webp",
-      "paragraphs": [
-        "Another successful edition of the Prix Entrepreneur ESA - HEC Paris competition, an initiative by the ESA Business School and HEC Paris.",
-        "The winning startups receive an exceptional prize to be sent over to the HEC Incubateur in Station F, Paris - all expenses paid, for six months, with free travel tickets by Air France."
-      ]
+      "desc": 
+        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers.\nIn second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.\n\nSpecial thank you to the competition’s supporters, sponsors and all the finalists."
+      ,
+      "cover": ["../images/blog/b1.webp"],
+      "paragraphs": 
+        "Another successful edition of the Prix Entrepreneur ESA - HEC Paris competition, an initiative by the ESA Business School and HEC Paris.\n\nThe winning startups receive an exceptional prize to be sent over to the HEC Incubateur in Station F, Paris - all expenses paid, for six months, with free travel tickets by Air France."
+      
     },
     {
       "id": 2,
       "date": "7, june, 2021",
       "title": "Ed'Innov Launch",
-      "desc": [
-        "Devant une centaine de participants en présentiel et en ligne, Mme Grillo a rappelé l’engagement de la France en faveur de l’éducation au Liban. Elle a appelé de ses vœux une mobilisation commune en faveur d’une dynamique d’avenir pour préserver, grâce à l’innovation, l’excellence de l’éducation francophone au Liban, tout en soulignant l’exemplarité d’un système éducatif qui tire sa force de son pluralisme, de sa diversité et de sa capacité à jouer un rôle fondamental pour la cohésion du pays.",
-        "M. Maxence Duault, Directeur de l’ESA Business School, a souligné à son tour le fort potentiel de l’incubateur Smart Esa, qui a jusqu’à présent accompagné une centaine de startups libanaises et s’ouvre de plus en plus au secteur de l’éducation. Les enjeux et les défis sont immenses, tant sur les plans technologique qu’éducatif : Ed’Innov fonctionnera comme un centre de « recherche et développement » collectif, au service de l’éducation au Liban.",
-        "Les prochains rendez-vous :\n\nEn septembre prochain, Ed’Innov démarrera un programme d’accélération de quatre mois, afin d’accompagner les startups libanaises du numérique éducatif au sein de Smart ESA. Un hackathon sera organisé, en novembre, autour de « l’innovation frugale », en réponse aux besoins de solutions éducatives accessibles et peu coûteuses. Enfin une conférence internationale portant sur l’innovation dans le secteur éducatif à Beyrouth viendra clore l’année 2021."
-      ],
-      "cover": "../images/blog/2.png",
-      "paragraphs": [
-        "L’Ambassade de France au Liban et l’ESA Business School ont lancé Ed’Innov, groupement pour l’innovation dans l’éducation au Liban. Le lancement officiel a eu lieu ce lundi 7 juin à l’ESA Business school, en présence de Mme Anne Grillo, Ambassadrice de France au Liban.",
-        "The Ed'Innov project is a collaboration between the French Embassy in Lebanon and the ESA, aimed at improving the quality of education in Lebanon, especially for French speakers. The project involves education and edtech innovators from Lebanon and France, working together to develop innovative solutions and improve access to them for all. The ultimate goal is to contribute to the economic development of the edtech sector in Lebanon."
-      ]
+      "desc": 
+        "Porté par l’Ambassade de France au Liban et l’ESA, le projet Ed’Innov est un groupement qui rassemble les acteurs de l’éducation et de l’innovation Ed-tech, libanais et français afin de faire émerger des solutions innovantes au service et au bénéfice de la qualité de l’enseignement au Liban, en particulier francophone. Responsables institutionnels, enseignants, étudiants, parents d’élèves, chercheurs, experts de l’éducation francophone, éditeurs et entrepreneurs du numérique éducatif sont ainsi appelés à travailler ensemble pour développer l’accès pour tous aux solutions innovantes et contribuer au développement du secteur économique du numérique éducatif au Liban.\n\nDevant une centaine de participants en présentiel et en ligne, Mme Grillo a rappelé l’engagement de la France en faveur de l’éducation au Liban. Elle a appelé de ses vœux une mobilisation commune en faveur d’une dynamique d’avenir pour préserver, grâce à l’innovation, l’excellence de l’éducation francophone au Liban, tout en soulignant l’exemplarité d’un système éducatif qui tire sa force de son pluralisme, de sa diversité et de sa capacité à jouer un rôle fondamental pour la cohésion du pays.\n\nM. Maxence Duault, Directeur de l’ESA Business School, a souligné à son tour le fort potentiel de l’incubateur Smart Esa, qui a jusqu’à présent accompagné une centaine de startups libanaises et s’ouvre de plus en plus au secteur de l’éducation. Les enjeux et les défis sont immenses, tant sur les plans technologique qu’éducatif : Ed’Innov fonctionnera comme un centre de « recherche et développement » collectif, au service de l’éducation au Liban.\n\nLes prochains rendez-vous :\n\n En septembre prochain, Ed’Innov démarrera un programme d’accélération de quatre mois, afin d’accompagner les startups libanaises du numérique éducatif au sein de Smart ESA. Un hackathon sera organisé, en novembre, autour de « l’innovation frugale », en réponse aux besoins de solutions éducatives accessibles et peu coûteuses. Enfin une conférence internationale portant sur l’innovation dans le secteur éducatif à Beyrouth viendra clore l’année 2021."
+      ,
+      "cover": ["../images/blog/2.png",
+      "../images/blog/edInnov2.jpg",
+      "../images/blog/edInnov3.jpg"],
+      "paragraphs": 
+        "Ed'Innov est un projet pour améliorer l'enseignement au Liban en rassemblant les acteurs de l'éducation et de l'innovation Ed-tech, libanais et français, pour trouver des solutions innovantes ensemble.\n\nMme Grillo a appelé à une mobilisation commune pour préserver l'excellence de l'éducation francophone au Liban grâce à l'innovation, soulignant l'exemplarité du système éducatif pour la cohésion du pays."
+      
     },
     {
       "id": 3,
       "date": "4, March, 2021",
       "title": "Global Innovation & Enterprise",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/3.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "IE-Club, in partnership with Smart ESA, hosted the Global Innovation and Enterprise pitching event in 2021, with a special focus on Lebanese startups. The event provided a unique platform for ten established startups founded in Lebanon to pitch their ideas to major European corporates and investors.\n\nThis offered an excellent opportunity for the Lebanese startups to gain exposure to global investors and establish potential business partnerships with European corporates. The event aimed to facilitate collaboration between international investors and the Lebanese startup ecosystem and promote the growth of innovative startups in the country.",
+      "cover": ["../images/blog/3.jpg"],
+      "paragraphs": "With a special focus on Lebanese startups in 2021, IE-Club hosted another round of its Global Innovation and Enterprise pitching event in collaboration with Smart ESA.\n\nIE-Club and its partners offered a unique opportunity for 10 established, Lebanese-founded startups to pitch to major European corporates and investors. "
     },
     {
       "id": 4,
       "date": "10, December, 2020",
       "title": "Demo Day 2020",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/4.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "Smart ESA's program is the result of a collaboration between ESA Business School, the French Embassy in Lebanon, and the Central Bank of Lebanon.\n By leveraging the network and expertise of its founding members, Smart ESA provides a unique journey for its startup batches, focusing on developing three pillars: Great Vision, Customers first-approach, and Impactful Execution.\n\nThrough this approach, Smart ESA aims to foster entrepreneurial success and drive positive impact in Lebanon and beyond.",
+      "cover": ["../images/blog/4.jpg"],
+      "paragraphs":"Smart ESA, a program for outstanding Lebanese entrepreneurs, recently concluded its ninth consecutive program, Boost 2020, in partnership with MAGNiTT and Air France.\n\n The Demo Day event saw seven Smart ESA startups presenting their projects to hundreds of viewers, including investors, industry experts, entrepreneurs, and members of the press."
     },
     {
       "id": 5,
       "date": "01, July, 2020",
       "title": "ESA Coding Lab",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/5.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "We are delighted to announce the launch of the ESA Coding Lab, in collaboration with our partners, Agence Française de Développement and ITESCIA. The ESA Coding Lab is a comprehensive full-stack development training program that spans over four months and awards a dual certificate from France and Lebanon upon completion.\n\n This program aims to provide students with the necessary skills and knowledge to become proficient full-stack developers, enabling them to contribute to the growth of the tech industry in Lebanon and beyond.\n\nThe ESA Coding Lab is based in the French Institute of Nabatiyeh with a second location to be announced during 2021. ",
+      "cover": ["../images/blog/5.jpg"],
+      "paragraphs": "We proudly announce the launch of the ESA Coding Lab with the great help of our partners, Agence Française de Développement and ITESCIA.\n\nThe ESA Coding Lab is a 4-month full-stack development training program that offers a dual certificate from France and Lebanon. "
     },
     {
       "id": 6,
       "date": "14, May, 2020",
       "title": "Prix ESA-HEC Paris 2020",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/6.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "catching each of the jury member’s eyes, Myceleum (founded by Bassem Makarem and Ghassan Achi), a startup that greatly simplifies the process of creating and updating projects for tech companies and developers, will also be heading to Station F, Paris for a 3-month incubation program.\n\nThe Prix ESA-HEC Paris is a yearly competition in partnership with HEC Paris, ESA Business School and Smart ESA where the best startups in Lebanon pitch to international jury members to be granted the opportunity to head over to Station F, Paris for 6 months. ",
+      "cover": ["../images/blog/6.jpg"],
+      "paragraphs":"Congratulations to startups DIM and Myceleum on winning 1st and 2nd place in the first edition of the Prix ESA-HEC Paris prize.\n\nDIM, a ConTech startup that offers an on-site management optimization tool founded by Michella Abou Jawdeh, received a cash prize of $10,000 and a 3-month incubation at Station F, Paris."
     },
     {
       "id": 7,
       "date": "19, October, 2019",
       "title": "Hackathon La Mode en 2050",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/7.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "Lebanon's first-ever fashion-inspired Hackathon, 'Hackathon: La Mode en 2050', brought together five teams comprising members from different universities to compete in an exciting challenge.\n\nThe event was made possible thanks to the support of the Ambassade de France à Beyrouth and the Agence Universitaire de la Francophonie (AUF), and the participation of several universities.\n\nThe teams showcased their innovative ideas and solutions for the future of fashion, demonstrating their creativity, expertise, and passion for the industry. We extend our special thanks to all involved for their contribution to the success of this event.",
+      "cover": ["../images/blog/7.jpg"],
+      "paragraphs": "The participants of the 'Hackathon: La Mode en 2050'. Five teams, each member from a different university, went head-to-head to compete in Lebanon's first ever fashion-inspired Hackathon.\n\nSpecial thank you to Ambassade de France à Beyrouth & Agence Universitaire de la Francophonie (AUF) for making this event possible, and all participating universities. "
     },
     {
       "id": 8,
       "date": "14, October, 2019",
       "title": "Hack The City",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/8.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "Hack The City workshop was a 3 days event sponsored by the Municipality of Beirut . The event was won by the Jarak Startup,  an application helping communities connect to each others.\n\nThe hackathon is a 72-hour event during which participants will work in teams to find solutions to make the city better! During the hackathon, the teams will undergo extensive training and mentorship with experts in Business, Urbanism, Design, IT and Pitching to enable them to pitch their solution to two selection juries (local and international).",
+      "cover": ["../images/blog/8.jpg"],
+      "paragraphs": "Hack The City workshop was a 3 days event sponsored by the Municipality of Beirut . The event was won by the Jarak Startup,  an application helping communities connect to each others."
     },
     {
       "id": 9,
       "date": "8, October, 2018",
       "title": "Demo Day 2018",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/9.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
+      "cover": ["../images/blog/9.jpg"],
+      "paragraphs":"Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 10,
       "date": "10, October, 2017",
       "title": "Demo Day 2017",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/10.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
+      "cover": ["../images/blog/10.jpg"],
+      "paragraphs":"Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 11,
       "date": "20, September, 2017",
       "title": "Social Economic Award",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/11.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
+      "cover":[ "../images/blog/11.jpg"],
+      "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 12,
       "date": "21, March, 2018",
       "title": "CMA CGM Partnership Agreement",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/12.jpg",
-      "paragraphs": [
-        ""
-      ]
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
+      "cover": ["../images/blog/12.jpg"],
+      "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 13,
       "date": "20, April, 2018",
       "title": "Open Dialogue on Fintech",
-      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      "cover": "../images/blog/13.jpg",
-      "paragraphs": [
-        ""
-      ]
-    },
-    {
-      "title": "",
-      "desc": "jfjjjjgfjgj;;;a;kajjjjjjjfmmmmmm",
-      "cover": "data:image/png;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAQCAwMDAgQDAwMEBAQEBQkGBQUFBQsICAYJDQsNDQ0LDAwOEBQRDg8TDwwMEhgSExUWFxcXDhEZGxkWGhQWFxb/2wBDAQQEBAUFBQoGBgoWDwwPFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhb/wAARCADXANcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopCaAFozTGbCkkjA6+1eHftC/Hi38JzWtp4G1bRdd1e3lb7fpRSSXem3gefGdkLA/3s/Srp051JcsFdmdSpCnHmm7I9y3AUqsDXx9/w0d481LxLbzeJNCk0/Q4mSX7N4Y1BDcswOSsrzKN6f7KbfevW9C/ae+E95DnU9R1LQZB96PU9MlUKf8AeQMp/A10VMDiqXx02jCnjsLV+Con8z2fNFcj4V+KHw68SKp0TxvoN4SM+Wl/GH/75JBH5V1cciyRh43V1boVOR+dcrTW51Jp7D6KTPvQDSGLRSZpRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFIxxTJmZYXZApYKSu44Gfc9q+SfiN+1IdJ+JmkR3XhHULi+0WK8W6h0fUUutPupGUKgEy8NtxlgQSuemaCZzjCLlJ2SPrZ5AFJJAAGST2FeM/Fj9pDwZ4bu59H8NK3inWocq8Vi4+y2zf9Np/uj6LuPtXzH8QPi54m+Jc0kfinxcltYSt8mhadI1rbKv92QnDzH/AHjj2rMs4LeC1SG1jjigUYVYlAUD2xxVRin1PgM743jh26WEpty/ma0+Xc3PFXxV+IXxI1rVLTxLrwttLtZFRNG0stBCeMkyEHfIvOBuODjpWVDFHDF5cMaRxjoqKAPyFcx4jfRbu9YWrXT6rD8qTachMiMOgZh8pHqGNdFpYu/7Nt/t+03XljziowC2Oa+5yCcXRcVTs117nkPMMRjqMatZtPs9Pmieq99qNlZYF5eww5HCu4BP0HWrA61zkMpstcv7rU9OuHmmnxBcRWxlUxAfKARyO/FejmWKnhqSlCHMzGcpQg5xi5NdELqGoaHdrldCn1JQ3zPHYZAHqCwGfwrU8LXCwqL7wxrutaWyHB+w6lNAYz6Mm7APsRUOn61a3t4Lby7qCR1LRLcQNH5gHXbnril1TT9Pkdr65ZrZwPmuY5jEcf7TAjP418x/a96jWIpJr0OKnxBiMPV9lUhKD8m2/uPQdG+L3xh0jalp49kvYl6x6tp0VwT/AMDUK2K63w/+1P410dWl8Z+FtDv7GP79zpt61rLj12S5Un23c1883v8Abcegz6v4fuLtrO1G43epsPIl5A2oCNzk9iMCux0rw5ZIYbrUDJqN4q7hJdchCRztT7q/lmuilQy7Hxl7Gm00fYYPNcdyRqSn7r7rU+hfhD8fte8V6D4fa58J6laf2nKGudbvtNljsDG8xVI4PKDF327Rliqg5JNfQadK8t/YzUL+zZ4ajVtypFMo+nnPXqa/dr5SUeWTXY+5jLmin3FoooqSgooooAKKKKACiiigAooooAKKKKACiiigBkihlKsAVYYIPevlD/goBpun6RqHgOy0zTbaztYzehI7ZBHGhKqSAi8cnnNfWDV8s/8ABRgSDXvAx3AxlrwFcd9i81MvhPG4g/5Fdf8AwnzxNDDOMTwxyD0dA386z9S0lf7PuBptxcWEzRNsa3lKqDjuvStOquuXosNFuLoj/VphR6seAPzNYxu5K25+H4WtXVWEYPrt0MbwPqOs2nhmzFnLazQ+XzDPFsYHPOXXqcjqRmtyHxb5XGqaRdW3rLB+/j/T5h+VZmi2xtNJt7ZvvRxjd9ep/U1ZGB9TX7HhsBy4eCi7Oy8/wPdqZpL20uaKkr/1sdBpusaVqH/HnqFvKf7u8Bh+B5qaW9tIIZpprqOGO3bbK0j7Qh9CT9a4rXLA3luEhgtWm3DD3CEhR7Y5zV74VeELC487U7u8ubm4stQZVWVg8JGBkbGyPx61zYmeIozUeVO/U9XA+wxUZO7TXTqP8XXWo6jZWmqaFbSRw2N0sjajcLsi8tjtbahwXGD7Cu2h8PeGtCZdQ8S6xFqFwQCkl4yrEvvHCOB9eTUup6howu00bULuzE14u1LSZxmQem309qfp2kaVYSb7PT7eFj/EEy30yecV87j8peMr86qW7ndOhStF8tmuvW3a5FeXS+KL63MUT/2NZuJE3ptF7KPukKf+Wa9RnqelVpLa+8S6lcjTtYvNNstLBVri2VT9pnxnblgQVXv6ninx29xr3iy90mW+uLOxsLeN5EtyFkui+f4+qqMY+XmustbS2sdKFlZQLBBDEVjjQcAY/WvIxeKhg6bwmH3W7JqVo0bRjvp8v+CfSv7JduLf9nPwlECCf7PDOwGNzF2JbA6ZNej157+ys6P+z14TZG3L9gAz/wACavQq8Y/SKfwIKKKKCwooooAKKKKACiiigAooooAKKKoaxqtnpsO65l+bHyxryzfhQBfrG1zxFYaflA3nTf3EPT6ntXL674lvr/dHDm3h/uqfmI9zWNj9adhXNPWNe1HUG+aYwxdo4+P17189ftoXE82qeD0kuZZAhuyFdsgDaOle5fhXg/7ZrEa94QQKeRdnOP8AZXipn8J43EP/ACKq/ozyXtWX4yU/8I/JOBkW0iTMv94KckVqOypG0kjBVUZYk4AHqTWB4m1WyvtHksdOvI5prp1h2xnOATyfpilhYTlWjyLW6PxPL6VR4iMktE9S6jCRFkQ/KwBH0PNU/EklzFoV1LajEyxEoQOR7j8KuKNkaoBwoAH0FOxu+UjIIwc1+2VKcpUHHq1+hrTlGFZStdJlSHRZo7WGfTdVuJWZASt0+9Jcj81/Ct74Sr4gu9Hvrex0wWm/UZfNvp5VZIzwCUQcufTOBWP4FlaTw/GrZ/czSRqT3AbivQ/g6oXwfKQc7tRnP6ivyL+1MbScqXtG0r76nuYHFVIVa0JJNrZ28/Ip+OvDum6X8N9REMBuJleO4muphvmdg6kuW6jAB4HAraWRJUWWJw6SKGVgcggjg1uEBgVKqwIwQwyD9a4/RbVNM17WNLtVZLOGaOW3jz8sW9csq+gyOnbNenw9jGq0qUtXLU9fD1nODUnqtRniQy6ZcR+JrQt5unoRcxD/AJebfPzKfcfeB9RXR61rFpYeG31h2LQtCrQr0aUsPkUe5JFYvia1nvPDeoWltjz5rZ1iyf4iOKxP7Vl1i10ebUrObTNN0aNJLk3qbGnuguxURerAHJz3JGK1znAe1xcJQWj3fY3+r+3cNNn+B9nfshvM/wCzd4Ta4wJjZHeBj5T5jZHHp0r0sV4f+xbrev33wt0HTF8IXGn6JZ2UofUryZY3nn85sLHDy23ByWbHPAFe3r92vm5JKTS2P0Sn8CFooopFhRRRQAUUUUAFFFFABRRRQBW1hLt9NkSxkWO4ONjN0HIz+ma4XUNA1wSNNNbtOx6sr7ia9DoxQB5TcQTwNieCSP8A3kIqPIPQ16xJGjrh1DD0IzVK60XSrj/W2MOfVV2n9KdxWPNMj1r53/bnvru31rwbBp6RSXLC7kMchIDIFAPPY+hr6y8XeA7fVNBvLHTNXvtFuriMrDe2213t2/vKGBBP1r5j/aQ+EXxO1T4ieEdCttf0fxLfixvHt5bi3/s+R1UKW37SyE8jBAHet8NGjKtFVvh6nBmdGVXB1IQjzNp6Hz+y3eqyrLqlt9nhjP7q0Em4E/3nI4PsOlXljROQiKcYGFHArpPE3w0+LHh0Odc+GuuLHGcNPp6peRfUGMk4/CuROpWS3X2aaY29wOsFyhhkH/AXANfpWV/2VRpqnhpJ/m/vPyDGYHMKPx0nFLoloW8iqXiKe5tdDurm0GZo0ypIztHc474FXeNoPrS8de1ezUh7SDhF2b6nmUpezmpSWzJvD8VtDo9qlnIJYfLBWQHO/PJY+5Jrtvgvu/4RGdSMbdSuAPpkV5hol7ZaLql9ZXcyWkMzrNbb/lTkYZQenXmu1+Hvii0tfC9xaacq6hqMuoTfZ7aFsjaSP3kjdFQep69q/Ga+CrUsTKg03K9j2sHhKvtqvKm1Kzv6nbeI9bsNDtFnvHLSSHbb20fMtw/91F7/AF7VieH7a6jimur4f6dqExnuEByIyeFQeygAVTf7HpV4uoaxL9t1m+YRx+VCZJpWPSK3jGWx6AfU17F8JvgF4n8VRrqfxEMvh/RpBmPQ7WXF9OP+m8q8RA90Tn1Ir38JTo5VH2lWV59j6vAZXUqK0Fvu2eaeHodZ8VeIG0DwTos2vaghxcNEdlrZ+885+VP90Zb2r6K+B/wCsPDOrW/irxjfp4g8RQr/AKOvl7bLTievkRn7zf8ATRufTFeqeDfDOg+FNBh0Tw3pNrpenwD5Le2jCr9T6n1J5NaqqAcjvXm43NK+Kdm7R7H1uDy2jhldK77mT4K0GLw3oMelQXM1wkckknmzY3MXcsc49N2K16KK809AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsHUPCum3vjzTfFsrTC/wBLtZ7WEK+EKS7S24dz8oxW9RQA3BHesbxV4R8K+JrdofEPhzStUjYci8s0l/VhkVtYoGKFdbMTSe54l4q/ZW+Emps0umaff+HpiOulXromfUxvuX9K838Y/si6/awyTeEfG1vfsoJS01e08st7CaPp+K19bYHpSED0ruoZljKH8Oo0ediMnwGI/iUk/kfnl4v+D/xW8NWQu9d+H95NAuS8umSR3yxgfxME+YDjris39mfRdV8e32oeHfh5DpdvePdPcXmo3vyRQQ8DeIx88xBz8o4B6kV9/fETwdonjXSYNL1+K6lsobpLhoIbp4VnK9Ek2kb0OeVPBqr8K/ByeErTU4GFiwu9UnurYW1qIhbwuRtiwPTHbiuytn2LrRSla/e2px4Xh3BYao5U72fS+hy3wF+Bfhb4byHWJppfEHiedcXGt36gyKD1SFOkKey8+pNep4GOtO47UV48pSk+aTuz3IxUVZLQKKKKkoKKKKACiiigAooooAKKKKACiiigAooooAKKKKAA188/tWfHfWfgvHaXkmjzavaXt29vujmWMwsBuAOQc5FfQ1fHn/BVCJD8H5JSvzR67b7T6ZVs0AdX+y5+1LcfGXxtJ4RsfBd1p8lvYSXVxqUt4jrGBwo2BeSSRWJ+0J+1XrHwn8dp4cv/AAzc6gs1qtzBdx3KRrIpJB+UrwQQRXnH/BH2GM+PvGtwR+8XSoEB9vMJrnf+CokCr428K3G1R5tncJnv8sg4/WgfU7CP9v2RJF3eCro+qtfR9P8AvmvRPhj+3P8ADHW7yOy8VWGpeHJHIX7RLF5sAP8AtFMkD3xXO/8ABN34a+AfHf7NN2fF/hDSdYf+2Z0826tlaUKAuAH+8PwNZf7UP7EVjDpFz4j+EEs0c0KmSXQbqXekq9T5Mh5Df7LZz60AfZvhnXdH8Q6Lb6voWp2upWFyuYbm1lEkbj2IrRr8ivgB8YPHfwQ8btPo8s4tY5/L1XQ7kkQz4OGUqfuSDnDDn8K/Uv4NePtA+Jfw707xj4cnMllqEeSjn54JBw0bjsynI/WgR1RrlfH3iy18Nt9rvJlis7KF7m+cn7sYBP8ASulvJ47e1knkOFjUsa+Kv+CkXxJk03wGnha0uNuoeKJC1wAeY7RDzn2Y4H50AfUf7PnxK0f4sfC+x8a6KjRQ3jSRyQMctC6MVKt74wfxrt6/Pj/glD8SxofxE1L4bahcbbLxAn2rTwx4W5QfMo/3k/Va/QcUDZU1xp00i4kt5PLlRCysAOMfWvkj4y/tg6p8N/iVeeEtT8I3V21nsdbiO8jVZ42GQwBXj0r671QbtNuF9Ym/lX5i/wDBR2JI/j5ayouHk0aHcfXBbFAj7v8A2Ufi/J8avANz4sTwzNodpHetawLNcrK020DcwwBgZOK9SrwL/gmdBHD+yHoBjGPMnuZH92Mh5/SvfaACiiigAooooAKKKKACiiigAooooAKKKKAENfIH/BVD/kjU3/Ydtf8A0Fq+vzXyB/wVQ/5I3N/2HLX/ANBagDiP+CPf/I6eNj/1DYP/AEM1gf8ABUj/AJGnwd/173f/AKMWt/8A4I9/8jp42/7BsH/oZrB/4Kkf8jR4P/697v8A9GLTKW57p/wSZ/5Nquv+w5cfyWvp9lB4J4r5g/4JM/8AJtV1/wBhy4/ktfUNIln56/8ABUD4X2uh+KIPiBpNssS3s4tdTWNcBnIzHIcdyMg+tWP+CSfj650/4kaz8O7mctY6va/brSNm4jnj4faP9pT+le0/8FIoLe7+A3ifzNv+jRW8ikjo4kGP518ff8E/bl7X9rnwnIrbQzzo59FMTZoK6H6YfE3VIrTT/szSiNNpmuHJwEjXkk/lX5Y/HDxRqXxg+P1zdaZHJcC/vE0/R7dQSfKDbUwPc5Y19a/8FD/idJ4f+Gc2lWc5TVPFbtbRYPzRWw++3txx+NeLf8E1tA8LxfFC4+IHi3UrK2tvD6eXpsM86IZLlxguAxHCrnn1NAkeN69p3iX4QfGQW8jmHWvDF/HPFImcOVwwKnurDj86/Wr4QeMdP8ffDXRfGGlspt9Ws0m2g58tyPmQ+4YEV8M/8FKdE8L6xeaf8QfC+r6dcyo/2K/hhuY2kKHmN8KTnByPoa7D/gkn8Sw9trHwq1Gf5oidS0kM3VTxKg+hw34mgOh9raj/AMg+f/rk38q/Mf8A4KQ/8l2sf+wNH/6E1fpxqH/IOm/65N/KvzH/AOCkP/JdrL/sDR/+hNQEdz7F/wCCav8AyaH4c/66XH/o1q95rwb/AIJq/wDJofhz/rpcf+jWr3mgHuFFFFAgooooAKKKKACiiigAooooAKKKKAEPWvkD/gqj/wAkbm/7Dlr/AOgtX1+fvV8ef8FSpUb4NzfPy2vW4A+itQBxn/BHv/kdPG3/AGDbf/0M1gf8FR/+Ro8H/wDXvd/+jFrc/wCCP8qL428boWG7+y4Gx7eYea5//gqFOH8YeEYgOVs7l+vXLimUtz3r/gkz/wAm03X/AGHLj+S19LaxfQadYvdTn5VHA7sfQV8jf8E0/F+leGf2Zbv7dcW8B/tqdi1zcLEgGF5JYj0qD9oz9rbwxo8M1p4Xu4vEmtAFY/Iz9itD6s/8Z9hnPrSE9zm/+Cl3xEhTwvb+BoZ1fUdYnW8vkByYoFPyA/7zY/AV5n/wTn8LT6l8YbvxdMPLsPDtk5eZuFEsgwBn2XcTXmng/wANfED43/E64Fkk+qarfSedqF/KD5NomfvyN0RQOAvfgCvon9oS60X4Bfs22vwx8L3O7WvESMLq6HEkiH/WzN6Z+6vtTYeR4R+0p43u/ir8crq501ZLi1WddN0eBOdyBtoIHq7c16En7D/xyliSQ2/h9dyg7W1H5lz2Py9at/8ABL34Zx+MPjhJ4s1C3D6Z4RjEsYYZV7p+Ix/wEZb8q/SVc96Q7n5lah+xN8bbGze5e28PlUHOzUcnH/fNeU/CbxRq3wm+NumeItjw3Xh/UvLvYf70YbZKh9cjNfsNeQrcW8kD/dkUqa/MP/goh4DPhL44PrMMAWz8RIZWIHyidPlkH4jB/GgPU/S+w1K01nwrFq1hKstpfWYuIJFPDIybgfyNfmp/wUg/5LtY/wDYGj/9CNfS/wDwTQ+JyeKP2e7zwhqFzu1PwirQgM3zPasCY2/Dlfyr5m/4KPMrfHizQH5l0aLcPTLGgS3Psf8A4Jq/8mheHP8Arpcf+jWr3mvlH9hL4p+DfCX7K2g6drOuaZaXUMk++O5vo4iuZCRkE5710/jb9rP4W6QrKfGFjIwPKabE91IR7YG2gGmfQ9FeT/sxfGe3+NEOrarofhy/sNA0yZba3v79wJb2XGWwgzhQMd+p6V6xQIKKKKACiiigAooooAKKKKACiiigANfPv7anwF8RfGDw/pOj+FtX0zSorW8e6vX1BpWMzbcKFCg8DJPNfQVJgZzQB8ofsc/sw+O/g18TbvW9V8TaHqGlalp72d7b2nnLK2SCrDcoHB96h/a7/ZV8afFz4oQ65ofiPQtM0qzsUtra3u/OaXOSzs21SOSa+tdo6YowKAPz5P7AfxJ8rym8d+GvLznbtuNufXG3Fdf8OP2ALG3vkn8deOpLyBWBNnpFt5Icehkckj8AK+2MUYoHc43wX8MvBngrwavh3wl4fttNso/n8qJivnyY4aV+Wc57nOK+Tvi9+xx8XfiL8QL/AMWaz438LLNdviGBVuCltCPuRLlegHfua+4sA9aMCgR4t+xD8GtX+Cfw71Hw9rmoabf3d9qJuvtFiHwy7QAG3gHIwa9qpMAHOKWgArwX9tj4B33xk8J6bYeHb7TtO1Cz1E3Ul1fFyChQqVUKD1OPyr3qkKg0AfGX7On7JnxY+FHxOtfE9p4y8N3Nmym31OxX7Qv2u2b7yZ28EdQfUU79pb9kHx78T/jFqXizT/FPh6x0+ZI4bO2nEzSRxIuPmIXGScmvszA9KQACgD892/4J/fEUnJ8a+Fz9Y5//AImg/wDBP/4jhML438Ljjj93cYz/AN81+hNFA7s4b9nL4e2vwt+D2i+CreSOaTT4f9LnRcCeduXfnnk9M9gK7mk2jrS0CCiiigAooooAKKKKACiiigAooooARvavn/Rf2ld3ijwtZa14b+yaX4gN6l1qMU5ddNeK7NvEZARwjkDLdiwr6Abnivnv4X/A/W7bUrWz8YWVjNo8uh6rp1/FHcbyTc3zTJjj+4Qc9iKAOmh+M18nxym8F3mgwxaSmtjRhqYnJcXDWwnjBXGAG+ZRz1FZni/43eI4viZJ4W8NaDo8lv8A20dGh1HU754YmnS386bO1TwuVX3Jrn/D3wR+Ilp8PfHmn6jqtnfa9NrVtqPhXUnlwZDaIq27T/3WwgVvXk1J4k+DviyPwP4BU+GdG8U6lpWqXWq+JLG8vBDDdXFyjb2VmUg4ZuMjoooA6Txl8V/Gnh0aHo99beC4tY8SXs0FnfPqsg0u2SJAzedIVB8xs4VB19aj8TfE/wCK+i/DbWvE934I0KJvDKyvfF7+UwahGoDJLZuFO5CCQQ2CCMVTuPCXjz/hH7eCy+EXgy10eO6k/tLwk95DLFqQZRtuEmMW2ORCOhHIPUVV8P8Awi8XQ/BP4j6Bb6XY6EPFiH+xPDcOoGe20v8Ad7W/eEYXe3zEKNooA9L8P+JvGEPwx1LxT4p0vR4ZrfT2vrS3066kkV0EXmAOXUEHPHGa5D4f/Hka18WLDwdrOg/2bb6to1ld2WpLNuia7ni802rZHDbQSp/iwa9B1jQ7+5+D9x4ciWP7dJobWSgvhPNMOz73pnvXl/hX4J6pdaPrel+JGhthe6NpEOn3drNuls72zhIEq+hV8EHuM+tAHUwfFO7k+Bfif4gf2PF53h979UtPOO2b7MzKMtjjdt/CquqfF+7s/wBkdfjMNEie4bQ49T/s7zjsy2Pk34zjnrisjwf8N/HcP7JPiLwLr7WE/inWItQDSQy4glkmZirk4+XOQSMcZrz+PwH+0dqH7N0nwb1Pwl4Pt9PTQBp0OoQaw7Ts6AbSVIwM45oA6LQvj18S5/Bd74t1HwZ4NXS7TQpdW2WXilbi6wse9VaELkdgfSq3wn/aW8W+IPG3grSNf8EaLDZ+OI2a0m0jXBdz2mE3Zni2goPXNcr4L+CHxJsPBmqeHh8H/h1oVzf+GrjS213TdRc3krvFtG7IxhmA3Vn+C/2ffi3p83g+5sPBPgnwrqHg2IzPq2m6gzXesyrEVEUpCgBWYgtnNAHrnhL9oq11r9qi/wDhP/Yoi02F5bWy1szHbdXkSB5YAMYyAT0PauZ8G/taRa14d+I7T+G4bXW/A6XNxZ2TXJ2anBE5QsGIyCDjcBnGRXLaf+yz8SNE8EeHPEWm+Nbi88ZaTrq67Lo9xNGunLcySZuCkgTeSVOMkkH0qLxJ+yx401v4A6raKbDTfHEfiLUL/TZIrv8Adz2lywL20sgHRhnr0I96APQm+Pfj7xb4kh8MfCfwDpus6pZ6Lbaprk2p6mbe1tGnQOtujBSWfB74Fc94g/bHt9I8O+GNUvPBk0Ml5rVxpPiWze4Jl0iSHG9lwP3i4Oe3Aq1oHwu+M3wr8ZN4s+HGm+H9dPiDQrOz1rS9SvTB9lu4IwglikAw6cdP/wBdZnhH9mvxjY+JvBus+IX0nVribxBqOseMdr7YgLmIoIYlIy4AOO1AHsvw5+Kv/CW/HTxN4GtbG3On6HpdjqFpqUU5f7YlwpYcYwAB3zXpdfO/7IvwL8T/AAj+MXjW9vr6O+8O6hBBbaDK1wWnSBGZlidT90IG2jmvoigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z",
-      "id": 486
+
+      "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
+      "cover": ["../images/blog/13.jpg"],
+      "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
+
     }
   ],
   "team": [
     {
       "id": "1",
-      "thumbnail": "./images/team/1.jpg",
+      "thumbnail": "./images/team/thumb1.jpg",
       "cover": "https://www.youtube.com/watch?v=IBw79MByBWk",
       "date": "JAN. 18, 2021",
-      "name": "Tatiana Hag",
+      "name": "Tatiana Hage",
       "work": "Season 2 Episode 4"
     },
     {
       "id": "2",
-      "thumbnail": "./images/team/1.jpg",
-      "cover": "./images/team/t2.webp",
+      "thumbnail": "./images/team/thumb2.jpg",
+      "cover": "https://www.youtube.com/watch?v=nBnXa8pJbC0",
       "date": "JAN. 18, 2021",
       "name": "Fadi Bizri",
       "work": "Season 2 Episode 3"
     },
     {
       "id": "3",
-      "thumbnail": "./images/team/1.jpg",
+      "thumbnail": "./images/team/thumb3.jpg",
       "cover": "./images/team/t3.webp",
       "date": "JAN. 18, 2021",
       "name": "Elsa Aoun",
@@ -435,32 +403,32 @@
     },
     {
       "id": "4",
-      "thumbnail": "./images/team/1.jpg",
-      "cover": "./images/team/t4.webp",
+      "thumbnail": "./images/team/thumb4.jpg",
+      "cover": "./images/team/thumb4.webp",
       "date": "JAN. 18, 2021",
       "name": "Sami Bou Saab",
       "work": "Season 2 Episode 1"
     },
     {
       "id": "5",
-      "thumbnail": "./images/team/1.jpg",
-      "cover": "./images/team/t5.webp",
+      "thumbnail": "./images/team/thumb5.jpg",
+      "cover": "./images/team/thumb5.webp",
       "date": "JAN. 18, 2021",
       "name": "Roy Baladi",
       "work": "Episode 14"
     },
     {
       "id": "6",
-      "thumbnail": "./images/team/1.jpg",
-      "cover": "./images/team/t6.webp",
+      "thumbnail": "./images/team/thumb6.jpg",
+      "cover": "./images/team/thumb7.webp",
       "date": "JAN. 18, 2021",
       "name": "Maroun Chammas",
       "work": "Episode 13(part2)"
     },
     {
       "id": "7",
-      "thumbnail": "./images/team/1.jpg",
-      "cover": "./images/team/t7.webp",
+      "thumbnail": "./images/team/thumb7.jpg",
+      "cover": "./images/team/thumb7.webp",
       "date": "JAN. 18, 2021",
       "name": "Maroun Chammas",
       "work": "Episode 13(part1)"

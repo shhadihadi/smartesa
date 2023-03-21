@@ -3,6 +3,7 @@ import Back from "../common/back/Back"
 import BlogCard from "./BlogCard"
 import "./blog.css"
 import useFetch from "../../components/useFetch";
+import NumPosts from "./Numposts";
 
 const Blog = () => {
 
@@ -17,8 +18,8 @@ const Blog = () => {
     setNumPosts(numPosts + 3); // Increase the number of posts to display by 3
   };
 
-
-  const allPostsDisplayed = SamartTalkHome ? numPosts >= SamartTalkHome.length : false;
+  const { NumPosts: allPostsDisplayed } = NumPosts(); 
+  //const allPostsDisplayed = SamartTalkHome ? numPosts >= SamartTalkHome.length : false;
 
   return (
     <>
@@ -36,7 +37,7 @@ const Blog = () => {
           <div className='container grid2'>
             <BlogCard numPosts={numPosts} />
           </div>
-          {!allPostsDisplayed && (
+          {allPostsDisplayed>numPosts && (
             <div className="text-center">
               <button className="load-more primary-btn" onClick={loadMore}>Load more</button>
             </div>

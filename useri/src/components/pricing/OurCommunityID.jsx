@@ -16,16 +16,14 @@ const OurCommunityID = () => {
           <div className="parS" key={val.id}>
             <div className="itemP">
                 <h2> {val.nb} {val.title}</h2>
-                {val.paragraphs.map((paragraph, index) => (
-                <p key={index}>
-                {paragraph.split("\n").map((line, index) => (
+              
+                {val.paragraphs?.split("\n").map((line, index) => (
                    <React.Fragment key={index} >
                   {line}
                   <br />
                 </React.Fragment>
                   ))}
-              </p>
-                ))}
+            
             </div>
             {val.communityimg.length > 0 && (
                 <div className="image-container">

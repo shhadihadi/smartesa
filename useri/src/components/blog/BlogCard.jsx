@@ -1,5 +1,7 @@
 import React from "react"
 import useFetch from "../useFetch"
+import { Link } from 'react-router-dom'
+
 
 const BlogCard = ({ numPosts }) => {
   const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
@@ -13,11 +15,11 @@ const BlogCard = ({ numPosts }) => {
     <>
       {postsToRender && postsToRender.map((val) => (
         <div 
-        key={val.id} 
+        key={val.id}
         className='items shadow' 
         style={{boxShadow:'  rgba(0, 0, 0, 0.1) 0px 4px 12px'}}>
           <div className='img'>
-            <img src={val.cover} alt=''className='blog-card-img' />
+            <img src={val.cover[0]} alt=''className='blog-card-img' />
           </div>
           <div className='text'>
              <div className='admin flexSB'>
@@ -26,8 +28,8 @@ const BlogCard = ({ numPosts }) => {
                 <label htmlFor=''>{val.date}</label>
               </span>
             </div> 
-            <h1>{val.title}</h1>
-            <p>{val.paragraphs[0]?.substring(0,130) + '...'}</p>
+            <Link to={`../Event/${val.id}`}> <h1>{val.title}</h1></Link>
+            <p>{val.paragraphs?.substring(0,130) + '...'}</p>
           </div>
         </div>
       ))

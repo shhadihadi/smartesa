@@ -3,6 +3,7 @@ import Back from "../common/back/Back"
 import "./contact.css"
 import { useState } from "react";
 import useFetch from "../../components/useFetch";
+import Faq from "./Faq";
 
 const Contact = () => {
   const [firstName, setfirstName] = useState('');
@@ -57,6 +58,9 @@ const Contact = () => {
           paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
         />
       )}
+      <section>
+      {<Faq /> }
+      </section>
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>
@@ -113,6 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      
     </>
   )
 }
