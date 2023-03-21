@@ -47,7 +47,7 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-            <div className='getcertibutton'> <Link to='/' className="apply">Apply Now</Link></div>
+            <div className='getcertibutton'> <Link to='/Apply' className="apply">Apply Now</Link></div>
             <div className='getcertibuttonsmall'> {location.pathname.split("/")[1].toUpperCase()}</div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>

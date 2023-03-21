@@ -11,6 +11,7 @@ import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import CourseCardId from "./components/allcourses/coursecartById/coursecardid"
 import Event from "./components/byID/event/Event"
+import MultiStepForm from "./components/Apllynow/MultiStepForm"
 // import Community from "./components/byID/ourcommunity/Community"
 
 function App() {
@@ -26,8 +27,10 @@ function App() {
           <Route  path='/OurCommunity' element ={<Pricing />} />
           <Route  path='/events' element ={<Blog />} />
           <Route  path='/contact' element ={<Contact />} />
+          <Route exact  path='/Apply' element ={<MultiStepForm />} />
           <Route  path="/coursesCard/:id" element ={<CourseCardId />} />
           <Route exact path="/Event/:id" element ={<Event />} />
+
           {/* <Route exact path="/OurCommunity/:id" element ={<Community/>} />
            */}
         </Routes>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import Heading from "../../common/heading/Heading"
 import "./Hero.css"
 
@@ -14,9 +15,11 @@ const Hero = () => {
               <button className='primary-btn'>
                 VIEW PROGRAMS <i className='fa fa-long-arrow-alt-right'></i>
               </button>
+              <Link to="/Apply">
               <button>
                 APPLY NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
+              </Link>
             </div>
           </div>
         </div>
