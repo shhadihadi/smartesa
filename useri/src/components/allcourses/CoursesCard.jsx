@@ -1,6 +1,5 @@
 import React from "react"
 import "./courses.css"
-import { coursesCard } from "../../dummydata"
 import useFetch from "../useFetch"
 import { Link } from 'react-router-dom'
 
@@ -58,7 +57,7 @@ const CoursesCard = () => {
               <div className='price'>
               {/* {val.text.map((p) => 
               ( <h3>{p.slice(0, 150)+'...'}</h3> ))} */}
-              <h3>{val.text[0].slice(0, 150)+'...'}</h3>
+              <h3>{val.text.slice(0, 150)+'...'}</h3>
                   
 
 
