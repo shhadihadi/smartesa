@@ -10,7 +10,7 @@
   "internationaProgramHome": [
     {
       "title": "INTERNATIONAL PROGRAMS",
-      "Paragraphs": "Providing entrepreneurs with an unsurpassed methodology, offering workshops, one-on-one mentoring, extensive access to high-profile and international experts\nFor entrepreneurs with just an idea at the beginning of their journey, looking forward to create a business and transform their idea into a potential and successful business;  our Create Program is the right one for you !\nFor start-ups with a Minimum Viable Product (MVP) and early traction, our Boost Program is aiming to grow your company and improve your sales.",
+      "Paragraphs": "Providing entrepreneurs with an unsurpassed methodology, offering workshops, one-on-one mentoring, extensive access to high-profile and international experts\nFor entrepreneurs with just an idea at the beginning of their journey, looking forward to create a business and transform their idea into a potential and successful business;  our Create Program is the right one for you !\nFor start-ups with a Minimum Viable Product (MVP) and early traction, our Boost Program is aiming to grow your company and improve your sales. ",
       "id": 1
     }
   ],
@@ -369,9 +369,11 @@
       "id": 13,
       "date": "20, April, 2018",
       "title": "Open Dialogue on Fintech",
+
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
       "cover": ["../images/blog/13.jpg"],
       "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
+
     }
   ],
   "team": [
@@ -581,20 +583,12 @@
       "id": 1
     },
     {
-      "email": "hawraahamzi@gmail.com",
-      "id": 2
-    },
-    {
-      "email": "hadi_shouman@hotmail.com",
+      "email": "mhmd@hotmail.com",
       "id": 3
     },
     {
-      "email": "hadi_shouman@hotmai.coml",
+      "email": "hadihadi@hotmail.com",
       "id": 4
-    },
-    {
-      "email": "hadi_shouman@homai.com",
-      "id": 5
     }
   ],
   "upload": [
