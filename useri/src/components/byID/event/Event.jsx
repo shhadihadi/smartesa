@@ -38,13 +38,12 @@ const Event = () => {
             <div className='items'>
               { error && <div>{ error }</div> }
               { isPending && <div>Loading...</div> }
-              { desc && 
-                desc.map((paragraph, index) => (
+              
 
                   <div className='item flexSB'>
                     <div className='text' style={{ whiteSpace: "pre-line" }}>                      
-                      <p key={index}>
-                        {paragraph.split("\n").map((line, index) => (
+                      <p >
+                        {desc.split("\n").map((line, index) => (
                            <React.Fragment key={index} >
                           {line}
                           <br />
@@ -53,7 +52,7 @@ const Event = () => {
                       </p>
                     </div>
                   </div>                
-              ))}
+              
             </div>
           </div>
         </div>

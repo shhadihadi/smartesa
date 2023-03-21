@@ -19,7 +19,7 @@ const About = () => {
       { paragraphs && (
         <Back 
           title= {AboutUsHome[0].title}
-          paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
+          paragraphs={paragraphs} 
         />
       )}
       <AboutCard />

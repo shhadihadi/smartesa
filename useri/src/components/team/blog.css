@@ -1,4 +1,4 @@
-.blog img {
+.blog .blog-img{
   width: 100%;
   
 }
@@ -7,6 +7,23 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.thumbnail-container {
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-10px, -10px); /* adjust the position as needed */
+  font-size: 1.5rem; /* adjust the font size as needed */
+  color: white;
+  z-index: 1;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
 
 .text-center{
   text-align: center;
@@ -16,6 +33,28 @@
   width: 250px;
   margin-top: 40px;
 }
+
+
+.page-blur {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  filter: blur(8px);
+}
+
+.overlay iframe {
+  filter: none;
+}
+
 
 .blog-card-img {
   width: 100% !important;

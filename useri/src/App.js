@@ -12,6 +12,8 @@ import Home from "./components/home/Home"
 import CourseCardId from "./components/allcourses/coursecartById/coursecardid"
 import Event from "./components/byID/event/Event"
 // import Community from "./components/byID/ourcommunity/Community"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
