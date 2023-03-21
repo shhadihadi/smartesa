@@ -43,7 +43,7 @@ const AboutHome = () => {
           action={
             <IconButton >
              
-              <Link to={`/aboutEdit/${val.id}`}>
+              <Link to={`/aboutHomeEdit/${val.id}`}>
           < EditOutlined />
            </Link>
             </IconButton>
