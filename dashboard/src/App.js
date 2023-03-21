@@ -35,7 +35,7 @@ import Internationalid from "./pages/InternationalPrograms/internationalid";
 import ComunityById from "./pages/Commuinty/ComunityById";
 import SmartVideo from "./pages/smartTalk/SmartVideo";
 import Subscribe from'./pages/subscribe/Subscribe'
-
+import AboutHomeEdit from './pages/About us/AboutHomeEdit'
 
 
 
@@ -124,6 +124,9 @@ function App() {
             <Route path="/aboutEdit/:id">
               <Route index element={<AboutEdit />} />
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
+               </Route>
+            <Route path="/aboutHomeEdit/:id">
+              <Route index element={<AboutHomeEdit />} />
 
                </Route>
                <Route path="/MethoEdit/:id">

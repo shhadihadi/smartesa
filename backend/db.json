@@ -2,9 +2,7 @@
   "homeAbout": [
     {
       "id": 1,
-      "Paragraphs": 
-        "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.\nThe program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.\nSmart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.\nThe program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
-      
+      "Paragraphs": "Smart ESA is an accelerator program offered by ESA Business School, aimed at transforming creative individuals into successful entrepreneurs. By equipping startups with a comprehensive management toolkit, Smart ESA promotes sustainable success and empowers entrepreneurs to take their businesses to the next level.\nThe program is open to entrepreneurs from all over Lebanon and has already graduated more than 40 startups and 50 projects across 10 programs. Since its founding in 2017, Smart ESA has become the most successful accelerator program in Lebanon, earning recognition as the best accelerator in the country in 2018 and winning the Social Economic Awards in 2017.\nSmart ESA's impressive track record is reflected in the success of its portfolio startups, which have achieved remarkable results in prestigious competitions across the MENA region, including GITEX, Amadeus Travel Tech Challenge, Arab Startup Competition at Harvard Business School, and the MIT Enterprise Forum Pan Arab competition.\nThe program's methodology is anchored in practical entrepreneurship expertise, providing startups with the knowledge, skills, and resources necessary to thrive in today's competitive business landscape. By fostering a culture of innovation, creativity, and collaboration, Smart ESA is helping to shape the future of entrepreneurship in Lebanon and beyond."
     }
   ],
   "internationaProgramHome": [
@@ -28,35 +26,28 @@
       "address": "289 rue Clemenceau, Beirut, Lebanon",
       "phone": "+961 1 373 373",
       "email": "smartesa@esa.edu.lb",
-      "Paragraphs": 
-        "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.\nDon't hesitate to reach out and start a conversation - we can't wait to hear from you!"
-      
+      "Paragraphs": "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.\nDon't hesitate to reach out and start a conversation - we can't wait to hear from you!"
     }
   ],
   "AboutUsHome": [
     {
-      "id": 1,
       "title": "About Us",
-      "Paragraphs": 
-        "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success.\nSmart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs\nFounded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. "
-      
+      "Paragraphs": "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success.\nSmart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs\nFounded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. \nwalaa nasser",
+      "id": 1
     }
   ],
   "SamartTalkHome": [
     {
       "id": 1,
       "title": "Smart Talk",
-      "Paragraphs": 
-        "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time.\n Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.\nJoin us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
-      
+      "Paragraphs": "Welcome to SmartTalk, the first-ever web TV dedicated to entrepreneurship in Lebanon and the Arab world. Our platform provides a unique opportunity to connect with industry leaders,entrepreneurs, investors, and ecosystem experts, and gain valuable insights on building successful businesses that stand the test of time.\n Our engaging and informative content is designed to equip aspiring and established entrepreneurs with the tools and knowledge they need to achieve their goals.\nJoin us as we explore the latest trends, best practices, and success stories in the world of entrepreneurship, and embark on a journey towards building a thriving and sustainable business."
     }
   ],
   "EventsHome": [
     {
       "id": 1,
       "title": "Events",
-      "Paragraphs": 
-        "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.\nNow, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
+      "Paragraphs": "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.\nNow, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
     }
   ],
   "awrapper": [
@@ -263,34 +254,32 @@
       "id": 1,
       "date": "28, June, 2021 ",
       "title": "Prix Entrepreneur ESA - HEC Paris 2021",
-      "desc": 
-        "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers.\nIn second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.\n\nSpecial thank you to the competition’s supporters, sponsors and all the finalists."
-      ,
-      "cover": ["../images/blog/b1.webp"],
-      "paragraphs": 
-        "Another successful edition of the Prix Entrepreneur ESA - HEC Paris competition, an initiative by the ESA Business School and HEC Paris.\n\nThe winning startups receive an exceptional prize to be sent over to the HEC Incubateur in Station F, Paris - all expenses paid, for six months, with free travel tickets by Air France."
-      
+      "desc": "Congratulations to the two winning startups of the competition:\nIn first place, Synapse, a clinical communications platform linking health and social care providers.\nIn second place, Podeo, a podcasting platform dedicated to managing, producing and distributing audio podcasts in the Arab world.\n\nSpecial thank you to the competition’s supporters, sponsors and all the finalists.",
+      "cover": [
+        "../images/blog/b1.webp"
+      ],
+      "paragraphs": "Another successful edition of the Prix Entrepreneur ESA - HEC Paris competition, an initiative by the ESA Business School and HEC Paris.\n\nThe winning startups receive an exceptional prize to be sent over to the HEC Incubateur in Station F, Paris - all expenses paid, for six months, with free travel tickets by Air France."
     },
     {
       "id": 2,
       "date": "7, june, 2021",
       "title": "Ed'Innov Launch",
-      "desc": 
-        "Porté par l’Ambassade de France au Liban et l’ESA, le projet Ed’Innov est un groupement qui rassemble les acteurs de l’éducation et de l’innovation Ed-tech, libanais et français afin de faire émerger des solutions innovantes au service et au bénéfice de la qualité de l’enseignement au Liban, en particulier francophone. Responsables institutionnels, enseignants, étudiants, parents d’élèves, chercheurs, experts de l’éducation francophone, éditeurs et entrepreneurs du numérique éducatif sont ainsi appelés à travailler ensemble pour développer l’accès pour tous aux solutions innovantes et contribuer au développement du secteur économique du numérique éducatif au Liban.\n\nDevant une centaine de participants en présentiel et en ligne, Mme Grillo a rappelé l’engagement de la France en faveur de l’éducation au Liban. Elle a appelé de ses vœux une mobilisation commune en faveur d’une dynamique d’avenir pour préserver, grâce à l’innovation, l’excellence de l’éducation francophone au Liban, tout en soulignant l’exemplarité d’un système éducatif qui tire sa force de son pluralisme, de sa diversité et de sa capacité à jouer un rôle fondamental pour la cohésion du pays.\n\nM. Maxence Duault, Directeur de l’ESA Business School, a souligné à son tour le fort potentiel de l’incubateur Smart Esa, qui a jusqu’à présent accompagné une centaine de startups libanaises et s’ouvre de plus en plus au secteur de l’éducation. Les enjeux et les défis sont immenses, tant sur les plans technologique qu’éducatif : Ed’Innov fonctionnera comme un centre de « recherche et développement » collectif, au service de l’éducation au Liban.\n\nLes prochains rendez-vous :\n\n En septembre prochain, Ed’Innov démarrera un programme d’accélération de quatre mois, afin d’accompagner les startups libanaises du numérique éducatif au sein de Smart ESA. Un hackathon sera organisé, en novembre, autour de « l’innovation frugale », en réponse aux besoins de solutions éducatives accessibles et peu coûteuses. Enfin une conférence internationale portant sur l’innovation dans le secteur éducatif à Beyrouth viendra clore l’année 2021."
-      ,
-      "cover": ["../images/blog/2.png",
-      "../images/blog/edInnov2.jpg",
-      "../images/blog/edInnov3.jpg"],
-      "paragraphs": 
-        "Ed'Innov est un projet pour améliorer l'enseignement au Liban en rassemblant les acteurs de l'éducation et de l'innovation Ed-tech, libanais et français, pour trouver des solutions innovantes ensemble.\n\nMme Grillo a appelé à une mobilisation commune pour préserver l'excellence de l'éducation francophone au Liban grâce à l'innovation, soulignant l'exemplarité du système éducatif pour la cohésion du pays."
-      
+      "desc": "Porté par l’Ambassade de France au Liban et l’ESA, le projet Ed’Innov est un groupement qui rassemble les acteurs de l’éducation et de l’innovation Ed-tech, libanais et français afin de faire émerger des solutions innovantes au service et au bénéfice de la qualité de l’enseignement au Liban, en particulier francophone. Responsables institutionnels, enseignants, étudiants, parents d’élèves, chercheurs, experts de l’éducation francophone, éditeurs et entrepreneurs du numérique éducatif sont ainsi appelés à travailler ensemble pour développer l’accès pour tous aux solutions innovantes et contribuer au développement du secteur économique du numérique éducatif au Liban.\n\nDevant une centaine de participants en présentiel et en ligne, Mme Grillo a rappelé l’engagement de la France en faveur de l’éducation au Liban. Elle a appelé de ses vœux une mobilisation commune en faveur d’une dynamique d’avenir pour préserver, grâce à l’innovation, l’excellence de l’éducation francophone au Liban, tout en soulignant l’exemplarité d’un système éducatif qui tire sa force de son pluralisme, de sa diversité et de sa capacité à jouer un rôle fondamental pour la cohésion du pays.\n\nM. Maxence Duault, Directeur de l’ESA Business School, a souligné à son tour le fort potentiel de l’incubateur Smart Esa, qui a jusqu’à présent accompagné une centaine de startups libanaises et s’ouvre de plus en plus au secteur de l’éducation. Les enjeux et les défis sont immenses, tant sur les plans technologique qu’éducatif : Ed’Innov fonctionnera comme un centre de « recherche et développement » collectif, au service de l’éducation au Liban.\n\nLes prochains rendez-vous :\n\n En septembre prochain, Ed’Innov démarrera un programme d’accélération de quatre mois, afin d’accompagner les startups libanaises du numérique éducatif au sein de Smart ESA. Un hackathon sera organisé, en novembre, autour de « l’innovation frugale », en réponse aux besoins de solutions éducatives accessibles et peu coûteuses. Enfin une conférence internationale portant sur l’innovation dans le secteur éducatif à Beyrouth viendra clore l’année 2021.",
+      "cover": [
+        "../images/blog/2.png",
+        "../images/blog/edInnov2.jpg",
+        "../images/blog/edInnov3.jpg"
+      ],
+      "paragraphs": "Ed'Innov est un projet pour améliorer l'enseignement au Liban en rassemblant les acteurs de l'éducation et de l'innovation Ed-tech, libanais et français, pour trouver des solutions innovantes ensemble.\n\nMme Grillo a appelé à une mobilisation commune pour préserver l'excellence de l'éducation francophone au Liban grâce à l'innovation, soulignant l'exemplarité du système éducatif pour la cohésion du pays."
     },
     {
       "id": 3,
       "date": "4, March, 2021",
       "title": "Global Innovation & Enterprise",
       "desc": "IE-Club, in partnership with Smart ESA, hosted the Global Innovation and Enterprise pitching event in 2021, with a special focus on Lebanese startups. The event provided a unique platform for ten established startups founded in Lebanon to pitch their ideas to major European corporates and investors.\n\nThis offered an excellent opportunity for the Lebanese startups to gain exposure to global investors and establish potential business partnerships with European corporates. The event aimed to facilitate collaboration between international investors and the Lebanese startup ecosystem and promote the growth of innovative startups in the country.",
-      "cover": ["../images/blog/3.jpg"],
+      "cover": [
+        "../images/blog/3.jpg"
+      ],
       "paragraphs": "With a special focus on Lebanese startups in 2021, IE-Club hosted another round of its Global Innovation and Enterprise pitching event in collaboration with Smart ESA.\n\nIE-Club and its partners offered a unique opportunity for 10 established, Lebanese-founded startups to pitch to major European corporates and investors. "
     },
     {
@@ -298,15 +287,19 @@
       "date": "10, December, 2020",
       "title": "Demo Day 2020",
       "desc": "Smart ESA's program is the result of a collaboration between ESA Business School, the French Embassy in Lebanon, and the Central Bank of Lebanon.\n By leveraging the network and expertise of its founding members, Smart ESA provides a unique journey for its startup batches, focusing on developing three pillars: Great Vision, Customers first-approach, and Impactful Execution.\n\nThrough this approach, Smart ESA aims to foster entrepreneurial success and drive positive impact in Lebanon and beyond.",
-      "cover": ["../images/blog/4.jpg"],
-      "paragraphs":"Smart ESA, a program for outstanding Lebanese entrepreneurs, recently concluded its ninth consecutive program, Boost 2020, in partnership with MAGNiTT and Air France.\n\n The Demo Day event saw seven Smart ESA startups presenting their projects to hundreds of viewers, including investors, industry experts, entrepreneurs, and members of the press."
+      "cover": [
+        "../images/blog/4.jpg"
+      ],
+      "paragraphs": "Smart ESA, a program for outstanding Lebanese entrepreneurs, recently concluded its ninth consecutive program, Boost 2020, in partnership with MAGNiTT and Air France.\n\n The Demo Day event saw seven Smart ESA startups presenting their projects to hundreds of viewers, including investors, industry experts, entrepreneurs, and members of the press."
     },
     {
       "id": 5,
       "date": "01, July, 2020",
       "title": "ESA Coding Lab",
       "desc": "We are delighted to announce the launch of the ESA Coding Lab, in collaboration with our partners, Agence Française de Développement and ITESCIA. The ESA Coding Lab is a comprehensive full-stack development training program that spans over four months and awards a dual certificate from France and Lebanon upon completion.\n\n This program aims to provide students with the necessary skills and knowledge to become proficient full-stack developers, enabling them to contribute to the growth of the tech industry in Lebanon and beyond.\n\nThe ESA Coding Lab is based in the French Institute of Nabatiyeh with a second location to be announced during 2021. ",
-      "cover": ["../images/blog/5.jpg"],
+      "cover": [
+        "../images/blog/5.jpg"
+      ],
       "paragraphs": "We proudly announce the launch of the ESA Coding Lab with the great help of our partners, Agence Française de Développement and ITESCIA.\n\nThe ESA Coding Lab is a 4-month full-stack development training program that offers a dual certificate from France and Lebanon. "
     },
     {
@@ -314,15 +307,19 @@
       "date": "14, May, 2020",
       "title": "Prix ESA-HEC Paris 2020",
       "desc": "catching each of the jury member’s eyes, Myceleum (founded by Bassem Makarem and Ghassan Achi), a startup that greatly simplifies the process of creating and updating projects for tech companies and developers, will also be heading to Station F, Paris for a 3-month incubation program.\n\nThe Prix ESA-HEC Paris is a yearly competition in partnership with HEC Paris, ESA Business School and Smart ESA where the best startups in Lebanon pitch to international jury members to be granted the opportunity to head over to Station F, Paris for 6 months. ",
-      "cover": ["../images/blog/6.jpg"],
-      "paragraphs":"Congratulations to startups DIM and Myceleum on winning 1st and 2nd place in the first edition of the Prix ESA-HEC Paris prize.\n\nDIM, a ConTech startup that offers an on-site management optimization tool founded by Michella Abou Jawdeh, received a cash prize of $10,000 and a 3-month incubation at Station F, Paris."
+      "cover": [
+        "../images/blog/6.jpg"
+      ],
+      "paragraphs": "Congratulations to startups DIM and Myceleum on winning 1st and 2nd place in the first edition of the Prix ESA-HEC Paris prize.\n\nDIM, a ConTech startup that offers an on-site management optimization tool founded by Michella Abou Jawdeh, received a cash prize of $10,000 and a 3-month incubation at Station F, Paris."
     },
     {
       "id": 7,
       "date": "19, October, 2019",
       "title": "Hackathon La Mode en 2050",
       "desc": "Lebanon's first-ever fashion-inspired Hackathon, 'Hackathon: La Mode en 2050', brought together five teams comprising members from different universities to compete in an exciting challenge.\n\nThe event was made possible thanks to the support of the Ambassade de France à Beyrouth and the Agence Universitaire de la Francophonie (AUF), and the participation of several universities.\n\nThe teams showcased their innovative ideas and solutions for the future of fashion, demonstrating their creativity, expertise, and passion for the industry. We extend our special thanks to all involved for their contribution to the success of this event.",
-      "cover": ["../images/blog/7.jpg"],
+      "cover": [
+        "../images/blog/7.jpg"
+      ],
       "paragraphs": "The participants of the 'Hackathon: La Mode en 2050'. Five teams, each member from a different university, went head-to-head to compete in Lebanon's first ever fashion-inspired Hackathon.\n\nSpecial thank you to Ambassade de France à Beyrouth & Agence Universitaire de la Francophonie (AUF) for making this event possible, and all participating universities. "
     },
     {
@@ -330,7 +327,9 @@
       "date": "14, October, 2019",
       "title": "Hack The City",
       "desc": "Hack The City workshop was a 3 days event sponsored by the Municipality of Beirut . The event was won by the Jarak Startup,  an application helping communities connect to each others.\n\nThe hackathon is a 72-hour event during which participants will work in teams to find solutions to make the city better! During the hackathon, the teams will undergo extensive training and mentorship with experts in Business, Urbanism, Design, IT and Pitching to enable them to pitch their solution to two selection juries (local and international).",
-      "cover": ["../images/blog/8.jpg"],
+      "cover": [
+        "../images/blog/8.jpg"
+      ],
       "paragraphs": "Hack The City workshop was a 3 days event sponsored by the Municipality of Beirut . The event was won by the Jarak Startup,  an application helping communities connect to each others."
     },
     {
@@ -338,23 +337,29 @@
       "date": "8, October, 2018",
       "title": "Demo Day 2018",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
-      "cover": ["../images/blog/9.jpg"],
-      "paragraphs":"Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
+      "cover": [
+        "../images/blog/9.jpg"
+      ],
+      "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 10,
       "date": "10, October, 2017",
       "title": "Demo Day 2017",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
-      "cover": ["../images/blog/10.jpg"],
-      "paragraphs":"Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
+      "cover": [
+        "../images/blog/10.jpg"
+      ],
+      "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 11,
       "date": "20, September, 2017",
       "title": "Social Economic Award",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
-      "cover":[ "../images/blog/11.jpg"],
+      "cover": [
+        "../images/blog/11.jpg"
+      ],
       "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
@@ -362,18 +367,20 @@
       "date": "21, March, 2018",
       "title": "CMA CGM Partnership Agreement",
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
-      "cover": ["../images/blog/12.jpg"],
+      "cover": [
+        "../images/blog/12.jpg"
+      ],
       "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
     },
     {
       "id": 13,
       "date": "20, April, 2018",
       "title": "Open Dialogue on Fintech",
-
       "desc": "A small river named Duden flows by their place and supplies it with the necessary regelialia.Lorem sed nonumy dolor dolore sit, amet et dolore sit sea vero et dolor dolor. \nEt sed et sit sadipscing sea ipsum et, dolor stet consetetur ipsum et sadipscing sea duo. Ut gubergren amet sed dolores voluptua, sit sanctus lorem rebum et tempor sit kasd sed eos, ipsum kasd sed.",
-      "cover": ["../images/blog/13.jpg"],
+      "cover": [
+        "../images/blog/13.jpg"
+      ],
       "paragraphs": "Labore stet nonumy eirmod ea justo clita, eos justo eos ut stet ipsum stet, sit elitr sed ut takimata invidunt.."
-
     }
   ],
   "team": [
