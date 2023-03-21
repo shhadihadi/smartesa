@@ -11,6 +11,8 @@ import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 
+import React from 'react'
+
 
 
 
@@ -48,7 +50,7 @@ const AboutUs = () => {
                
           action={
             <IconButton >
-              <DeleteOutlined />
+             
               <Link to={`/aboutEdit/${val.id}`}>
           < EditOutlined />
            </Link>
@@ -60,6 +62,14 @@ const AboutUs = () => {
                 
                
                 <h4 >{val.Paragraphs} </h4>
+                <h4>{val.Paragraphs?.split('\n').map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))} 
+                        </h4>
+              
               
           
             </Paper>
