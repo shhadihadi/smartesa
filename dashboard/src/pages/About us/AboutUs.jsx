@@ -61,7 +61,7 @@ const AboutUs = () => {
         />
                 
                
-                <h4 >{val.Paragraphs} </h4>
+                
                 <h4>{val.Paragraphs?.split('\n').map((line, index) => (
                           <React.Fragment key={index}>
                             {line}
