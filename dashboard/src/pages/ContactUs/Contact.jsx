@@ -15,6 +15,7 @@ import useFetch from '../../useFetch';
 import { IconButton } from '@mui/material';
 import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import { Link } from 'react-router-dom';
+import ContactHome from './ContactHome'
 
 
 const Contact = () => {
@@ -25,6 +26,9 @@ const Contact = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
+        <div className='Contact1'>
+        <ContactHome />
+       </div>
         <div className='Contact'>
           <h2>Contact Us</h2>
        
