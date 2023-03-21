@@ -1,7 +1,5 @@
 
-import './about.scss'
-import Sidebar from "../../components/sidebar/Sidebar"
-import Navbar from "../../components/navbar/Navbar"
+
 
 import useFetch from '../../useFetch';
 import { Link } from 'react-router-dom';
@@ -10,7 +8,6 @@ import { Grid , Paper} from '@mui/material';
 import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
-import AboutHome from './AboutHome'
 
 import React from 'react'
 
@@ -20,32 +17,23 @@ import React from 'react'
 
 
 
-const AboutUs = () => {
-  const { error, isPending, data: homeAbout } = useFetch('http://localhost:8000/homeAbout')
+const AboutHome = () => {
+  const { error, isPending, data: AboutUsHome } = useFetch('http://localhost:8000/AboutUsHome')
   
  
   return (
    
-    <div className="list">
-      <Sidebar/>
-      <div className="listContainer">
-        <Navbar/>
-         <h2 >About Us</h2>
-        <div className='details'> 
-       <AboutHome />
-       </div>
-    
-       <div className='details'> 
-       
-       <div>
+  
+     
+   
         
         
       <Grid container   spacing={5} >
         
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {homeAbout &&
-            homeAbout.map(val =>(
+        {AboutUsHome &&
+            AboutUsHome.map(val =>(
               
               <Grid item key={val.id} xs={12} md={12} lg={12}>
            
@@ -84,19 +72,15 @@ const AboutUs = () => {
         
             }  
            </Grid>
+               
+     
 
-              
-        </div> 
-
-
-</div>
-
+      
+     
     
-     </div>
-     </div> 
      
    
   )
 }
 
-export default AboutUs
+export default AboutHome
