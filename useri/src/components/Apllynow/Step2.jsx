@@ -4,89 +4,80 @@ import "./apply.css";
 function Step2({ nextStep, prevStep, handleChange, formData }) {
   return (
     <div className="applyformAMain">
-    <div className="exitformApply">exit</div>
+    <div className="exitformApply">close</div>
+    <div className="exitformApplysmallSCREEN">close</div>
     <div className="Formapplysetall">
-    <div className="morefordesidn"></div>
+    <div className="morefordesidn">
+      
+    <div className="fornbForm"><p>1</p></div>
+    <div className="activecolor">
+        <p>2</p>
+      </div>
+      <div className="fornbForm"><p>3</p></div>
+      </div>
     <div className="subMainFormApplyHadi">
     <form onSubmit={nextStep}>
-    <div className="formaWidhthundred">
-        <div className="field field_v1">
-      <label htmlFor="first-name" className="ha-screen-reader">
-        First name
-      </label>
-      <input
-        id="first-name"
-        className="field__input"
-        placeholder="e.g. Stanislav"
-      />
-      <span className="field__label-wrap" aria-hidden="true">
-        <span className="field__label">First name</span>
-      </span>
-    </div>
-    <div className="field field_v1">
-      <label htmlFor="Last-name" className="ha-screen-reader">
-        Last name
-      </label>
-      <input
-        id="first-name"
-        className="field__input"
-        placeholder="e.g. Stanislav"
-      />
-      <span className="field__label-wrap" aria-hidden="true">
-        <span className="field__label">Last name</span>
-      </span>
-    </div>
-    </div>
-    <div className="formaWidhthundred">
-        <div className="field field_v2">
-      <label htmlFor="first-name" className="ha-screen-reader">
-      Mobile Number
-      </label>
-      <input
-        id="first-name"
-        className="field__input"
-        placeholder="03837264"
-      />
-      <span className="field__label-wrap" aria-hidden="true">
-        <span className="field__label">Mobile Number</span>
-      </span>
-    </div>
-    <div className="field field_v3">
-      <label htmlFor="email" className="ha-screen-reader">
-        E-mail
-      </label>
-      <input
-        id="email"
-        className="field__input"
-        placeholder="e.g. melnik909@ya.ru"
-      />
-      <span className="field__label-wrap" aria-hidden="true">
-        <span className="field__label">E-mail</span>
-      </span>
-    </div>
-    </div>
-    <div className="formaWidhthundred" >
-        <div className="field field_v2" style={{justifyContent:"left"}}>
-      <label htmlFor="first-name" className="ha-screen-reader" style={{width:"200% !important"}}>
-      Mobile Number
-      </label>
-      <input
-        id="first-name"
-        className="field__input"
-        placeholder="03837264"
-        style={{width:"200% !important"}}
-      />
-      <span className="field__label-wrap" aria-hidden="true" style={{width:"200% !important"}}>
-        <span className="field__label" style={{width:"200% !important"}}>Mobile Number</span>
-      </span>
-    </div>
+      {/* <div className="flexforcheckButtons"> */}
 
+      <div className="boxesapplyKnow">
+        <p>SELECT THE CLOSEST ANSWER TO YOUR SITUATION</p>
+    <input type="checkbox" id="box-1" />
+    <label htmlFor="box-1">WE JUST HAVE AN IDEA</label>
+    {/* <input type="checkbox" id="box-2" defaultChecked />
+    <label htmlFor="box-2">Gentrify pickled kale chips </label> */}
+    <input type="checkbox" id="box-3" />
+    <label htmlFor="box-3">WE HAVE AN MVP AND WE ARE GENERATING SALES</label>
+  </div>
+  <div className="boxesapplyKnowB">
+        <p>WHICH INDUSTRIES DO YOU OPERATE IN ?</p>
+        <div className="dislpayAasrosAPPly">
+    <input type="checkbox" id="box-5" />
+    <label htmlFor="box-5">E-HEALTH</label>
+    <input type="checkbox" id="box-6" />
+    <label htmlFor="box-6">E-COMMERCE</label>
+    <input type="checkbox" id="box-7" />
+    <label htmlFor="box-7">MARKETPLACE</label>
+    <input type="checkbox" id="box-8" />
+    <label htmlFor="box-8">INSURTECH</label>
     </div>
-    {/* <div className="formaWidhthundred"> */}
-      <div className="asusaulDISPLAY">
-    <label for="message">Message</label>
-    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    <div className="dislpayAasrosAPPly">
+    <input type="checkbox" id="box-81" />
+    <label htmlFor="box-81">IOT</label>
+    <input type="checkbox" id="box-82" />
+    <label htmlFor="box-82">PRODUCT</label>  
+      <input type="checkbox" id="box-10" />
+    <label htmlFor="box-10">EDTECH</label>
     </div>
+    <div className="dislpayAasrosAPPly">
+    <input type="checkbox" id="box-11" />
+    <label htmlFor="box-11">TRAVEL TECHNOLOGY</label>   
+     <input type="checkbox" id="box-110" />
+    <label htmlFor="box-110">FINTECH</label>
+    <input type="checkbox" id="box-12" />
+    <label htmlFor="box-12">CONTECH</label>
+    </div>
+    <div className="dislpayAasrosAPPly">
+    <input type="checkbox" id="box-13" />
+    <label htmlFor="box-13">BEAUTY/FASHION/LUXURY</label>
+    <input type="checkbox" id="box-14" />
+    <label htmlFor="box-14">MEDIA TECHNOLOGY</label>
+    <input type="checkbox" id="box-15" />
+    <label htmlFor="box-15">SOFTWARE</label> 
+    </div> 
+    <div className="dislpayAasrosAPPly">
+      <input type="checkbox" id="box-16" />
+    <label htmlFor="box-16">FMCG</label>
+    <input type="checkbox" id="box-17" />
+    <label htmlFor="box-17">AGRICULTURE</label>   
+     <input type="checkbox" id="box-18" />
+    <label htmlFor="box-18">SPORTS</label>
+    </div>
+  
+
+  </div>
+      {/* </div> */}
+      
+
     {/* </div> */}
     <br />
       <button type="button" onClick={prevStep}>Back</button>
