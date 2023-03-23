@@ -1,14 +1,14 @@
 import React from "react"
 import Heading from "../common/heading/Heading"
-import PriceCard from "../pricing/PriceCard"
+import OurCommunity from "../pricing/OurCommunityID";
 
 const Hprice = () => {
   return (
     <>
       <section className='hprice padding'>
-        <Heading subtitle='OUR PRICING' title='Pricing & Packages' />
-        <div className='price container gridP'>
-          <PriceCard />
+        <Heading subtitle='OUR Community' title='Meet Our Community' />
+        <div>
+          <OurCommunity />
         </div>
       </section>
     </>

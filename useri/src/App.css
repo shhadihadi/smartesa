@@ -14,6 +14,12 @@ body {
   max-width: 84%;
   margin: auto;
 }
+
+.containerB {
+  max-width: 100%;
+  margin: auto;
+}
+
 .flexSB {
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,6 @@
 import React from "react";
 import Back from "../common/back/Back";
 import "./price.css";
-import Faq from "./Faq";
 import OurCommunity from "./OurCommunityID";
 import useFetch from "../useFetch";
 
