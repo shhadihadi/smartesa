@@ -1,13 +1,13 @@
 import React from "react"
 import Heading from "../common/heading/Heading"
-import OurCommunity from "../pricing/OurCommunityID";
+import OurCommunity from "./PriceCard";
 
 const Hprice = () => {
   return (
     <>
-      <section className='hprice padding'>
+      <section className='hprice paddingP'>
         <Heading subtitle='OUR Community' title='Meet Our Community' />
-        <div>
+        <div className="priceCO containerCO gridCO">
           <OurCommunity />
         </div>
       </section>

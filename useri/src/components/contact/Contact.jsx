@@ -70,7 +70,7 @@ const Contact = () => {
             <h1>Contact us</h1>
             <p>We're open for any suggestion or just to have a chat</p>
 
-            <div className='items grid2'>
+            <div className='items grid2C'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
                 <p>289 rue Clemenceau, Beirut, Lebanon</p>

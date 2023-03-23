@@ -11,8 +11,19 @@
   font-weight: 400;
 }
 .contacts p {
+  margin-left: 0%;
+  margin-right: 0%;
   color: grey;
+
 }
+
+.grid2C {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-content: space-around;
+}
+
 .contacts .items {
   margin: 30px 0;
 }

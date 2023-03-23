@@ -7,8 +7,6 @@ import useFetch from "../useFetch"
 const AboutCard = () => {
   const { error, isPending, data: homeAbout } = useFetch('http://localhost:8000/homeAbout')
 
-
-  // extract the "Paragraphs" array from the first object in the "AboutUsHome" array
   const paragraphs = homeAbout ? homeAbout[0].Paragraphs : null;
   return (
     <>
@@ -27,17 +25,14 @@ const AboutCard = () => {
           { paragraphs && 
               paragraphs?.split('\n').map((line, index) => (
                 <div className='item flexSB'>
-                                  {/* <div className='img'>
-                                    <img src={val.cover} alt='' />
-                                  </div> */}
-                                  <div className='text'>
-                                    
-                                    <p key={index}>{line}</p>
-                                  </div>
-                                </div>
+                  {/* <div className='img'>
+                    <img src={val.cover} alt='' />
+                  </div> */}
+                  <div className='text'>                                    
+                    <p key={index}>{line}</p>
+                  </div>
+                </div>
               ))}
-
-
             </div>
           </div>
         </div>
