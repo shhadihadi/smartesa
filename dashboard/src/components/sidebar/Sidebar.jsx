@@ -87,6 +87,7 @@ const Sidebar = () => {
             <span>CONTACT US</span>
           </li>
           </Link>
+          
           <Link to="/methotology" style={{ textDecoration: "none" }}>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
@@ -99,6 +100,7 @@ const Sidebar = () => {
             <span>Heards</span>
           </li>
           </Link>
+          
           <p className="title">USER</p>
           <Link to="/apply" style={{ textDecoration: "none" }}>
           <li>
@@ -111,6 +113,12 @@ const Sidebar = () => {
             <AccountCircleOutlinedIcon className="icon" />
             <span>FAQ</span>
           </li></Link>
+          <Link to="/subscribe" style={{ textDecoration: "none" }}>
+          <li>
+          <AccountCircleOutlinedIcon className="icon" />
+            <span>Subscribe</span>
+          </li>
+          </Link>
           <li>
             <ExitToAppIcon className="icon" />
             <span>Logout</span>
