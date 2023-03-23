@@ -11,6 +11,7 @@ import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 import {ImageListItem, ImageList,ImageListItemBar ,ListSubheader} from'@mui/material';
+import { red } from "@mui/material/colors";
 
 
 
@@ -28,9 +29,9 @@ const Articles = () => {
       
                
       
-      <ImageList sx={{ width: 1000, height: 450 }}>
+      <ImageList sx={{ width: 1000, height: 500}}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Events </ListSubheader>
+        <ListSubheader component="div" background="red">Events </ListSubheader>
       </ImageListItem>
       {blogs &&
       blogs.map((item) => (

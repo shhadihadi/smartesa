@@ -36,6 +36,8 @@ import ComunityById from "./pages/Commuinty/ComunityById";
 import SmartVideo from "./pages/smartTalk/SmartVideo";
 import Subscribe from'./pages/subscribe/Subscribe'
 import AboutHomeEdit from './pages/About us/AboutHomeEdit'
+import EditEventHome from "./pages/Events/EditEventHome";
+import SmartEdit from "./pages/smartTalk/SmartEdit";
 
 
 
@@ -132,6 +134,14 @@ function App() {
                <Route path="/MethoEdit/:id">
               <Route index element={<UpdateformMetho />} />
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
+
+               </Route>
+               <Route path="/editEventHome/:id">
+              <Route index element={<EditEventHome />} />
+
+              </Route>
+               <Route path="/smartEdit/:id">
+              <Route index element={<SmartEdit />} />
 
                </Route>
 

@@ -32,7 +32,7 @@
   "AboutUsHome": [
     {
       "title": "About Us",
-      "Paragraphs": "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success.\nSmart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs\nFounded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. \nwalaa nasser",
+      "Paragraphs": "Smart ESA is the ESA Business School Accelerator, working to transform creators into entrepreneurs by providing startups with a management toolbox for sustainable success.\nSmart ESA welcomes all entrepreneurs across Lebanon. +40 startups and +50 projects have graduated from the +10 programs\nFounded in 2017, Smart ESA is recognized as the most successful accelerator program in Lebanon. It was Elected best Accelerator in Lebanon in 2018  and won the Social Economic Awards in 2017. The startups in the portfolio are recognized as some of the most successful from Lebanon. \n",
       "id": 1
     }
   ],
@@ -45,9 +45,9 @@
   ],
   "EventsHome": [
     {
-      "id": 1,
       "title": "Events",
-      "Paragraphs": "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.\nNow, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!"
+      "Paragraphs": "Relive the magic of our past events! From stunning performances to engaging talks, our events have left a lasting impact on everyone who attended. Our carefully curated events are designed to bring people together and create unforgettable memories.\nNow, you can relive those special moments and memories by browsing through our collection of past events. From photos and videos to recaps and highlights, our archive offers a glimpse into the amazing experiences we've created. So come take a journey through time and see for yourself what makes our events so special!",
+      "id": 1
     }
   ],
   "awrapper": [
@@ -596,6 +596,10 @@
     {
       "email": "hadihadi@hotmail.com",
       "id": 4
+    },
+    {
+      "email": "ibrahim@hotmail.com",
+      "id": 5
     }
   ],
   "upload": [
