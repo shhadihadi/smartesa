@@ -25,12 +25,12 @@ const Contact = () => {
     <div className="list">
       <Sidebar/>
       <div className="listContainer">
-        <Navbar/>
+        <Navbar/><h2>Contact Us</h2>
         <div className='Contact1'>
         <ContactHome />
        </div>
         <div className='Contact'>
-          <h2>Contact Us</h2>
+          
        
        
           <TableContainer className="table">
