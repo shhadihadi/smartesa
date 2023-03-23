@@ -9,6 +9,7 @@ import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
 
+
 import React from 'react'
 
 
@@ -43,7 +44,7 @@ const ContactHome = () => {
           action={
             <IconButton >
              
-              <Link to={`/aboutEdit/${val.id}`}>
+              <Link to={`/editContact/${val.id}`}>
           < EditOutlined />
            </Link>
             </IconButton>
@@ -53,7 +54,9 @@ const ContactHome = () => {
         />
                 
                
-                
+                <h4><span>Address:</span>{val.address}</h4>
+                <h4><span>Phone:</span>{val.phone}</h4>
+                <h4><span>Email:</span>{val.email}</h4>
                 <h4>{val.Paragraphs?.split('\n').map((line, index) => (
                           <React.Fragment key={index}>
                             {line}

@@ -38,6 +38,7 @@ import Subscribe from'./pages/subscribe/Subscribe'
 import AboutHomeEdit from './pages/About us/AboutHomeEdit'
 import EditEventHome from "./pages/Events/EditEventHome";
 import SmartEdit from "./pages/smartTalk/SmartEdit";
+import EditContact from "./pages/ContactUs/EditContact";
 
 
 
@@ -142,6 +143,10 @@ function App() {
               </Route>
                <Route path="/smartEdit/:id">
               <Route index element={<SmartEdit />} />
+
+              </Route>
+               <Route path="/editContact/:id">
+              <Route index element={<EditContact />} />
 
                </Route>
 

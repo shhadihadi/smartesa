@@ -21,12 +21,12 @@
   ],
   "ContactHome": [
     {
-      "id": 1,
-      "title": "Contact",
+      "title": "Contact Home",
       "address": "289 rue Clemenceau, Beirut, Lebanon",
       "phone": "+961 1 373 373",
       "email": "smartesa@esa.edu.lb",
-      "Paragraphs": "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.\nDon't hesitate to reach out and start a conversation - we can't wait to hear from you!"
+      "Paragraphs": "Connecting with us is just a click away! Whether you have a question, comment, or just want to say hello, we're always here to listen.\nDon't hesitate to reach out and start a conversation - we can't wait to hear from you!\n\n",
+      "id": 1
     }
   ],
   "AboutUsHome": [
