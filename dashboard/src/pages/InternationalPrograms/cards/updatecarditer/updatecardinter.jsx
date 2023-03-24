@@ -18,6 +18,9 @@ function Updatecardinter() {
   const [text, setText] = useState("");
   const [prevCover, setPrevCover] = useState("");
   const [prevCourTeacher, setPrevCourTeacher] = useState([]);
+  const [AboutALL, setAboutALL] = useState("");
+  const [detailsimg, setdetailsimg] = useState([]);
+  const [predetailsimg,setpredetailsimg] = useState([]);
 
   // fetch the data for the card with the given id on component mount
   useEffect(() => {
@@ -27,8 +30,9 @@ function Updatecardinter() {
         setCoursesName(data.coursesName);
         setPrevCover(data.cover);
         setCover(data.cover);
-        setCourTeacher(data.courTeacher)
-    
+        setCourTeacher(data.courTeacher);
+        setdetailsimg(data.detailsimg);
+        setAboutALL(data.AboutALL);
         setTARGET(data.TARGET);
         setSECTOR(data.SECTOR);
         setOBJECTIVE(data.OBJECTIVE);
@@ -74,6 +78,29 @@ function Updatecardinter() {
       reader.readAsDataURL(file);
     });
   };
+  const HANDELmoreInfoIMG = (e) => {
+    const files = Array.from(e.target.files);
+    const images = [];
+    // setCommunityimg([null]);
+
+      // Check if there are any new images
+      if (files.length === 0) {
+        return;
+      }
+    files.forEach((file) => {
+      const reader = new FileReader();
+      // setCommunityimg = null;
+      // setCommunityimg([null])
+
+      reader.onload = () => {
+        images.push(reader.result);
+        setdetailsimg([...predetailsimg, ...images]);
+      };
+
+      reader.readAsDataURL(file);
+    });
+    
+  };
   // handle the form submit event
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -87,7 +114,9 @@ function Updatecardinter() {
       TYPE,
       text,
       cover: prevCover,
-      // courTeacher,
+      AboutALL,
+      detailsimg:detailsimg,
+
       courTeacher: courTeacher,
     };
 
@@ -182,6 +211,12 @@ function Updatecardinter() {
                 <h3>Images</h3>
                 <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
                  onChange={handleHoverCoverChange}/>
+
+          <h3 style={{marginLeft:"70px"}}>Info</h3>
+                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                
+                onChange={HANDELmoreInfoIMG}
+                 />
                 
                 </div>
                 <div className="asoneRowHadi">
@@ -190,6 +225,15 @@ function Updatecardinter() {
                 onChange={(e) => setText(e.target.value)}
                 
                 ></textarea>
+                
+                </div>
+                <div style={{marginTop:"-45px"}} className="asoneRowHadi">
+                <h3>MoreInfo</h3>
+                <textarea id="message" cols="30" rows="10" placeholder="Message" value={AboutALL}
+                onChange={(e) => setAboutALL(e.target.value)}
+                
+                ></textarea>
+                
                 </div>
                 
 
