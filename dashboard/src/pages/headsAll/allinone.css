@@ -1,35 +1,80 @@
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.allnavsinonehadi{
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 400px; */
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: space-between;
+  /* background-color: brown; */
+}
+.cardofourTeam{
+  /* height: 200px; */
+  /* background-color:aqua; */
+  width:490px;
+  display: flex;
+  margin-top: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+.firstForImage{
+width: 32%;
+height: 100%;
+/* background-color: rgb(108, 165, 42); */
+border-right: 1px solid;
+
+}
+.firstForImage img{
+  width: 100%;
+  margin-top: 5px;
+  /* margin-bottom: auto; */
+}
+.MasterTextData{
+  height: 27%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  border-bottom: 1px solid;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+.ForInfoTeamss{
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
 }
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.AllInfoTeams{
+  height:73%;
+  width: 100%;
+  /* background-color: rgb(226, 214, 43); */
+  text-align: center;
 }
+.AllInfoTeams p{
+  /* padding-top: 5px; */
+  width:96%
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;}
+}
+.editANDdELETEtEAM{
+  width: 10%;
+  height: 100%;
+  /* background-color: rgb(226, 43, 186); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 1px solid;
+  /* padding-left: 10px; */
+
+
+}
+.JobnamePfTeam{
+  text-align: right;
+}
+.JobnamePfTeam p{
+  padding-right: 20px;
+}
+.namePfTeam p{
+  padding-left: 20px;
+  margin-top: 4px;
+}

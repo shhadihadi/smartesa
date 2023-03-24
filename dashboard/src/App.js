@@ -13,7 +13,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/smartTalk/SmartTalk'
+import SmartTalk from './pages/SmartTalk/SmartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -33,12 +33,14 @@ import Createcom from "./pages/Commuinty/crud/Creatcom";
 import Updatecom from "./pages/Commuinty/crud/Updatecom";
 import Internationalid from "./pages/InternationalPrograms/internationalid";
 import ComunityById from "./pages/Commuinty/ComunityById";
-import SmartVideo from "./pages/smartTalk/SmartVideo";
+import SmartVideo from "./pages/SmartTalk/SmartVideo";
 import Subscribe from'./pages/subscribe/Subscribe'
 import AboutHomeEdit from './pages/About us/AboutHomeEdit'
 import EditEventHome from "./pages/Events/EditEventHome";
-import SmartEdit from "./pages/smartTalk/SmartEdit";
+import SmartEdit from "./pages/SmartTalk/SmartEdit";
 import EditContact from "./pages/ContactUs/EditContact";
+import AddTeam from "./pages/headsAll/AddTeam";
+import EditTeamProfile from "./pages/headsAll/EditTeamProfile";
 
 
 
@@ -160,6 +162,12 @@ function App() {
 
                <Route path="/intro/new">
               <Route index element={<CreateIntroCard />} />
+               </Route>
+               <Route path="/team/new">
+              <Route index element={<AddTeam />} />
+               </Route>
+               <Route path="/updateTeam/:id">
+              <Route index element={<EditTeamProfile />} />
                </Route>
                <Route path="/createcom">
               <Route index element={<Createcom />} />
