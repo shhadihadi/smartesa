@@ -5,28 +5,11 @@ import { Box } from '@mui/material';
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import { useEffect, useState } from 'react';
-import SubAction from './SubAction';
+
 import './sub.scss'
+import { DeleteOutlined } from '@mui/icons-material';
 
-const columns = [
-  { field: 'id', headerName: 'ID', width: 300 },
 
-  {
-    field: 'email',
-    headerName: 'Email',
-    type: 'email',
-    width: 300,
-  },
-  {
-    field: 'actions',
-    headerName: 'Actions',
-    type: 'actions',
-    width: 300,
-    renderCell: (params) => (
-      <SubAction />
-       ),
-        },
-];
 
 
 
@@ -40,6 +23,48 @@ const Subscribe= () => {
           .then((data) => setTableData(data))
       }, [])
        console.log(tableData)
+       
+   
+  const handledelete = (id) => {
+    fetch(`http://localhost:8000/subscribe/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      // history.push('/');
+      window.location.reload();
+      
+    });
+  };
+
+      const columns = [
+        { field: 'id', headerName: 'ID', width: 300 },
+      
+        {
+          field: 'email',
+          headerName: 'Email',
+          type: 'email',
+          width: 300,
+        },
+        {
+          field: 'actions',
+          headerName: 'Actions',
+          type: 'actions',
+          width: 300,
+          renderCell: (params) => {
+            return (
+              <div className="cellAction">
+               
+                <div
+                  className="deleteButton"
+                  onClick={() => handledelete(params.row.id)}
+                >
+               <DeleteOutlined />
+                </div>
+              </div>
+            );
+            },
+              },
+      ];
+
 
  return (
     <div className="list">
