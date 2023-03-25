@@ -97,7 +97,7 @@ const Sidebar = () => {
           <Link to="/allinnone" style={{ textDecoration: "none" }}>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Heards</span>
+            <span>Teams</span>
           </li>
           </Link>
           

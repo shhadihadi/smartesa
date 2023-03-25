@@ -10,12 +10,15 @@ function CreateIntroCard() {
   const [coursesName, setcoursesName] = useState(""); 
   const [cover, setcover] = useState(null);
   const [courTeacher, setcourTeacher] = useState([]);
+  const [detailsimg, setdetailsimg] = useState([]);
     const [TARGET, setTARGET] = useState("");
   const [SECTOR, setSECTOR] = useState("");
   const [OBJECTIVE, setOBJECTIVE] = useState("");
   const [DURATION, setDURATION] = useState("");
   const [TYPE, setTYPE] = useState("");
   const [text, settext] = useState("");
+  const [AboutALL, setAboutALL] = useState("");
+  
 
   const handleCoverChange = (e) => {
     const reader = new FileReader();
@@ -38,6 +41,21 @@ function CreateIntroCard() {
       reader.readAsDataURL(file);
     });
   };
+  const handleInfoImageChange = (e) => {
+    const files = Array.from(e.target.files);
+    const images = [];  
+    files.forEach((file) => {
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        images.push(reader.result);
+        setdetailsimg([...detailsimg, ...images]);
+        
+      };
+  
+      reader.readAsDataURL(file);
+    });
+  };
   
 
 
@@ -47,8 +65,9 @@ function CreateIntroCard() {
       coursesName,
       TARGET,SECTOR,OBJECTIVE,DURATION,TYPE,
       courTeacher: courTeacher,
-      text,
+      text,AboutALL,
       cover: cover,
+      detailsimg:detailsimg,
       id: Math.floor(Math.random() * 1000) + 1, // generate a random ID
     };
 
@@ -69,12 +88,14 @@ function CreateIntroCard() {
     setcoursesName('');
      setcover('');
       setcourTeacher('');
+      setdetailsimg('');
        setTARGET('');
         setSECTOR('');
          setOBJECTIVE(''); 
          setDURATION(''); 
          setTYPE(''); 
          settext('');
+         setAboutALL('');
 
   
   };
@@ -150,9 +171,14 @@ function CreateIntroCard() {
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Images</h3>
-                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpg, image/jpeg "
                 
                 onChange={handleHoverCoverChange}
+                 />
+                   <h3 style={{marginLeft:"70px"}}>Info</h3>
+                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg "
+                
+                onChange={handleInfoImageChange}
                  />
                 
                 </div>
@@ -161,6 +187,14 @@ function CreateIntroCard() {
                 <textarea  cols="30" rows="10" placeholder="Message" 
                 value={text}
                 onChange={(e) =>settext(e.target.value)}
+                
+                ></textarea>
+                </div>
+                <div className="asoneRowHadi">
+                <h3>Details</h3>
+                <textarea  cols="30" rows="10" placeholder="Message" 
+                value={AboutALL}
+                onChange={(e) =>setAboutALL(e.target.value)}
                 
                 ></textarea>
                 </div>
