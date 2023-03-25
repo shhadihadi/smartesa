@@ -38,7 +38,7 @@ const Events = () => {
           </div>
 
           <div className='events'>  
-      <Grid container   spacing={5}>
+      <Grid container   spacing={6} >
         
         {/* { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
