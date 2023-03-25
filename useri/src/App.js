@@ -11,9 +11,7 @@ import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import CourseCardId from "./components/allcourses/coursecartById/coursecardid"
 import Event from "./components/byID/event/Event"
-// import Community from "./components/byID/ourcommunity/Community"
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import MultiStepForm from "./components/Apllynow/MultiStepForm"
 
 function App() {
   return (
@@ -30,6 +28,7 @@ function App() {
           <Route  path='/contact' element ={<Contact />} />
           <Route  path="/coursesCard/:id" element ={<CourseCardId />} />
           <Route exact path="/Event/:id" element ={<Event />} />
+          <Route exact  path='/Apply' element ={<MultiStepForm />} />
           {/* <Route exact path="/OurCommunity/:id" element ={<Community/>} />
            */}
         </Routes>

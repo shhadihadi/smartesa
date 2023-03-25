@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import useFetch from "../useFetch";
 
-
 const VideoPopup = ({ videoUrl, onClose }) => {
   const videoId = videoUrl.split('v=')[1];
   const videoUrlWithParams = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
