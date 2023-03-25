@@ -25,7 +25,7 @@ const SmartVideo = () => {
   
  
   return (
-  <div className='smartTalk'>
+  <div className='smartTalk1'>
      
      <Grid container   spacing={3}>
         
@@ -38,17 +38,12 @@ const SmartVideo = () => {
                
                 
                    <Paper>
-                 <div className="imgreight">
-                      <img src={val.cover} alt="Cover" />
-                      <Link>
-             {val.cover}
-             </Link>
-                    </div>
+                 
                     <CardHeader 
             action={
               <IconButton >
                 <DeleteOutlined />
-                <Link to={`/aboutEdit/${val.id}`}>
+                <Link to={`/smartEditVideo/${val.id}`}>
             < EditOutlined />
              </Link>
              
@@ -57,6 +52,10 @@ const SmartVideo = () => {
             title={val.title}
           //   subheader={val.Paragraph}
           />
+                <div className="imgreight">
+                      <img src={val.cover} alt="Cover" />
+                     
+                    </div>
             </Paper>
             
             </Grid>

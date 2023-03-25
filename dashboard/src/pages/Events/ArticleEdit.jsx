@@ -10,8 +10,11 @@ function ArticleEdit() {
   const [coverFile, setCoverFile] = useState(null);
  
   const [title, setTitle] = useState("");
+   
+  const [date, setDate] = useState("");
   const [desc, setDesc] = useState("");
-  const [cover, setCover] = useState("");
+  const [communityimg, setCommunityimg] = useState([]);
+  const [precommunityimg, sepretCommunityimg] = useState([]);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -31,8 +34,10 @@ function ArticleEdit() {
       .then((data) => {
         // setId(data.id);
         setTitle(data.title);
+        setDate(data.date);
         setDesc(data.desc);
-        setCover(data.cover);
+        // setCover(data.cover);
+        setCommunityimg(data.communityimg);
       })
       .catch((err) => {
         console.log(err.message);
@@ -40,7 +45,26 @@ function ArticleEdit() {
   }, [id]);
 
   const handleCoverChange = (e) => {
-    setCover(e.target.files[0]);
+    const files = Array.from(e.target.files);
+    const images = [];
+    setCommunityimg([null]);
+
+      // Check if there are any new images
+      if (files.length === 0) {
+        return;
+      }
+    files.forEach((file) => {
+      const reader = new FileReader();
+      // setCommunityimg = null;
+      // setCommunityimg([null])
+
+      reader.onload = () => {
+        images.push(reader.result);
+        setCommunityimg([...precommunityimg, ...images]);
+      };
+
+      reader.readAsDataURL(file);
+    });
   };
 
  
@@ -48,7 +72,7 @@ function ArticleEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let coverPath = cover;
+    let coverPath = communityimg;
     if (coverFile) {
       coverPath = await saveFileToDirectory(coverFile, "cover");
     }
@@ -57,8 +81,9 @@ function ArticleEdit() {
 
     const updatedOnline = {
       title,
+      date,
       desc,
-      cover: coverPath,
+      communityimg: communityimg,
       
     };
 
@@ -104,15 +129,20 @@ function ArticleEdit() {
                     value={id}
                 
                   />
-                  <p>Course Name</p>
+                  <p>Title Events</p>
                   <input
                     type="text"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                   />
+               <p>Date</p>
+                  <input
+                    type="text"
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                  />
                
-               
-                  <p>Text</p>
+                  <p>Paragraphs</p>
                   <textarea
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
@@ -120,9 +150,9 @@ function ArticleEdit() {
               
                
                   <p>Cover</p>
-                  <input
-                    type="file"
-                    accept="image/*"
+                  
+                  <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                   
                     onChange={handleCoverChange}
                   />
                 
