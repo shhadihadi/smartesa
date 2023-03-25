@@ -1,11 +1,14 @@
 import React from "react"
 import Heading from "../../common/heading/Heading"
 import "./Hero.css"
+import useFetch from "../../useFetch"
 
 const Hero = () => {
+  const { error, isPending, data: backImages } = useFetch('http://localhost:8000/backImages');
   return (
     <>
-      <section className='hero'>
+    {backImages && backImages[0] && (
+      <section className='hero' style={{backgroundImage: `url(${backImages[0].coverIamge})`}}>
         <div className='container'>
           <div className='row'>
             <Heading subtitle='WELCOME TO SMART ESA' title='Leading startup and corporate accelerator in Lebanon' />
@@ -20,7 +23,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> )}
       <div className='margin'></div>
     </>
   )

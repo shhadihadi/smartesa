@@ -155,7 +155,7 @@ p {
   padding-bottom: 20px;
 }
 .back {
-  background-image: url("../public/images/back.png");
+  /* background-image: url("../public/images/back.png"); */
   background-size: cover;
   background-attachment: fixed;
   position: absolute;

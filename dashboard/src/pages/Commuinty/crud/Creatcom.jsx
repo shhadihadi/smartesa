@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 function Createcom() {
 
-  const [price, setPrice] = useState("");
-  const [name, setName] = useState("");
-  const [desc, setDesc] = useState("");
+  const [nb, setnb] = useState("");
+  const [title, settitle] = useState("");
+  const [paragraphs, setparagraphs] = useState("");
   const [communityimg, setCommunityimg] = useState([]);
 
   const handleUPUAD = (e) => {
@@ -31,14 +31,14 @@ function Createcom() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const intercards = {
-      name,
-      price,
-      desc,
+      title,
+      nb,
+      paragraphs,
       communityimg: communityimg,
       id: Math.floor(Math.random() * 1000) + 1, // generate a random ID
     };
 
-    fetch('http://localhost:8000/price/', {
+    fetch('http://localhost:8000/ourcommunity/', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(intercards)
@@ -52,9 +52,9 @@ function Createcom() {
       });
 
     // Reset the form fields
-    setPrice('');
-    setName('');
-     setDesc('');
+    setnb('');
+    settitle('');
+     setparagraphs('');
       setCommunityimg('');
   
 
@@ -80,16 +80,16 @@ function Createcom() {
                     <h3>Communimty Name</h3>
                     <input
                       type="text"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      value={title}
+                      onChange={(e) => settitle(e.target.value)}
                     />
                   </div>
                   <div className="asoneRowHadi">
                     <h3>Cover Name</h3>
                     <input
                       type="text"
-                      value={price}
-                      onChange={(e) => setPrice(e.target.value)}
+                      value={nb}
+                      onChange={(e) => setnb(e.target.value)}
                     />
                       <button >submit</button>
                   </div>
@@ -103,7 +103,7 @@ function Createcom() {
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
                 <textarea  cols="30" rows="10" placeholder="Message" 
-                onChange={(e) =>setDesc(e.target.value)}
+                onChange={(e) =>setparagraphs(e.target.value)}
                 
                 ></textarea>
                 </div>

@@ -27,6 +27,7 @@ const OurCommunityID = () => {
             </div>
             {val.communityimg.length > 0 && (
                 <div className="image-container">
+                  
                     {val.communityimg.map((img, index) => (
                         <img key={index} src={img} alt="" />
                     ))}

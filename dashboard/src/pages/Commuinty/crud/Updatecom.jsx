@@ -9,20 +9,20 @@ function Updatecom() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [price, setPrice] = useState("");
-  const [name, setName] = useState("");
-  const [desc, setDesc] = useState("");
+  const [nb, setnb] = useState("");
+  const [title, settitle] = useState("");
+  const [paragraphs, setparagraphs] = useState("");
   const [communityimg, setCommunityimg] = useState([]);
   const [precommunityimg, sepretCommunityimg] = useState([]);
 
   // fetch the data for the card with the given id on component mount
   useEffect(() => {
-    fetch(`http://localhost:8000/price/${id}`)
+    fetch(`http://localhost:8000/ourcommunity/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setPrice(data.price);
-        setName(data.name);
-        setDesc(data.desc);
+        setnb(data.nb);
+        settitle(data.title);
+        setparagraphs(data.paragraphs);
         // sepretCommunityimg(data.communityimg);
         setCommunityimg(data.communityimg);
       })
@@ -76,19 +76,24 @@ function Updatecom() {
   };
 ;
 
+const Clearphotos = async (e) =>{
+  setCommunityimg (precommunityimg);
+}
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const updatedCard = {
-      name,
-      price,
-      desc,
+      title,
+      nb,
+      paragraphs,
       communityimg: communityimg,
     };
 
     // update the card with the given id on the server
     try {
-      const response = await fetch(`http://localhost:8000/price/${id}`, {
+      const response = await fetch(`http://localhost:8000/ourcommunity/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedCard),
@@ -116,16 +121,16 @@ function Updatecom() {
                   <h3>Communimty Name</h3>
                   <input
                     type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={title}
+                    onChange={(e) => settitle(e.target.value)}
                   />
                 </div>
                 <div className="asoneRowHadi">
                   <h3>Cover Name</h3>
                   <input
                     type="text"
-                    value={desc}
-                    onChange={(e) => setDesc(e.target.value)}
+                    value={nb}
+                    onChange={(e) => setnb(e.target.value)}
                   />
                   <button>submit</button>
                 </div>
@@ -134,13 +139,14 @@ function Updatecom() {
                 <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
                 onChange={hadi}
                  />
+                 <button style={{backgroundColor:"brown"}} onClick={Clearphotos}>clear</button>
                 
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
                 <textarea  cols="30" rows="10" placeholder="Message" 
-                value={desc}
-                onChange={(e) =>setDesc(e.target.value)}
+                value={paragraphs}
+                onChange={(e) =>setparagraphs(e.target.value)}
                 
                 ></textarea>
                 </div>
