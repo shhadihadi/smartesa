@@ -9,6 +9,7 @@ import { Grid , Paper} from '@mui/material';
 
 import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
+
 import CardHeader from '@mui/material/CardHeader'
 import {ImageListItem, ImageList,ImageListItemBar ,ListSubheader} from'@mui/material';
 import { red } from "@mui/material/colors";
@@ -21,6 +22,16 @@ import { red } from "@mui/material/colors";
 
 const Articles = () => {
   const { error, isPending, data: blogs} = useFetch('http://localhost:8000/blogs')
+
+  const handledelete = (id) => {
+    fetch(`http://localhost:8000/blogs/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      // history.push('/');
+      window.location.reload();
+      
+    });
+  };
   
  
   return (
@@ -38,14 +49,15 @@ const Articles = () => {
         //  <Link to={`/aboutEdit/${item.id}`}>
         
         <ImageListItem key={item.cover}> 
-        
+         {/* <IconButton>{item.date}</IconButton> */}
           <img
             src={`${item.cover}?w=248&fit=crop&auto=format`}
             srcSet={`${item.cover}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
-            date={item.date}
-          />
+            
+          /> 
+        
           <ImageListItemBar
             title={item.title}
             subtitle={item.title}
@@ -55,7 +67,14 @@ const Articles = () => {
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-                 <DeleteOutlined />
+                <IconButton
+                background=" #3f4580">
+
+                  {item.date}
+                </IconButton>
+                <DeleteOutlined 
+                          onClick={() => handledelete(item.id)}
+                          />
               <Link to={`/articleEdit/${item.id}`}>
           < EditOutlined />
            </Link>
