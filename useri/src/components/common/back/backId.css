@@ -42,6 +42,33 @@
     text-align: left;
   }
 
+  @media screen and (max-width: 1468px)  {
+    .backId {
+      
+      background-position: center;
+      background-size: cover;
+      padding-top: 480px;
+      padding-left: 100px;
+      height: 90vh!important;
+      width: 100% !important;
+    }
+    .backId h1 {
+      font-size: 43px;
+      font-weight: 300;
+      width: 100%;
+      margin-top: -270px;
+      margin-left: -80px;
+    }
+    .backId p {
+      margin-left: 50px;
+      margin-top: 4px;
+      width: 122%;
+      margin-bottom: 10px !important;
+      text-align: left;
+      line-height: 30px
+    }
+  }
+
   @media screen and (min-width: 1461px)  {
     .backId {
       
