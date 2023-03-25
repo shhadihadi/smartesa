@@ -21,6 +21,13 @@ const SmartTalk = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
+        <div className="datatable">
+        <div className="datatableTitle">
+              Add New Video
+              <Link to="/addVideo" className="link">
+                Add New
+              </Link>
+            </div>
         <div className='smartTalk'>
         <Grid container   spacing={5}>
         
@@ -70,7 +77,7 @@ const SmartTalk = () => {
         <div className='smartTalk1'>
         
        <SmartVideo />
-        </div>
+        </div></div>
       </div>
     </div>
   )

@@ -42,6 +42,7 @@ import EditContact from "./pages/ContactUs/EditContact";
 import AddTeam from "./pages/headsAll/AddTeam";
 import EditTeamProfile from "./pages/headsAll/EditTeamProfile";
 import UpdateMainPics from "./pages/list/UpdateMainPics";
+import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
 
 
 
@@ -138,6 +139,9 @@ function App() {
             <Route path="/aboutHomeEdit/:id">
               <Route index element={<AboutHomeEdit />} />
 
+              </Route>
+            <Route path="/smartEditVideo/:id">
+              <Route index element={<SmartEditVideo />} />
                </Route>
                <Route path="/MethoEdit/:id">
               <Route index element={<UpdateformMetho />} />
