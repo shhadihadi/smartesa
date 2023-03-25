@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 // import IconButton from '@mui/material/IconButton'
 // import CardHeader from '@mui/material/CardHeader'
 import Articles from'./Articles'
+import EventsHome from './EventsHome';
 
 
 const Events = () => {
@@ -22,6 +23,7 @@ const Events = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
+
         <div className="datatable">
             <div className="datatableTitle">
               Add New Articles
@@ -32,8 +34,10 @@ const Events = () => {
            
        
         <div className='events1'>
-          
-            
+          <EventsHome />
+          </div>
+
+          <div className='events'>  
       <Grid container   spacing={5}>
         
         {/* { error && <div>{ error }</div> }

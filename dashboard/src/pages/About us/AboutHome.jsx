@@ -1,41 +1,49 @@
-import React from 'react'
 
-import Sidebar from "../../components/sidebar/Sidebar"
-import Navbar from "../../components/navbar/Navbar"
-import './smartTalk.scss'
-import useFetch from '../../useFetch'
+
+
+import useFetch from '../../useFetch';
 import { Link } from 'react-router-dom';
 import { Grid , Paper} from '@mui/material';
 
-import {DeleteOutlined,  EditOutlined} from'@mui/icons-material';
+import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
-import SmartVideo from './SmartVideo'
+
+import React from 'react'
 
 
-const SmartTalk = () => {
-  const { error, isPending, data: SamartTalkHome } = useFetch('http://localhost:8000/SamartTalkHome')
+
+
+
+
+
+const AboutHome = () => {
+  const { error, isPending, data: AboutUsHome } = useFetch('http://localhost:8000/AboutUsHome')
+  
+ 
   return (
-    <div className="list">
-      <Sidebar/>
-      <div className="listContainer">
-        <Navbar/>
-        <div className='smartTalk'>
-        <Grid container   spacing={5}>
+   
+  
+     
+   
+        
+        
+      <Grid container   spacing={5} >
         
         { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-        {SamartTalkHome &&
-            SamartTalkHome.map(val =>(
+        {AboutUsHome &&
+            AboutUsHome.map(val =>(
               
               <Grid item key={val.id} xs={12} md={12} lg={12}>
            
                <Paper>
                <CardHeader 
+               
           action={
             <IconButton >
              
-              <Link to={`/smartEdit/${val.id}`}>
+              <Link to={`/aboutHomeEdit/${val.id}`}>
           < EditOutlined />
            </Link>
             </IconButton>
@@ -45,6 +53,7 @@ const SmartTalk = () => {
         />
                 
                
+                
                 <h4>{val.Paragraphs?.split('\n').map((line, index) => (
                           <React.Fragment key={index}>
                             {line}
@@ -52,6 +61,7 @@ const SmartTalk = () => {
                           </React.Fragment>
                         ))} 
                         </h4>
+              
               
           
             </Paper>
@@ -63,16 +73,14 @@ const SmartTalk = () => {
             }  
            </Grid>
                
-         
-          
-        </div>
-        <div className='smartTalk1'>
-        
-       <SmartVideo />
-        </div>
-      </div>
-    </div>
+     
+
+      
+     
+    
+     
+   
   )
 }
 
-export default  SmartTalk
+export default AboutHome

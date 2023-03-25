@@ -13,7 +13,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/SmartTalk/SmartTalk'
+import SmartTalk from './pages/smartTalk/SmartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -33,7 +33,12 @@ import Createcom from "./pages/Commuinty/crud/Creatcom";
 import Updatecom from "./pages/Commuinty/crud/Updatecom";
 import Internationalid from "./pages/InternationalPrograms/internationalid";
 import ComunityById from "./pages/Commuinty/ComunityById";
-
+import SmartVideo from "./pages/smartTalk/SmartVideo";
+import Subscribe from'./pages/subscribe/Subscribe'
+import AboutHomeEdit from './pages/About us/AboutHomeEdit'
+import EditEventHome from "./pages/Events/EditEventHome";
+import SmartEdit from "./pages/smartTalk/SmartEdit";
+import EditContact from "./pages/ContactUs/EditContact";
 
 
 
@@ -122,11 +127,26 @@ function App() {
             <Route path="/aboutEdit/:id">
               <Route index element={<AboutEdit />} />
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
+               </Route>
+            <Route path="/aboutHomeEdit/:id">
+              <Route index element={<AboutHomeEdit />} />
 
                </Route>
                <Route path="/MethoEdit/:id">
               <Route index element={<UpdateformMetho />} />
                {/* <Route path='/aboutedit/:aboutid' element={<AboutEdit />}></Route> */}
+
+               </Route>
+               <Route path="/editEventHome/:id">
+              <Route index element={<EditEventHome />} />
+
+              </Route>
+               <Route path="/smartEdit/:id">
+              <Route index element={<SmartEdit />} />
+
+              </Route>
+               <Route path="/editContact/:id">
+              <Route index element={<EditContact />} />
 
                </Route>
 
@@ -157,6 +177,15 @@ function App() {
             <Route path="/addArticles">
               <Route index element={<AddArticles />} />
 
+
+              </Route>
+            <Route path="/smartVideo">
+              <Route index element={<SmartVideo />} />
+
+
+              </Route>
+            <Route path="/subscribe">
+              <Route index element={<Subscribe />} />
             </Route>
             </Route>
           

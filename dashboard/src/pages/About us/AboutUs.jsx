@@ -10,6 +10,9 @@ import { Grid , Paper} from '@mui/material';
 import {DeleteOutlined, Edit, EditOutlined} from'@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
 import CardHeader from '@mui/material/CardHeader'
+import AboutHome from './AboutHome'
+
+import React from 'react'
 
 
 
@@ -27,8 +30,11 @@ const AboutUs = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-     
-     <h2 >About Us</h2>
+         <h2 >About Us</h2>
+        <div className='details'> 
+       <AboutHome />
+       </div>
+    
        <div className='details'> 
        
        <div>
@@ -48,7 +54,7 @@ const AboutUs = () => {
                
           action={
             <IconButton >
-              <DeleteOutlined />
+             
               <Link to={`/aboutEdit/${val.id}`}>
           < EditOutlined />
            </Link>
@@ -59,7 +65,15 @@ const AboutUs = () => {
         />
                 
                
-                <h4 >{val.Paragraphs} </h4>
+                
+                <h4>{val.Paragraphs?.split('\n').map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))} 
+                        </h4>
+              
               
           
             </Paper>
@@ -70,24 +84,14 @@ const AboutUs = () => {
         
             }  
            </Grid>
-               
+
+              
         </div> 
 
+
 </div>
-      
-      {/* <Container>
-      <Grid container spacing={3}>
-      { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-        {AboutJs &&
-            AboutJs.map(val =>(
-          <Grid item xs={12} md={6} lg={4} key={val.id}>
-            <AboutCard AboutJs={val}  />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-       */}
+
+    
      </div>
      </div> 
      
