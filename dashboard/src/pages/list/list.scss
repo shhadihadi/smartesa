@@ -5,3 +5,49 @@
     flex: 6;
   }
 }
+
+.forImageContainer{
+  display: flex;
+  width: 94%;
+  flex-wrap: wrap;
+  // height: 400px;
+  // background-color: aqua;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.displaymyImageHere{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 245px;
+  width: 250px;
+  // background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+.forTextBACKK{
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  // background-color: blueviolet;
+}
+.forTextBACKK h3{
+  padding-top: 7px;
+}
+.forImageeBACKK{
+  width: 100%;
+  height: 70%;
+  // background-color: rgb(34, 4, 63);
+}
+.forImageeBACKK img{
+  width:100%
+}
+.forEDIITBACKK{
+  width: 100%;
+  height: 15%;
+  // background-color: rgb(43, 226, 73);
+  // border-top: 1px solid;
+  text-align: center;
+}

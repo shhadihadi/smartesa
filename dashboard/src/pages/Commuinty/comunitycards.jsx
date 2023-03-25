@@ -82,6 +82,7 @@ function Comunitycards() {
           </div>
           </div>
            <div className="nonamedisplay">
+            <div className="image-container">
           {val.communityimg.map((source) => (
                       <>
                       
@@ -92,6 +93,7 @@ function Comunitycards() {
                       
                       </>
                     ))}
+                    </div>
           </div> 
           
           </div>
