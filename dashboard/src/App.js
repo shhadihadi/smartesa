@@ -41,6 +41,7 @@ import SmartEdit from "./pages/smartTalk/SmartEdit";
 import EditContact from "./pages/ContactUs/EditContact";
 import AddTeam from "./pages/headsAll/AddTeam";
 import EditTeamProfile from "./pages/headsAll/EditTeamProfile";
+import UpdateMainPics from "./pages/list/UpdateMainPics";
 
 
 
@@ -103,6 +104,10 @@ function App() {
 
               <Route path="international/:id">
               <Route index element={<Internationalid />} />
+
+              </Route>
+              <Route path="updateMainPics/:id">
+              <Route index element={<UpdateMainPics />} />
 
               </Route>
 
