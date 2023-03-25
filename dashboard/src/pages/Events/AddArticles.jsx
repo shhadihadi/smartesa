@@ -6,16 +6,25 @@ import { Link } from 'react-router-dom';
 
 function AddArticles() {
   const [title, setTitle] = useState('');
+  const [date, setDate] = useState('');
   const [desc, setDesc] = useState('');
-  const [cover, setcover] = useState('');
+  const [cover, setCover] = useState('');
+  // const [communityimg, setCommunityimg] = useState([]);
  
 
   const handleCoverChange = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      setcover(reader.result);
-    };
-    reader.readAsDataURL(e.target.files[0]);
+    const files = Array.from(e.target.files);
+    const images = [];  
+    files.forEach((file) => {
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        images.push(reader.result);
+        setCover([...cover, ...images]);
+      };
+  
+      reader.readAsDataURL(file);
+    });
   };
 
  
@@ -24,9 +33,10 @@ function AddArticles() {
     e.preventDefault();
     const blogs = {
       title,
+      date,
       desc,
-      cover: cover,
-      
+      cover,
+      // communityimg: communityimg,
       id: Math.floor(Math.random() * 1000) + 1, // generate a random ID
     };
 
@@ -45,8 +55,10 @@ function AddArticles() {
 
     // Reset the form fields
     setTitle('');
+    setDate('');
     setDesc('');
-    setcover('');
+    setCover('');
+    // setCommunityimg('');
     
   };
 
@@ -60,31 +72,40 @@ function AddArticles() {
             <div className="cretetile">Create Articles</div>
 
             <form onSubmit={handleSubmit}>
-              <label>Title</label>
-
-                <inputs
-                  type="text"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  required
-                />
-                
-                
-             
+            <div>
+                    <label>Title Events </label>
+                    <input
+                      type="text"
+                      value={title}
+                      onChange={(e) => setTitle(e.target.value)}
+                    />
+                  </div>
+                 < div>
+                    <label>Date Events </label>
+                    <input
+                      type="text"
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                    />
+                  </div>
+                <div>
+             <label>Paragraph</label>
               
                 <textarea
                   value={desc}
                   onChange={(e) => setDesc(e.target.value)}
                 ></textarea>
-              <label>Paragraph</label>
+              </div>
               <div className="createmetho">
                 <div className="textoutputdisplay" style={{ marginTop: '-28px' }}>
                   <p>Cover</p>
-                  <input type="file" accept="image/*" required onChange={handleCoverChange} />
+                  <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                onChange={handleCoverChange}
+                 />
                 </div>
                 
               </div>
-              <button  type="submit">Save</button>
+              <button>Save</button>
                 <Link to="/events">Back</Link>  
             </form>
           </div>
