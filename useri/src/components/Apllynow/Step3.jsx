@@ -1,8 +1,24 @@
 import React from 'react';
 import "./apply.css";
 import "./addfor.scss";
+// import { useState,useContext } from "react";
+// import {ApplyFormDataContext} from "../../UseContext"
+import { useLocation, useNavigate } from 'react-router-dom';
 
-function Step3({ nextStep, prevStep, handleChange, formData }) {
+function Step3({ nextStep, prevStep,handleSubmit,CustomWebsite,MediaLink,MediaLink2,text1,PDFUpload,handlecustomWebsiteChange,handleMediaLinkChange,handleMediaLink2Change,handleHoverCoverChange,handletext1Change }) {
+  
+  
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // function to go back to previous page
+  const goBack = () => {
+    navigate(-1);
+  }
+
+  // previous page location
+  const previousLocation = location.state?.from;
+  
   return (
     <div className="applyformAMain">
     <div className="exitformApply">close</div>
@@ -21,12 +37,13 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
       
   
     <div className="subMainFormApplyHadi">
-    <form onSubmit={nextStep}>
+    <form  onSubmit={handleSubmit}>
       {/* <div className="flexforcheckButtons"> */}
 
     <div className="mainstap3form">
   <div className="flexforStep3">
   <div className="form__groupHadi fieldHadi">
+    
       <input
         type="input"
         className="form__fieldHadi"
@@ -34,6 +51,8 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
         name="Website"
         id="Website"
         required
+        value={CustomWebsite}
+        onChange={handlecustomWebsiteChange}
       />
       <label htmlFor="Website" className="form__labelHadi">
       Custom Website
@@ -47,6 +66,9 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
         name="Insta"
         id="Insta"
         required
+        value={MediaLink}
+        onChange={handleMediaLinkChange}
+        // onChange={(e) => setMediaLink(e.target.value)} 
       />
       <label htmlFor="Insta" className="form__labelHadi">
       Media Link
@@ -60,6 +82,8 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
         name="Media"
         id="Media"
         required
+        value={MediaLink2}
+        onChange={handleMediaLink2Change}
       />
       <label htmlFor="Media" className="form__labelHadi">
       Media Link
@@ -69,7 +93,9 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
       
     </div>
     <div className="applyHadidissplayAsonline">
-      <input type="file" id="images" accept="image/*" required />
+      <input type="file" id="images"accept="image/pdf"
+                    required
+                    onChange={handleHoverCoverChange} />
       
     </div>
 
@@ -79,13 +105,16 @@ function Step3({ nextStep, prevStep, handleChange, formData }) {
         {/* <div className="divnoName"> */}
         {/* <p>hadi</p> */}
         {/* </div> */}
-      <textarea id="HOW MANY FOUNDERS ARE YOU ?" cols="30" rows="10" placeholder="Message"></textarea>
+      <textarea id="HOW MANY FOUNDERS ARE YOU ?" cols="30" rows="10" placeholder="Message"  
+        value={text1}
+        onChange={handletext1Change}
+        />
       </div>
       </div>
     
     <br />
       <button type="button" onClick={prevStep}>Back</button>
-      <button type="submit">Push</button>
+      <button  type="submit" onClick={handleSubmit} >Push</button>
     </form>
     </div>
     </div>

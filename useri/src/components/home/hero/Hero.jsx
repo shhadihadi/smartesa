@@ -2,6 +2,7 @@ import React from "react"
 import Heading from "../../common/heading/Heading"
 import "./Hero.css"
 import useFetch from "../../useFetch"
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { error, isPending, data: backImages } = useFetch('http://localhost:8000/backImages');
@@ -17,9 +18,11 @@ const Hero = () => {
               <button className='primary-btn'>
                 VIEW PROGRAMS <i className='fa fa-long-arrow-alt-right'></i>
               </button>
+              <Link to="/Apply">
               <button>
                 APPLY NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
+              </Link>
             </div>
           </div>
         </div>
