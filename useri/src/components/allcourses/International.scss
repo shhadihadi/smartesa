@@ -1,0 +1,132 @@
+.maincomunitycarddiv{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+}
+
+.fathercontainercard{
+    
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-bottom: 2px solid;
+}
+.cardourcomunityrowdisplay{
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+}
+.firstcontentcomunity{
+  padding-top: 5px;
+  width: 40%;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid;
+  
+}
+.firstcontentcomunity h4{
+padding-left:10px;
+}
+
+.cardourcomunityrowdisplay{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid;
+}
+.imgSc{
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+.imgSc4{
+  width:100px;
+  height: 40px;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.proportiesdecs{
+  width: 5%;
+  height: 10%;
+  margin: auto;
+  justify-content: space-around;
+  border-left: 1px solid;
+  text-align: center;}
+.nonamedisplay{  
+  width: 99%;
+  margin: auto;
+  padding: 5px;
+  padding-bottom:10px ;
+  height: 150px;
+}
+
+.nonamedisplay {
+  /* existing styles */
+  // height: auto; /* change to auto to allow content to overflow */
+  overflow-y: scroll; /* add overflow-y property to enable vertical scrollbar */
+}
+
+.nonamedisplay::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.nonamedisplay::-webkit-scrollbar-thumb {
+  background-color:  rgb(42,98,147)!important;
+  border-radius: 10px;
+}
+
+.nonamedisplay::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.textInter{
+  padding-top: 10px;
+}
+.image-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.image-container::-webkit-scrollbar-thumb {
+  background-color: rgb(42,98,147)!important;
+  border-radius: 10px;
+}
+
+.image-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  overflow: auto;
+  margin-top: 10px;
+  max-width: 1000px;
+  margin-left: auto; /* center the container horizontally */
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 20px;
+  height: auto;
+  object-fit: cover;
+  margin: 20px;
+}

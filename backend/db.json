@@ -78,21 +78,27 @@
   ],
   "coursesCard": [
     {
-      "coursesName": "CREATE ",
-      "TARGET": "Entrepreneurs with an ideas",
+      "id": 1,
+      "coursesName": "Prix Entrepreneur ESA-HEC PARIS",
+      "TARGET": "Start-ups with an MVP / early traction",
       "SECTOR": "All Sectors",
-      "OBJECTIVE": "Turn your idea into an impactful business",
-      "DURATION": "4 months ",
-      "TYPE": "2-3 Flexible days/week",
-      "text": " The Ed-Tech International Boost Program is carefully designed with our international partner specifically for Ed-Tech Start-ups to break the barriers to education and enhance learning experiences in a new era of digital education.",
-      "cover": "../images/courses/c1.png",
-      "courTeacher": [],
-      "detailsimg": [],
-      "AboutALL": "",
-      "id": 1
+      "OBJECTIVE": "Win a 6 Months Incubation Program at Station F – Paris",
+      "DURATION": "6 months",
+      "TYPE": "Yearly competition",
+      "AboutALL": "ESA Business school, in partnership with Smart ESA and HEC Alumni in Lebanon, have come together to organize the third edition of “ESA - HEC Entrepreneur Award”, as part of their  efforts to create a suitable environment for the emergence of Lebanese entrepreneurs.\n\nThe competition is supported by Air France, French Embassy in Lebanon, La French Tech Beyrouth and Chamber of Commerce, Industry and Agriculture in Beirut and Mount Lebanon.\n\nThis competition, open for all the Lebanese, both in the country and abroad, aims to support  Lebanese entrepreneurs as they create innovative projects to foster the vast potential that Lebanon has to offer.\n\nThe winner(s) of the Award will receive a six month-incubation in France, at the world's biggest startup campus, Station F. The winner(s) will also benefit from exceptional visibility in the media, via L’Orient-Le Jour.\n\nAnd all finalists will benefit from a support program provided by the Smart ESA incubator, scholarships to the Masters in Entrepreneurship and Innovation at ESA (a program developed in partnership with HEC Paris and Smart ESA) and from generous Air France offers.\n\nApplications must be submitted before 31 May 2023.\n\nThe competition is only open for enterprises in their design phase, or for those created less than 24 months ago, and which are presently undertaking the development of a product and have a turnover of less than $500K.\n\nA)                   Applications - Eligibility \n\nCandidates should prove that:\n•                      The project came in response to a problem or clear necessity\n•                      The project brings clear innovation to existing processes/products\n•                      The project is viable and profitable in the long term\n•                      The project has international potential\n\nB)                   Participation guidelines\n\nApplications should be only presented online, and all the required information should be submitted via the form at the bottom of this page.\n\nC)                   Confidentiality \n\nAll the information shared during the process of entering the competition remains the property of the project owner. The partners vow to keep it confidential and to protect the intellectual property of the candidates",
+      "text": "In partnership with HEC Paris, ESA Business School and Smart ESA organize the yearly Prix HEC Entrepreneur competition - where the best startups in Lebanon pitch to international jury members to be granted the opportunity to head over to Station F, Paris for 6 months, world's biggest startup campus.\n\nIn addition, finalists will benefit from a support program provided by Smart ESA; from scholarships to the Masters in Entrepreneurship and Innovation at ESA and from generous Air France offers. ",
+      "cover": "../images/courses/c5.png",
+      "courTeacher": [
+        "./images/partners/c9.png",
+        "./images/partners/c10.png",
+        "./images/partners/c11.png",
+        "./images/partners/c12.png"
+      ]
+      
     },
     {
-      "coursesName": "BOOST ",
+      "id": 2,
+      "coursesName": "Boost ",
       "TARGET": "Startups with valid MVP",
       "SECTOR": "All Sectors",
       "OBJECTIVE": "Getting Traction & Sustainable Growth",
@@ -100,20 +106,37 @@
       "TYPE": "3-4 Flexible days/week",
       "text": "Boost is an International Program for Start-ups. It is destined for start-ups with a valid MVP\nProviding entrepreneurs with an unsurpassed methodology, offering workshops, one-on-one mentoring, extensive access to high-profile and international experts.\nFor start-ups with a Minimum Viable Product (MVP) and early traction, our Boost Program is aiming to grow your company and improve your sale.",
       "cover": "../images/courses/c2.png",
-      "AboutALL": "",
-      "detailsimg": [],
       "courTeacher": [
         "./images/partners/c1.png",
         "./images/partners/c2.png",
         "./images/partners/c3.png",
         "./images/partners/c4.png"
       ],
-      "id": 2
+      "AboutALL": "",
+      "detailsimg": []
     },
     {
       "id": 3,
+      "coursesName": "Masters In Innovation AND Entrepreneurship",
+      "TARGET": "Students who aspire to become Entrepreneurs",
+      "SECTOR": "All Sectors",
+      "OBJECTIVE": "To develop a Start-up with a Business Plan",
+      "DURATION": "2 months",
+      "TYPE": "Full-Time Program",
+      "text": "The Masters in Innovation and Entrepreneurship is a dedicated, one year program facilitated by HEC Paris, ESA business School and Smart ESA. What makes this program special is the 'learning by doing' approach and practicality delivered by the three institutions. ",
+      "cover": "../images/courses/c6.png",
+      "AboutALL": "",
+      "detailsimg": [],
+      "courTeacher": [
+        "./images/partners/c6.png"
+      ]
+      
+    },
+    
+    {
+      "id": 4,
       "cover": "../images/courses/c3.png",
-      "coursesName": "SAINT GOBAIN GREEN-HUB",
+      "coursesName": "Saint Gobain Green-Hub",
       "courTeacher": [
         "./images/partners/c1.png"
       ],
@@ -124,11 +147,11 @@
       "OBJECTIVE": "Getting Traction & Sustainable Growth",
       "DURATION": "6 months",
       "TYPE": "3-4 Flexible days/week",
-      "priceAll": "The Green Hub Boost Program is an International Program carefully designed with our international partner Saint–Gobain. It is destined for green & sustainable start-ups with a valid MVP.",
+      "AboutAll": "The Green Hub Boost Program is an International Program carefully designed with our international partner Saint–Gobain. It is destined for green & sustainable start-ups with a valid MVP.",
       "text": "The Green Hub Boost Program is an International Program carefully designed with our international partner Saint–Gobain. It is destined forgreen & sustainable start-ups with a valid MVP.\nSaint Gobain, the worldwide leader in light and sustainable construction."
     },
     {
-      "id": 4,
+      "id": 5,
       "cover": "../images/courses/c4.png",
       "coursesName": "ED-TECH",
       "courTeacher": [
@@ -141,40 +164,22 @@
       "OBJECTIVE": "Getting Traction & Sustainable Growth",
       "DURATION": "6 months",
       "TYPE": "3-4 Flexible days/week",
-      "priceAll": "The Ed-Tech International Boost Program is carefully designed with our international partner specifically for Ed-Tech Start-ups to break the barriers to education and enhance learning experiences in a new era of digital education",
+      "AboutAll": "The Ed-Tech International Boost Program is carefully designed with our international partner specifically for Ed-Tech Start-ups to break the barriers to education and enhance learning experiences in a new era of digital education",
       "text": "The Ed-Tech International Boost Program is carefully designed with our international partner specifically for Ed-Tech Start-ups to break the barriers to education and enhance learning experiences in a new era of digital education."
     },
     {
-      "coursesName": "PRIX ENTREPRENEUR ESA-HEC PARIS",
-      "TARGET": "Start-ups with an MVP / early traction",
+      "id": 6,
+      "coursesName": "Create",
+      "TARGET": "Entrepreneurs with an idea",
       "SECTOR": "All Sectors",
-      "OBJECTIVE": "Win a 6 Months Incubation Program at Station F – Paris",
-      "DURATION": "6 months",
-      "TYPE": "Yearly competition",
-      "AboutALL": "ESA Business school, in partnership with Smart ESA and HEC Alumni in Lebanon, have come together to organize the third edition of “ESA - HEC Entrepreneur Award”, as part of their  efforts to create a suitable environment for the emergence of Lebanese entrepreneurs.\n\nThe competition is supported by Air France, French Embassy in Lebanon, La French Tech Beyrouth and Chamber of Commerce, Industry and Agriculture in Beirut and Mount Lebanon.\n\nThis competition, open for all the Lebanese, both in the country and abroad, aims to support  Lebanese entrepreneurs as they create innovative projects to foster the vast potential that Lebanon has to offer.\n\nThe winner(s) of the Award will receive a six month-incubation in France, at the world's biggest startup campus, Station F. The winner(s) will also benefit from exceptional visibility in the media, via L’Orient-Le Jour.\n\nAnd all finalists will benefit from a support program provided by the Smart ESA incubator, scholarships to the Masters in Entrepreneurship and Innovation at ESA (a program developed in partnership with HEC Paris and Smart ESA) and from generous Air France offers.\n\nApplications must be submitted before 31 May 2023.\n\nThe competition is only open for enterprises in their design phase, or for those created less than 24 months ago, and which are presently undertaking the development of a product and have a turnover of less than $500K.\n\nA)                   Applications - Eligibility \n\nCandidates should prove that:\n•                      The project came in response to a problem or clear necessity\n•                      The project brings clear innovation to existing processes/products\n•                      The project is viable and profitable in the long term\n•                      The project has international potential\n\nB)                   Participation guidelines\n\nApplications should be only presented online, and all the required information should be submitted via the form at the bottom of this page.\n\nC)                   Confidentiality \n\nAll the information shared during the process of entering the competition remains the property of the project owner. The partners vow to keep it confidential and to protect the intellectual property of the candidates",
-      "text": "In partnership with HEC Paris, ESA Business School and Smart ESA organize the yearly Prix HEC Entrepreneur competition - where the best startups in Lebanon pitch to international jury members to be granted the opportunity to head over to Station F, Paris for 6 months, world's biggest startup campus.\n\nIn addition, finalists will benefit from a support program provided by Smart ESA; from scholarships to the Masters in Entrepreneurship and Innovation at ESA and from generous Air France offers. ",
-      "cover": "../images/courses/c5.png",
-      "courTeacher": [
-        "./images/partners/c8.png",
-        "./images/partners/c5.png"
-      ],
-      "id": 5
-    },
-    {
-      "coursesName": "MASTERS IN INNOVATION AND ENTREPRENEURSHIP",
-      "TARGET": "Students who aspire to become Entrepreneurs",
-      "SECTOR": "All Sectors",
-      "OBJECTIVE": "To develop a Start-up with a Business Plan",
-      "DURATION": "2 months",
-      "TYPE": "Full-Time Program",
-      "text": "The Masters in Innovation and Entrepreneurship is a dedicated, one year program facilitated by HEC Paris, ESA business School and Smart ESA. What makes this program special is the 'learning by doing' approach and practicality delivered by the three institutions. ",
-      "cover": "../images/courses/c6.png",
-      "AboutALL": "",
+      "OBJECTIVE": "Turn your idea into an impactful business",
+      "DURATION": "4 months ",
+      "TYPE": "2-3 Flexible days/week",
+      "text": " The Ed-Tech International Boost Program is carefully designed with our international partner specifically for Ed-Tech Start-ups to break the barriers to education and enhance learning experiences in a new era of digital education.",
+      "cover": "../images/courses/c1.png",
+      "courTeacher": [],
       "detailsimg": [],
-      "courTeacher": [
-        "./images/partners/c6.png"
-      ],
-      "id": 6
+      "AboutALL": ""
     }
   ],
   "online": [

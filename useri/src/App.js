@@ -12,7 +12,7 @@ import Home from "./components/home/Home"
 import CourseCardId from "./components/allcourses/coursecartById/coursecardid"
 import Event from "./components/byID/event/Event"
 import MultiStepForm from "./components/Apllynow/MultiStepForm"
-
+//import Program from "./components/allcourses/internationalCard"
 function App() {
   return (
     <>
@@ -29,8 +29,7 @@ function App() {
           <Route  path="/coursesCard/:id" element ={<CourseCardId />} />
           <Route exact path="/Event/:id" element ={<Event />} />
           <Route exact  path='/Apply' element ={<MultiStepForm />} />
-          {/* <Route exact path="/OurCommunity/:id" element ={<Community/>} />
-           */}
+          {/* <Route exact path="/Inter/" element ={<Program/>} /> */}
         </Routes>
         <Footer />
       </Router>
