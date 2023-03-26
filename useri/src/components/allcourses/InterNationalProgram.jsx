@@ -1,8 +1,10 @@
 import React from "react";
 import Back from "../common/back/Back";
 import CoursesCard from "./CoursesCard";
+
 import OnlineCourses from "./OnlineCourses";
 import useFetch from "../../components/useFetch";
+import Internationalcard from "./internationalCard";
 
 const CourseHome = () => {
   const { error, isPending, data: internationaProgramHome } = useFetch('http://localhost:8000/internationaProgramHome');
@@ -20,7 +22,8 @@ const CourseHome = () => {
           paragraphs={paragraphs} // pass the entire "Paragraphs" array as a prop
         />
       )}
-      <CoursesCard />
+      <Internationalcard />
+      {/* <CoursesCard /> */}
       {/* <OnlineCourses /> */}
     </>
   )

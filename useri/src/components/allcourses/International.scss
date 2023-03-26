@@ -1,0 +1,142 @@
+.commuinty{
+    margin:40px ;
+    align-items: center;
+    background:  #d8cbcb;
+    border-radius:4px ; 
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+
+//**********************comunitycards***************************************************************//
+//father of this paged
+.counityitems{
+  width: 98%;
+  margin: auto;
+}
+
+
+.maincomunitycarddiv{
+  width: 98%;
+  margin: auto;
+}
+.fathercontainercard{
+  width: 98%;
+  min-height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-bottom: 2px solid;
+}
+.cardourcomunityrowdisplay{
+  height: 35%;
+    display: flex;
+  flex-direction: row;
+}
+.firstcontentcomunity{
+  width: 20%;
+  min-height: 90% !important;
+  // background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid;
+
+}
+.firstcontentcomunity h4{
+padding-left: 20px;
+}
+.secondcomuitydiv{
+  width: 69%;
+  height: 100%;
+  // background-color: rgb(130, 98, 134);
+  // margin: auto;
+  align-items: center;
+  padding: 30px;
+  margin-top: 0;
+  
+  // border-right: 1px solid;
+  // border: 1px solid;
+
+}
+.cardourcomunityrowdisplay{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid;
+}
+.proportiesdecs{
+  width: 5%;
+  height: 10%;
+  margin: auto;
+  justify-content: space-around;
+  border-left: 1px solid;
+  text-align: center;}
+.nonamedisplay{
+  display: flex;
+  width: 99%;
+  margin: auto;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom:20px ;
+  
+}
+.nonamedisplay img{
+  padding-bottom:20px ;
+
+}
+.deletoptioncardcomunuty{
+  margin-top: 16px;
+  width: 100%;
+}
+.editoptioncardcomunuty{
+  margin-top: 13px;
+  margin-bottom:15px;
+
+}
+.deletoptioncardcomunuty:hover{
+color: brown;
+
+}
+.editoptioncardcomunuty:hover{
+  color: rgb(194, 212, 93);
+
+}
+
+
+.image-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.image-container::-webkit-scrollbar-thumb {
+  background-color: rgb(42,98,147)!important;
+  border-radius: 10px;
+}
+
+.image-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  overflow: auto;
+  margin-top: 10px;
+  max-width: 1000px;
+  margin-left: auto; /* center the container horizontally */
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 20px;
+  height: auto;
+  object-fit: cover;
+  margin: 20px;
+}
