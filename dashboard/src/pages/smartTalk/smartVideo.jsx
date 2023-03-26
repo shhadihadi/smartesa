@@ -22,6 +22,16 @@ import { Stack, Box } from "@mui/material";
 const SmartVideo = () => {
   const { error, isPending, data: team} = useFetch('http://localhost:8000/team')
   console.log(team)
+
+  const handledelete = (id) => {
+    fetch(`http://localhost:8000/team/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      // history.push('/');
+      window.location.reload();
+      
+    });
+  };
   
  
   return (
@@ -42,7 +52,9 @@ const SmartVideo = () => {
                     <CardHeader 
             action={
               <IconButton >
-                <DeleteOutlined />
+                <DeleteOutlined 
+                          onClick={() => handledelete(val.id)}
+                          />
                 <Link to={`/smartEditVideo/${val.id}`}>
             < EditOutlined />
              </Link>
@@ -50,11 +62,12 @@ const SmartVideo = () => {
               </IconButton>
             }
             title={val.title}
+           
           //   subheader={val.Paragraph}
           />
                 <div className="imgreight">
                       <img src={val.cover} alt="Cover" />
-                     
+                     <h5>{val.date}</h5>
                     </div>
             </Paper>
             

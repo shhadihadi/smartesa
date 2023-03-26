@@ -20,6 +20,15 @@ import ContactHome from './ContactHome'
 
 const Contact = () => {
   const { error, isPending, data: contact } = useFetch('http://localhost:8000/contact')
+  const handledelete = (id) => {
+    fetch(`http://localhost:8000/contact/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      // history.push('/');
+      window.location.reload();
+      
+    });
+  };
  
   return (
     <div className="list">
@@ -42,7 +51,7 @@ const Contact = () => {
             <TableCell className="tableCell">Subject</TableCell>
             <TableCell className="tableCell">Email</TableCell>
             <TableCell className="tableCell">Message</TableCell>
-            {/* <TableCell className="tableCell">Action</TableCell> */}
+            <TableCell className="tableCell">Action</TableCell>
         
           </TableRow>
         </TableHead>
@@ -64,14 +73,14 @@ const Contact = () => {
               <TableCell className="tableCell">{row.subject}</TableCell>
               <TableCell className="tableCell">{row.email}</TableCell>
               <TableCell className="tableCell">{row.message}</TableCell>
-              {/* <TableCell className="tableCell">
+              <TableCell className="tableCell">
                 <IconButton>
-              <DeleteOutlined />
-              <Link to={`/aboutEdit/${row.id}`}>
-          < EditOutlined />
-           </Link>
+                <DeleteOutlined 
+                          onClick={() => handledelete(row.id)}
+                          />
+              
             </IconButton>
-              </TableCell> */}
+              </TableCell>
             
             </TableRow>
           ))} 

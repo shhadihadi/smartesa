@@ -24,7 +24,7 @@ const SmartTalk = () => {
         <div className="datatable">
         <div className="datatableTitle">
               Add New Video
-              <Link to="/addVideo" className="link">
+              <Link to="/createVideo" className="link">
                 Add New
               </Link>
             </div>

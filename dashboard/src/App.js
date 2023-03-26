@@ -43,6 +43,7 @@ import AddTeam from "./pages/headsAll/AddTeam";
 import EditTeamProfile from "./pages/headsAll/EditTeamProfile";
 import UpdateMainPics from "./pages/list/UpdateMainPics";
 import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
+import CreateVideo from "./pages/smartTalk/CreateVideo";
 
 
 
@@ -150,6 +151,10 @@ function App() {
                </Route>
                <Route path="/editEventHome/:id">
               <Route index element={<EditEventHome />} />
+
+              </Route>
+               <Route path="/createVideo/">
+              <Route index element={<CreateVideo />} />
 
               </Route>
                <Route path="/smartEdit/:id">
