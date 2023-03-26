@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import useFetch from '../../useFetch';
-import './allinone.css';
+import './allinone.scss';
 import { Link } from 'react-router-dom';
 import EditIcon from '@mui/icons-material/Edit';
 import Grid from "@mui/material/Grid";
@@ -24,6 +24,7 @@ function Allinone() {
         <div className="listContainer">
           <Navbar />
           <div className="allnavsinonehadi">
+          
           <div className="datatableTitle">
               Add New ADMIN
               <Link to="/team/new" className="link">
