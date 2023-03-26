@@ -29,6 +29,7 @@
   padding-right: 10px;
   width: 100%;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .Formapplysetall{
   display: flex;
@@ -56,6 +57,7 @@
 }
 .exitformApplysmallSCREEN{
   display: none;
+  cursor: pointer;
 }
 .morefordesidn{
   margin-left: 80px;
@@ -280,6 +282,7 @@ font-size: 16px;
       margin-top: -10px;
       justify-content: right;
       align-items:end;
+      cursor: pointer;
     }
     .subMainFormApplyHadi{
       width: 89%;

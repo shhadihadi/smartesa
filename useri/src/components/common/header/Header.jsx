@@ -46,10 +46,12 @@ const Header = () => {
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
+          <Link to="/Apply">
           <div className='start'>
-            <div className='getcertibutton'> <Link to='/' className="apply">Apply Now</Link></div>
+            <div className='getcertibutton'> <Link to='/Apply' className="apply">Apply Now</Link></div>
             <div className='getcertibuttonsmall'> {location.pathname.split("/")[1].toUpperCase()}</div>
           </div>
+          </Link>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
           </button>
