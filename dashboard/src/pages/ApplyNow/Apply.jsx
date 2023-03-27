@@ -35,7 +35,7 @@ const Apply = () => {
                <CardHeader 
           action={
             <IconButton >
-              <DeleteOutlined />
+            
               <Link to={`/aboutEdit/${val.id}`}>
           < EditOutlined />
            </Link>
