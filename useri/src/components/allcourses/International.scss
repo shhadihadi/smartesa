@@ -36,7 +36,7 @@ padding-left:10px;
 }
 
 .cardourcomunityrowdisplay{
-  width: 100%;
+  width: 95%;
   display: flex;
   border-bottom: 1px solid;
 }
@@ -72,9 +72,7 @@ a {
 }
 
 .nonamedisplay {
-  /* existing styles */
-  // height: auto; /* change to auto to allow content to overflow */
-  overflow-y: scroll; /* add overflow-y property to enable vertical scrollbar */
+  overflow-y: scroll; 
 }
 
 .nonamedisplay::-webkit-scrollbar {
@@ -96,37 +94,45 @@ a {
 .textInter{
   padding-top: 10px;
 }
-.image-container::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
 
-.image-container::-webkit-scrollbar-thumb {
-  background-color: rgb(42,98,147)!important;
-  border-radius: 10px;
-}
 
-.image-container::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+@media screen and (max-width: 1500px) {
+  .maincomunitycarddiv{
+      padding-top: 100px;
+  }
 }
-
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 200px;
-  overflow: auto;
-  margin-top: 10px;
-  max-width: 1000px;
-  margin-left: auto; /* center the container horizontally */
-  margin-right: auto;
-  margin-bottom: 20px;
+@media screen and (max-width: 1300px) {
+  .maincomunitycarddiv{
+      padding-top: 200px;
+  }
 }
-
-.image-container img {
-  width: 20px;
-  height: auto;
-  object-fit: cover;
-  margin: 20px;
+@media screen and (max-width: 1000px) {
+  .maincomunitycarddiv{
+      padding-top: 300px;
+      display: flex;
+      flex-direction:column;
+  }
+}
+@media screen and (max-width: 769px) {
+  .maincomunitycarddiv{
+      padding-top: 20px;
+      display: flex;
+      flex-direction:column;
+  }
+  .firstcontentcomunity {
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .maincomunitycarddiv{
+      padding-top: 200px;
+      display: flex;
+      flex-direction:column;
+  }
+  .firstcontentcomunity {
+    padding-top: 30px;
+    
+  }
 }
