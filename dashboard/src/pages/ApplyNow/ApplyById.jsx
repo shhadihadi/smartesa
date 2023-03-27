@@ -16,7 +16,7 @@ function ApplyById() {
         const response = await fetch(`http://localhost:8000/Apply/${id}.pdf`);
         const blob = await response.blob();
       
-        saveAs(blob, `data-${id}.pdf`);
+        saveAs(blob, `Apply-${id}.pdf`);
       };
    
     // const [numPages, setNumPages] = useState(null);
