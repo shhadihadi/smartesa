@@ -32,7 +32,7 @@ const FAQ = () => {
                <CardHeader 
           action={
             <IconButton >
-              <DeleteOutlined />
+           
               <Link to={`/faqEdit/${val.id}`}>
           < EditOutlined />
            </Link>
