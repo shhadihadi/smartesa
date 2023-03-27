@@ -28,7 +28,7 @@ const BlogCard = ({ numPosts }) => {
                 <label htmlFor=''>{val.date}</label>
               </span>
             </div> 
-            <Link to={`../Event/${val.id}`} style={{color:"rgb(42,98,147)"}}> <h1>{val.title}</h1></Link>
+            <Link to={`../Event/${val.id}`} style={{ textDecoration: "none" }}> <h1>{val.title}</h1></Link>
             <p>{val.paragraphs?.substring(0,130) + '...'}</p>
           </div>
         </div>
