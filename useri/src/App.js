@@ -14,6 +14,9 @@ import ProgramsId from "./components/allcourses/ProgramsById"
 import Event from "./components/byID/event/Event"
 import MultiStepForm from "./components/Apllynow/MultiStepForm"
 //import Program from "./components/allcourses/internationalCard"
+
+//import NCommunity from "./components/community/NO"
+
 function App() {
   return (
     <>
@@ -27,10 +30,8 @@ function App() {
           <Route  path='/OurCommunity' element ={<Community />} />
           <Route  path='/events' element ={<Blog />} />
           <Route  path='/contact' element ={<Contact />} />
-          {/* <Route  path="/coursesCard/:id" element ={<CourseCardId />} /> */}
           <Route exact path="/Event/:id" element ={<Event />} />
           <Route exact  path='/Apply' element ={<MultiStepForm />} />
-          {/* <Route exact path="/Inter/" element ={<Program/>} /> */}
           <Route  path="/Programs/:id" element ={<ProgramsId />} />
         </Routes>
         <Footer />

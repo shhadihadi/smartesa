@@ -18,6 +18,17 @@
   background-color: rgb(42,98,147);
   color: #fff;
 }
+
+.load-more2{
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 40%;
+  /* margin: auto; */
+  background-color: rgb(42,98,147);
+  color: #fff;
+}
+
+
 .testimonal .name {
   margin: 25px;
 }

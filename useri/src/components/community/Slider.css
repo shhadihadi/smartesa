@@ -1,0 +1,61 @@
+
+
+#hcg-slider-1 .hcg-slide-container {
+	width: auto;
+	height: auto;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+/************CSS Animation***********/
+
+.animated { 
+	animation-name: flip; 
+	animation-duration: 1s;
+}
+@keyframes flip {
+	0% {
+		transform: perspective(600px) rotate3d(0, 1, 0, -360deg);
+		animation-timing-function: ease-out
+	}
+	40% {
+		transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		animation-timing-function: ease-out
+	}
+	50% {
+		transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		animation-timing-function: ease-in
+	}
+	80% {
+		transform: perspective(600px) scale3d(.95, .95, .95);
+		animation-timing-function: ease-in
+	}
+	100% {
+		transform: perspective(600px);
+		animation-timing-function: ease-in
+	}
+}
+.flip {
+	backface-visibility: visible;
+	animation-name: flip
+}
+
