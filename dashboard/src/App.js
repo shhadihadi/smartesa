@@ -45,6 +45,7 @@ import UpdateMainPics from "./pages/list/UpdateMainPics";
 import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
 import CreateVideo from "./pages/smartTalk/CreateVideo";
 import ApplyById from "./pages/ApplyNow/ApplyById";
+import FaqCreate from "./pages/FAQ/FaqCreate";
 
 
 
@@ -86,6 +87,10 @@ function App() {
             </Route>
             <Route path="community">
               <Route index element={<Community />} />
+
+              </Route>
+            <Route path="faqCreate">
+              <Route index element={<FaqCreate />} />
              
             </Route>
             <Route path="events">
