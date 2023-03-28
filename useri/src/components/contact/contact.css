@@ -76,12 +76,13 @@ form .flexCt input:nth-child(1) {
 }
 
 /*--------------faq-------------*/
-.faq .container {
-  max-width: 70%;
+.faq .containerF {
+  margin: auto;
+  max-width: 60%;
   border-radius: 5px;
 }
 .faq .box {
-  background-color: #fff;
+  background-color: #fff !important;
   margin-bottom: 20px;
 }
 .faq button {
@@ -101,4 +102,30 @@ form .flexCt input:nth-child(1) {
 .faq .accordion:hover {
   background-color: rgb(42,98,147);
   color: #fff;
+}
+.pagination {
+  margin: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  color:rgb(42,98,147);
+  cursor: pointer;
+  margin: 0 0.5rem;
+  outline: none;
+}
+
+.pagination button:hover,
+.pagination button:focus {
+  text-decoration: underline;
+}
+
+.pagination button:disabled {
+  color: #6c757d;
+  cursor: not-allowed;
 }

@@ -60,7 +60,9 @@ const Contact = () => {
       )}
       <section>
       {<Faq /> }
+      
       </section>
+      {ContactHome && ContactHome.length > 0 && (
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>
@@ -73,15 +75,15 @@ const Contact = () => {
             <div className='items grid2C'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
-                <p>289 rue Clemenceau, Beirut, Lebanon</p>
+                <p>{ContactHome[0].address}</p>
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> info@yoursite.com</p>
+                <p> {ContactHome[0].email}</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> +961 1 373 373</p>
+                <p> {ContactHome[0].phone}</p>
               </div>
             </div>
 
@@ -117,7 +119,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+      )}
     </>
   )
 }
