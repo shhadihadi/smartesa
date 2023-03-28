@@ -45,6 +45,8 @@ import UpdateMainPics from "./pages/list/UpdateMainPics";
 import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
 import CreateVideo from "./pages/smartTalk/CreateVideo";
 import ApplyById from "./pages/ApplyNow/ApplyById";
+import FaqCreate from './pages/FAQ/FaqCreate'
+import { GridExcelExportMenuItem } from "@mui/x-data-grid-premium";
 
 
 
@@ -78,10 +80,16 @@ function App() {
             
             <Route path="aboutus">
               <Route index element={<AboutUs />} />
+
+
              
             </Route>
             <Route path="international">
               <Route index element={<International />} />
+
+              </Route>
+            <Route path="excelExporterWorker">
+              <Route index element={<GridExcelExportMenuItem />} />
              
             </Route>
             <Route path="community">
@@ -133,6 +141,10 @@ function App() {
               </Route>
             <Route path="apply">
               <Route index element={<Apply />} />
+
+              </Route>
+            <Route path="faqCreate">
+              <Route index element={<FaqCreate />} />
 
               </Route>
             <Route path="faq">

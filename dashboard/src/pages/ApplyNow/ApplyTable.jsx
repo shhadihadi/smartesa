@@ -8,7 +8,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 import './apply.scss'
-import { DeleteOutlined } from '@mui/icons-material';
+import { DeleteOutlined, ViewArray } from '@mui/icons-material';
 
 
 
@@ -73,30 +73,96 @@ const ApplyTable= () => {
           field: 'CustomWebsite',
           headerName: 'Customer Website',
           type: 'text',
-          width: 150,
+          width: 70,
         },
         
         {
-          field: 'actions',
-          headerName: 'Actions',
-          type: 'actions',
-          width: 100,
-          renderCell: (params) => {
-            return (
-              <div className="cellAction">
-                   <Link to={`/applyById/${params.row.id}`}style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
-                <div
-                  className="deleteButton"
-                  onClick={() => handledelete(params.row.id)}
-                >
-               <DeleteOutlined />
-                </div>
-              </div>
-            );
-            },
-              },
+          field: 'fundStatus',
+          headerName: 'Fund Status',
+          type: 'text',
+          width: 150
+        },
+        {
+          field: 'fundSStatusBB',
+          headerName: 'Fund Status BB',
+          type: 'text',
+          width: 150,
+        },
+        {
+          field: 'text',
+          headerName: 'Text',
+          type: 'text',
+          width: 150,
+        },
+        // {
+        //   field: 'SelectfundStatus',
+        //   headerName: 'Select fund Status',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'SelectfundStatusBB',
+        //   headerName: 'Select fund Status BB',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'CustomWebsite',
+        //   headerName: 'CustomWebsite',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'MediaLink',
+        //   headerName: 'MediaLink',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'MediaLink2',
+        //   headerName: 'MediaLink2',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'PDFUpload',
+        //   headerName: 'PDFUpload',
+        //   type: 'pdf',
+        //   width: 70,
+        // },
+        // {
+        //   field: 'text1',
+        //   headerName: 'text',
+        //   type: 'text',
+        //   width: 70,
+        // },
+        
+        
+        
+
+       
+       
+              {
+                field: 'actions1',
+                headerName: 'Actions1',
+                type: 'actions',
+                width: 100,
+                renderCell: (params) => {
+                  return (
+                   
+                      <div
+                       className="cellAction"
+                        onClick={() => handledelete(params.row.id)}
+                      >
+                     <DeleteOutlined />
+                     
+                      </div>
+
+                    
+                   
+                  );
+                  },
+                    },
       ];
 
 
@@ -108,7 +174,7 @@ const ApplyTable= () => {
 
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
-      
+        
         rows={tableData}
         columns={columns}
        

@@ -48,7 +48,7 @@ function ApplyById() {
         {Apply &&
             Apply.map(val =>( 
             <form >
-            <div>
+            <div key={val.id} >
                     <label>First Name</label>
                     <h5>{val.FN}</h5>
                   </div>
