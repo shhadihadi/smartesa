@@ -17,9 +17,6 @@ import { red } from "@mui/material/colors";
 
 
 
-
-
-
 const Articles = () => {
   const { error, isPending, data: blogs} = useFetch('http://localhost:8000/blogs')
 
@@ -27,68 +24,50 @@ const Articles = () => {
     fetch(`http://localhost:8000/blogs/${id}`, {
       method: "DELETE",
     }).then(() => {
-      // history.push('/');
       window.location.reload();
-      
     });
   };
-  
  
   return (
-  
-       
-      
-               
-      
-      <ImageList sx={{ width: 1000, height: 500}}>
+    <ImageList sx={{ width: "100%", gap: 40, maxHeight: 500}}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div" background="red">Events </ListSubheader>
       </ImageListItem>
       {blogs &&
       blogs.map((item) => (
-        //  <Link to={`/aboutEdit/${item.id}`}>
-        
         <ImageListItem key={item.cover}> 
-         {/* <IconButton>{item.date}</IconButton> */}
           <img
-            src={`${item.cover}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.cover}?w=248&fit=crop&auto=format&dpr=2 2x`}
+           src={`${item.cover}`}
+           srcSet={`${item.cover}`}
             alt={item.title}
             loading="lazy"
-            
-          /> 
-        
+          sx={{ width: "80%" }} // add this
+          />
+         <IconButton background=" #3f4580">
+                  {item.date}
+                </IconButton>
           <ImageListItemBar
             title={item.title}
             subtitle={item.title}
             actionIcon={
-            
               <IconButton
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-                <IconButton
-                background=" #3f4580">
-
-                  {item.date}
-                </IconButton>
-                <DeleteOutlined 
-                          onClick={() => handledelete(item.id)}
-                          />
-              <Link to={`/articleEdit/${item.id}`}>
-          < EditOutlined />
-           </Link>
+               
+                <DeleteOutlined onClick={() => handledelete(item.id)} />
+                <Link to={`/articleEdit/${item.id}`}>
+                  <EditOutlined />
+                </Link>
               </IconButton>
-      
-           
             }
           />
           
         </ImageListItem>
       ))}
     </ImageList>
-   
   )
 }
+
 
 export default Articles

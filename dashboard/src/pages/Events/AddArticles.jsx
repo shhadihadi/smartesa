@@ -60,7 +60,7 @@ function AddArticles() {
     setDate('');
     setDesc('');
     setCover('');
-    // setCommunityimg('');
+   
     
   };
   const modules = {

@@ -150,6 +150,11 @@ p {
   line-height: 30px;
   font-size: 18px;
 }
+
+.back .back-text{
+  text-align: justify;
+}
+
 .back-title{
   margin-left: 0;
   padding-bottom: 20px;
@@ -231,6 +236,8 @@ p {
   background-color: rgb(42,98,147);
   color: #fff;
 }
+
+
 .grid3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

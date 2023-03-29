@@ -1,14 +1,15 @@
-import React from "react"
-import "./footer.css"
+import React from "react";
+import "./footer.css";
 import { useState } from "react";
 import { Link } from "react-router-dom"
 const Footer = () => {
-  const [email, setemail] = useState('');
-  const [erroreEmail, seterroreEmail] = useState('');
+  const [email, setemail] = useState("");
+  const [erroreEmail, seterroreEmail] = useState("");
 
   const validateEmail = (email) => {
     const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegEx.test(email);
+
   } 
   function makeCall() {
     const phoneNumber = '+961 1 373 373';
@@ -21,21 +22,22 @@ const handleEmailClick = () => {
   window.open(mapURL, "_blank");
 };
 
+
   const handleSubmit = (e) => {
 
     e.preventDefault();
-  
+
     if (!validateEmail(email)) {
-      seterroreEmail('Please enter a valid email address.');
+      seterroreEmail("Please enter a valid email address.");
     } else {
       fetch(`http://localhost:8000/subscribe/`)
-        .then(response => response.json())
-        .then(subscribers => {
-          if (subscribers.some(subscriber => subscriber.email === email)) {
-            seterroreEmail('This email is already registered.');
+        .then((response) => response.json())
+        .then((subscribers) => {
+          if (subscribers.some((subscriber) => subscriber.email === email)) {
+            seterroreEmail("This email is already registered.");
           } else {
             const subscribe = { email };
-  
+
             fetch(`http://localhost:8000/subscribe/`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -44,7 +46,7 @@ const handleEmailClick = () => {
               .then(() => {
                 setemail("");
                 seterroreEmail(""); // Reset error message
-                e.target.reset(); 
+                e.target.reset();
                 // Success handling code here
               })
               .catch((error) => {
@@ -60,12 +62,13 @@ const handleEmailClick = () => {
     }
   };
   const handleFacebookClick = () => {
-    window.open('https://www.facebook.com/SmartESABooster', '_blank');
-  }
+    window.open("https://www.facebook.com/SmartESABooster", "_blank");
+  };
   const handleinstaClick = () => {
-    window.open("https://www.instagram.com/smart.esa/", '_blank');
-  }
+    window.open("https://www.instagram.com/smart.esa/", "_blank");
+  };
   const handleTwitterClick = () => {
+
     window.open("https://twitter.com/smart_esa", '_blank');
   }
   const handleESABClick = () => {
@@ -81,17 +84,21 @@ const handleEmailClick = () => {
     const email = 'smartesa@esa.edu.lb';
     window.location.href = `mailto:${email}`;
   }
+
   return (
     <>
-      <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
+      <section className="newletter">
+        <div className="container flexSB">
+          <div className="left row">
             <h1>SUBSCRIBE</h1>
-            <span className="spanfooterstyle">Would you like to learn more about the news of Smart ESA</span>
+            <span className="spanfooterstyle">
+              Would you like to learn more about the news of Smart ESA
+            </span>
           </div>
           {/* <div className="eroormessagehadi"> */}
-          <span  className="eroormessagehadi">{erroreEmail}</span>
+          <span className="eroormessagehadi">{erroreEmail}</span>
           {/* </div> */}
+
           <div className='right row'>
           
           <input
@@ -108,21 +115,33 @@ const handleEmailClick = () => {
   }}
 />
 <i className='fa fa-paper-plane' onClick={handleSubmit}></i>
+
           </div>
         </div>
       </section>
       <footer>
-        <div className='container padding' >
-          <div className='box logo'>
-            <h1 style={{marginLeft:'10px'}}>SMART ESA</h1>
-            <span style={{marginLeft:'18px'}}>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div className="container padding">
+          <div className="box logo">
+            <h1 style={{ marginLeft: "10px" }}>SMART ESA</h1>
+            <span style={{ marginLeft: "18px" }}>
+              ONLINE EDUCATION & LEARNING
+            </span>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
 
-            <a onClick={handleFacebookClick}><i className='fab fa-facebook-f icon'></i></a>
-            <a onClick={handleinstaClick}><i className='fab fa-instagram icon'></i></a>
-            <a onClick={handleTwitterClick}><i className='fab fa-twitter icon'></i></a>
+            <a onClick={handleFacebookClick}>
+              <i className="fab fa-facebook-f icon"></i>
+            </a>
+            <a onClick={handleinstaClick}>
+              <i className="fab fa-instagram icon"></i>
+            </a>
+            <a onClick={handleTwitterClick}>
+              <i className="fab fa-twitter icon"></i>
+            </a>
           </div>
-          <div className='box link'>
+          <div className="box link">
             <h3>Explore</h3>
             <ul style={{marginTop:"-30px"}}>
             <li>
@@ -151,6 +170,7 @@ const handleEmailClick = () => {
             </li>
             </ul>
           </div>
+
       
           <div className='box'>
   <h3> MADE BY</h3>
@@ -174,6 +194,7 @@ const handleEmailClick = () => {
               <li  onClick={sendEmail} style={{cursor:"pointer"}}>
                 <i className='fa fa-paper-plane'></i>
                 smartesa@esa.edu.lb
+
               </li>
             </ul>
           </div>
@@ -185,7 +206,7 @@ const handleEmailClick = () => {
         </p>
       </div> */}
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

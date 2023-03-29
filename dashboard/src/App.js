@@ -1,5 +1,5 @@
 import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
+
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
@@ -43,6 +43,8 @@ import CreateVideo from "./pages/SmartTalk/CreateVideo";
 import SmartVideo from "./pages/SmartTalk/smartVideo";
 import SmartEdit from "./pages/SmartTalk/SmartEdit";
 import ApplyById from "./pages/ApplyNow/ApplyById";
+import FaqCreate from "./pages/FAQ/FaqCreate";
+import Login from"./pages/login/Login";
 
 
 
@@ -53,6 +55,9 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
+        <Route path="login">
+              <Route index element={<Login />} />
+              </Route>
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
@@ -84,6 +89,14 @@ function App() {
             </Route>
             <Route path="community">
               <Route index element={<Community />} />
+
+              </Route>
+            <Route path="login">
+              <Route index element={<Login />} />
+
+              </Route>
+            <Route path="faqCreate">
+              <Route index element={<FaqCreate />} />
              
             </Route>
             <Route path="events">

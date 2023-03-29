@@ -9,14 +9,16 @@ function Internationalcard() {
     isPending,
     data: Programs,
   } = useFetch("http://localhost:8000/coursesCard");
-
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  };
   return (
     <div className="maincomunitycarddiv" >
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
       {Programs &&
         Programs.map((val) => (
-          <Link to={`../Programs/${val.id}`} key={val.id} style={{ textDecoration: "none" }}>
+          <Link to={`../Programs/${val.id}`} key={val.id} style={{ textDecoration: "none" }} onClick={handleClick}>
             <div className="fathercontainercard" key={val.id}>
               <div className="headercomunity">
                 <div className="cardourcomunityrowdisplay">
