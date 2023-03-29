@@ -19,6 +19,7 @@ function Comunitycards() {
   };
   return (
     <div>
+       <div className="datatable">
         <div className="datatableTitle">
               Add New Item
               
@@ -100,7 +101,7 @@ function Comunitycards() {
               ))}
       </div>
             
-      
+      </div>
       
     </div>
   )

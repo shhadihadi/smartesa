@@ -27,10 +27,10 @@ const International = () => {
       <Sidebar />
       <div className="listContainer">
         <Navbar />
-        
 
-        <div className="details">
-          <div>
+
+        <div className="international">
+          <div >
             <Grid container spacing={5}>
               {error && <div>{error}</div>}
               {isPending && <div>Loading...</div>}
@@ -78,6 +78,7 @@ const International = () => {
           <Intercard />
 
         </div>
+       
       </div>
     </div>
   );

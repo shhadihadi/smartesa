@@ -24,20 +24,14 @@ const Events = () => {
       <div className="listContainer">
         <Navbar/>
 
-        <div className="datatable">
-            <div className="datatableTitle">
-              Add New Articles
-              <Link to="/addArticles" className="link">
-                Add New
-              </Link>
-            </div>
+      
            
        
-        <div className='events1'>
+        <div className='events'>
           <EventsHome />
           </div>
 
-          <div className='events'>  
+          <div className='events1'>  
       <Grid container   spacing={6} >
         
         {/* { error && <div>{ error }</div> }
@@ -66,7 +60,7 @@ const Events = () => {
        
        
       </div>
-    </div>
+  
   )
 }
 
