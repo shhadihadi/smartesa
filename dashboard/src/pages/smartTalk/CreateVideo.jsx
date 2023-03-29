@@ -73,7 +73,7 @@ function CreateVideo() {
         <div className="listContainer">
           <Navbar />
           <div className="edit">
-            <div className="cretetile">Create Articles</div>
+            <h2>Create SmartTalk</h2>
 
             <form onSubmit={handleSubmit}>
             <div>

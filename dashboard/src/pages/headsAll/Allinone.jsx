@@ -23,8 +23,8 @@ function Allinone() {
         <Sidebar/>
         <div className="listContainer">
           <Navbar />
-          <div className="allnavsinonehadi">
-          
+         <h2>Teams</h2>
+          <div className="datatable">
           <div className="datatableTitle">
               Add New ADMIN
               <Link to="/team/new" className="link">
@@ -32,6 +32,7 @@ function Allinone() {
               </Link>
             </div>
             
+           <div className="allnavsinonehadi">  
           { error && <div>{ error }</div> }
         { isPending && <div>Loading...</div> }
         { testimonal &&
@@ -79,7 +80,7 @@ function Allinone() {
         ))}
             
           </div>
-          
+          </div>
           </div>
           </div>
   )

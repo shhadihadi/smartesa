@@ -87,7 +87,7 @@ function AddArticles() {
         <div className="listContainer">
           <Navbar />
           <div className="edit">
-            <div className="cretetile">Create Articles</div>
+            <h2>Create Articles</h2>
 
             <form onSubmit={handleSubmit}>
             <div>
