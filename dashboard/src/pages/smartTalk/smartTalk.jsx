@@ -24,13 +24,8 @@ const SmartTalk = () => {
       <Sidebar />
       <div className="listContainer">
         <Navbar />
-        <div className="datatable">
-          <div className="datatableTitle">
-            Add New Video
-            <Link to="/createVideo" className="link">
-              Add New
-            </Link>
-          </div>
+        <h2>SmartTalk</h2>
+     
           <div className="smartTalk">
             <Grid container spacing={5}>
               {error && <div>{error}</div>}
@@ -69,7 +64,7 @@ const SmartTalk = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

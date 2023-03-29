@@ -35,7 +35,14 @@ const SmartVideo = () => {
   };
 
   return (
-    <div className="smartTalk1">
+    <div className="datatable">
+    <div className="datatableTitle">
+      Add New Video
+      <Link to="/createVideo" className="link">
+        Add New
+      </Link>
+    </div>
+    
       <Grid container spacing={3}>
         {error && <div>{error}</div>}
         {isPending && <div>Loading...</div>}
