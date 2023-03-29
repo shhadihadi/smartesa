@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+  
 
 
 function Internationalid() {
@@ -23,6 +26,23 @@ function Internationalid() {
       });
   }, [id]);
 
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
+  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
+
 
     // handle the form submit event
     const handleSubmit = async (e) => {
@@ -31,7 +51,7 @@ function Internationalid() {
       const updatedCard = {
         title,Paragraphs
       };
-  
+
       // update the card with the given id on the server
       try {
         const response = await fetch(`http://localhost:8000/internationaProgramHome/${id}`, {
@@ -77,6 +97,12 @@ function Internationalid() {
                 onChange={(e) => setParagraphs(e.target.value)}
                 
                 ></textarea>
+                                           {/* <ReactQuill
+                      value={Paragraphs}
+     onChange={setParagraphs}
+     modules={modules}
+     formats={formats}
+   />  */}
                 </div>
               </div>
               </form>

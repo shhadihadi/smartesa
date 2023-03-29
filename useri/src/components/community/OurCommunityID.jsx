@@ -22,12 +22,13 @@ const OurCommunityID = () => {
                 {val.nb} {val.title}
               </h2>
 
-              {val.paragraphs?.split("\n").map((line, index) => (
+              {/* {val.paragraphs?.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
                   <br />
                 </React.Fragment>
-              ))}
+              ))} */}
+              <div dangerouslySetInnerHTML={{ __html: val.paragraphs }}></div>
             </div>
             {val.communityimg && val.communityimg.length > 0 && (
               <div className="image-container">

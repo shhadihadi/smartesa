@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import { useState } from 'react'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 function AddTeam() {
   const [name, setname] = useState("");
@@ -49,6 +51,22 @@ function AddTeam() {
 
   
   };
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
+  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
 
 
   return (
@@ -90,11 +108,18 @@ function AddTeam() {
                   
                   <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
-                <textarea  cols="30" rows="10" placeholder="Message" 
+                {/* <textarea  cols="30" rows="10" placeholder="Message" 
                 value={desc}
                 onChange={(e) =>setdesc(e.target.value)}
                 
-                ></textarea>
+                ></textarea> */}
+                <ReactQuill
+                      value={desc}
+     onChange={setdesc}
+     modules={modules}
+     formats={formats}
+   />
+
                 </div>
                   </div>
                   </form>

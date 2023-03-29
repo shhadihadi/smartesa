@@ -11,7 +11,6 @@ function Createcom() {
   const [paragraphs, setparagraphs] = useState('');
   const [communityimg, setCommunityimg] = useState([]);
   // const [paragraphs, setparagraphs] = useState('');
-  const [content, setContent] = useState('');
   
   
 
@@ -80,12 +79,15 @@ function Createcom() {
      'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
      
 
-  
+     <ReactQuill
+     value={paragraphs}
+     onChange={setparagraphs}
+     modules={modules}
+     formats={formats}
+   />
 
-  return (   
+  return (
     <div>
-      <div dangerouslySetInnerHTML={{__html: content}}></div>
-      
       <div className="list">
         <Sidebar />
         <div className="listContainer">
@@ -122,19 +124,12 @@ function Createcom() {
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
-                {/* <textarea  cols="30" rows="10" placeholder="Message" 
+                <textarea  cols="30" rows="10" placeholder="Message" 
                 onChange={(e) =>setparagraphs(e.target.value)}
                 
-                ></textarea> */}
-              
-                   <ReactQuill
-     value={paragraphs}
-     onChange={setparagraphs}
-     modules={modules}
-     formats={formats}
-   /> </div>
+                ></textarea>
                 </div>
-                
+                  </div>
                   </form>
         </div>
         </div>
