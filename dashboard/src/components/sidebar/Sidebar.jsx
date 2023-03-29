@@ -28,18 +28,9 @@ const Sidebar = () => {
       <hr />
       <div className="center">
         <ul>
-          <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+        
           <p className="title">LISTS</p>
-          <Link to="/users" style={{ textDecoration: "none" }}>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Admins</span>
-            </li>
-          </Link>
+          
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
@@ -52,18 +43,9 @@ const Sidebar = () => {
             <span>ABOUT US</span>
           </li>
           </Link>
-          <Link to="/international" style={{ textDecoration: "none" }}>
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>INTERNATIONAL</span>
-          </li>
-          </Link>
-          <p className="title">USEFUL</p>
-          <Link to="/community" style={{ textDecoration: "none" }}>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>OUR COMMUINTY</span>
-          </li></Link>
+          
+          
+          
           {/* <li>
             <NotificationsNoneIcon className="icon" />
             <span>OUR COMMUINTY</span>
@@ -75,6 +57,11 @@ const Sidebar = () => {
             <span>EVENTS</span>
           </li>
           </Link>
+          <Link to="/community" style={{ textDecoration: "none" }}>
+          <li>
+            <InsertChartIcon className="icon" />
+            <span>OUR COMMUINTY</span>
+          </li></Link>
           <Link to="/smartTalk" style={{ textDecoration: "none" }}>
           <li>
             <PsychologyOutlinedIcon className="icon" />
@@ -92,6 +79,12 @@ const Sidebar = () => {
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
             <span>Methotogy</span>
+          </li>
+          </Link>
+          <Link to="/international" style={{ textDecoration: "none" }}>
+          <li>
+            <LocalShippingIcon className="icon" />
+            <span>INTERNATIONAL</span>
           </li>
           </Link>
           <Link to="/allinnone" style={{ textDecoration: "none" }}>

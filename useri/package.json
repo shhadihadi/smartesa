@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "@formspree/react": "^2.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -17,8 +18,9 @@
     "fortawesome": "^0.0.1-security",
     "framer-motion": "^10.9.1",
     "react": "^18.2.0",
+    "react-animated-popup": "^0.1.8",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.3.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.8.2",
     "react-scripts": "^5.0.1",

@@ -51,7 +51,8 @@ function Allinone() {
                 </div>
               </div>
               <div className="AllInfoTeams">
-                <p>{val.desc}</p>
+                {/* <p>{val.desc}</p> */}
+                <div dangerouslySetInnerHTML={{ __html: val.desc }}></div>
               </div>
               </div>
               

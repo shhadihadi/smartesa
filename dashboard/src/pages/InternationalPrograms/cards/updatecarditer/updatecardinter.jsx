@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../../../components/navbar/Navbar";
 import Sidebar from "../../../../components/sidebar/Sidebar";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 function Updatecardinter() {
   const { id } = useParams();
   const navigate = useNavigate();
-  
+
   const [coursesName, setCoursesName] = useState("");
   const [cover, setCover] = useState(null);
   const [courTeacher, setCourTeacher] = useState([]);
@@ -20,7 +22,7 @@ function Updatecardinter() {
   const [prevCourTeacher, setPrevCourTeacher] = useState([]);
   const [AboutALL, setAboutALL] = useState("");
   const [detailsimg, setdetailsimg] = useState([]);
-  const [predetailsimg,setpredetailsimg] = useState([]);
+  const [predetailsimg, setpredetailsimg] = useState([]);
 
   // fetch the data for the card with the given id on component mount
   useEffect(() => {
@@ -61,10 +63,10 @@ function Updatecardinter() {
     const images = [];
     // setCommunityimg([null]);
 
-      // Check if there are any new images
-      if (files.length === 0) {
-        return;
-      }
+    // Check if there are any new images
+    if (files.length === 0) {
+      return;
+    }
     files.forEach((file) => {
       const reader = new FileReader();
       // setCommunityimg = null;
@@ -83,10 +85,10 @@ function Updatecardinter() {
     const images = [];
     // setCommunityimg([null]);
 
-      // Check if there are any new images
-      if (files.length === 0) {
-        return;
-      }
+    // Check if there are any new images
+    if (files.length === 0) {
+      return;
+    }
     files.forEach((file) => {
       const reader = new FileReader();
       // setCommunityimg = null;
@@ -99,11 +101,29 @@ function Updatecardinter() {
 
       reader.readAsDataURL(file);
     });
-    
   };
+  
+  
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
+  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
   // handle the form submit event
   const handleSubmit = async (e) => {
     e.preventDefault();
+
 
     const updatedCard = {
       coursesName,
@@ -115,7 +135,7 @@ function Updatecardinter() {
       text,
       cover: prevCover,
       AboutALL,
-      detailsimg:detailsimg,
+      detailsimg: detailsimg,
 
       courTeacher: courTeacher,
     };
@@ -137,8 +157,7 @@ function Updatecardinter() {
       console.error(err);
     }
   };
-  
-  
+
   return (
     <>
       <div className="list">
@@ -146,7 +165,6 @@ function Updatecardinter() {
         <div className="listContainer">
           <Navbar />
           <div className="formstyle">
-            
             <form onSubmit={handleSubmit}>
               <div className="formallupdate">
                 <div className="asoneRowHadi">
@@ -158,8 +176,8 @@ function Updatecardinter() {
                   />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Cover Image</h3>
-                <input
+                  <h3>Cover Image</h3>
+                  <input
                     type="file"
                     accept="image/png, image/gif, image/jpeg, image/jpeg0 "
                     // accept="image/*"
@@ -167,87 +185,99 @@ function Updatecardinter() {
                   />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Target</h3>
-                <input
+                  <h3>Target</h3>
+                  <input
                     type="text"
                     value={TARGET}
                     onChange={(e) => setTARGET(e.target.value)}
                   />
-                  <button >submit</button>
+                  <button>submit</button>
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Sector</h3>
-                <input
+                  <h3>Sector</h3>
+                  <input
                     type="text"
                     value={SECTOR}
                     onChange={(e) => setSECTOR(e.target.value)}
                   />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Type</h3>
-                <input
+                  <h3>Type</h3>
+                  <input
                     type="text"
                     value={TYPE}
                     onChange={(e) => setTYPE(e.target.value)}
                   />
-                </div>  
+                </div>
                 <div className="asoneRowHadi">
-                <h3>Objective</h3>
-                <input
+                  <h3>Objective</h3>
+                  <input
                     type="text"
                     value={OBJECTIVE}
                     onChange={(e) => setOBJECTIVE(e.target.value)}
                   />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>DURATION</h3>
-                <input
+                  <h3>DURATION</h3>
+                  <input
                     type="text"
                     value={DURATION}
                     onChange={(e) => setDURATION(e.target.value)}
                   />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Images</h3>
-                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
-                 onChange={handleHoverCoverChange}/>
+                  <h3>Images</h3>
+                  <input
+                    type="file"
+                    multiple
+                    name="myImage"
+                    accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                    onChange={handleHoverCoverChange}
+                  />
 
-          <h3 style={{marginLeft:"70px"}}>Info</h3>
-                <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
-                
-                onChange={HANDELmoreInfoIMG}
-                 />
-                
+                  <h3 style={{ marginLeft: "70px" }}>Info</h3>
+                  <input
+                    type="file"
+                    multiple
+                    name="myImage"
+                    accept="image/png, image/gif, image/jpeg, image/jpeg0 "
+                    onChange={HANDELmoreInfoIMG}
+                  />
                 </div>
                 <div className="asoneRowHadi">
-                <h3>Paragraph</h3>
-                <textarea id="message" cols="30" rows="10" placeholder="Message" value={text}
+                  <h3>Paragraph</h3>
+                  {/* <textarea id="message" cols="30" rows="10" placeholder="Message" value={text}
                 onChange={(e) => setText(e.target.value)}
                 
-                ></textarea>
-                
+                ></textarea> */}
+                  <ReactQuill
+                    value={text}
+                    onChange={setText}
+                    modules={modules}
+                    formats={formats}
+                  />
                 </div>
-                <div style={{marginTop:"-45px"}} className="asoneRowHadi">
-                <h3>MoreInfo</h3>
-                <textarea id="message" cols="30" rows="10" placeholder="Message" value={AboutALL}
+                <div style={{marginTop:"150px"}} className="asoneRowHadi" >
+                  <h3>MoreInfo</h3>
+                  {/* <textarea id="message" cols="30" rows="10" placeholder="Message" value={AboutALL}
                 onChange={(e) => setAboutALL(e.target.value)}
                 
                 ></textarea>
-                
+                 */}
+                  <ReactQuill
+                    value={AboutALL}
+                    onChange={setAboutALL}
+                    modules={modules}
+                    formats={formats}
+                  />
                 </div>
-                
-
               </div>
-            
             </form>
           </div>
-          </div>
-          </div>
-      
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Updatecardinter
-
-
+export default Updatecardinter;

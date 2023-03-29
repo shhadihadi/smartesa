@@ -45,13 +45,9 @@ const Commuinty = () => {
         />
                 
                
-              <h4>{val.Paragraphs?.split('\n').map((line, index) => (
-                          <React.Fragment key={index}>
-                            {line}
-                            <br />
-                          </React.Fragment>
-                        ))} 
-                        </h4>
+              {/* <h4> */}
+                <div dangerouslySetInnerHTML={{ __html: val.Paragraphs }}></div>
+                        {/* </h4> */}
               
           
             </Paper>

@@ -25,7 +25,10 @@ function Intercard() {
               <Link to="/intro/new" className="link">
                 Add New
               </Link>
-           </div>
+
+            </div>
+            
+
      {/* <Icon baseClassName="fas" className="fa-plus-circle" fontSize="small" /> */}
     <div className='intercardallinone'>
     
@@ -103,14 +106,15 @@ function Intercard() {
           
 
 
-<p>
+{/* <p>
 {val.text?.split('\n').map((line, index) => (
   <React.Fragment key={index}>
     {line}
     <br />
   </React.Fragment>
 ))}
-    </p>
+    </p> */}
+    <div dangerouslySetInnerHTML={{ __html: val.text }}></div>
               
         </div>
 

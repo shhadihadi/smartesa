@@ -27,7 +27,7 @@ const International = () => {
       <Sidebar />
       <div className="listContainer">
         <Navbar />
-       
+
 
         <div className="international">
           <div >
@@ -60,6 +60,7 @@ const International = () => {
                           </React.Fragment>
                         ))} 
                         </h4>
+                          {/* <div dangerouslySetInnerHTML={{ __html: val.Paragraphs }}></div> */}
 
                     </Paper>
                   </Grid>
