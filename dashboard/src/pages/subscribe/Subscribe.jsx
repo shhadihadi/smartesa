@@ -1,13 +1,16 @@
 import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 // import useFetch from '../../useFetch';
-import { Box } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import { useEffect, useState } from 'react';
 
 import './sub.scss'
 import { DeleteOutlined } from '@mui/icons-material';
+import { CSVLink, CSVDownload } from 'react-csv';
+
+import * as XLSX from 'xlsx';
 
 
 
@@ -16,6 +19,7 @@ import { DeleteOutlined } from '@mui/icons-material';
 const Subscribe= () => {
     // const { error, isPending, data: subscribe } = useFetch('http://localhost:8000/subscribe')
     const [tableData, setTableData]=useState([])
+  
 
     useEffect(() => {
         fetch("http://localhost:8000/subscribe")
@@ -85,10 +89,34 @@ const Subscribe= () => {
        
         rowsPerPageOptions={[5]}
         checkboxSelection
-     
-      />
+       
+   
       
-     
+      />
+     <IconButton
+     className="my-icon-button"
+     >
+     <CSVLink data={tableData} filename={"my-table-data.csv"}>
+    Export CSV
+</CSVLink>
+
+    </IconButton>
+
+  
+  <IconButton 
+  className="my-icon-button"
+  onClick={() => {
+    const workbook = XLSX.utils.book_new();
+    const worksheet = XLSX.utils.json_to_sheet(tableData);
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'subscribes');
+    XLSX.writeFile(workbook, 'walaa.xlsx');
+  }}>
+    <span color="dark">Export Excel</span>
+  </IconButton>
+
+
+      
+      
     </div> 
        
          </Box>
