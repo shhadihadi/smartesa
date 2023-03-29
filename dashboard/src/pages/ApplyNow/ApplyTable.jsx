@@ -1,16 +1,17 @@
 import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 // import useFetch from '../../useFetch';
-import { Box } from '@mui/material';
+import { Box , IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
+import { CSVLink } from 'react-csv';
 
 import './apply.scss'
 import { DeleteOutlined } from '@mui/icons-material';
 
-
+import * as  XLSX from'xlsx'
 
 
 
@@ -113,11 +114,30 @@ const ApplyTable= () => {
         columns={columns}
        
         rowsPerPageOptions={[5]}
-        
-       
+
      
       />
       
+      <IconButton
+     className="my-icon-button"
+     >
+     <CSVLink data={tableData} filename={"my-table-data.csv"}>
+    Export CSV
+</CSVLink>
+
+    </IconButton>
+
+  
+  <IconButton 
+  className="my-icon-button"
+  onClick={() => {
+    const workbook = XLSX.utils.book_new();
+    const worksheet = XLSX.utils.json_to_sheet(tableData);
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'subscribes');
+    XLSX.writeFile(workbook, 'apply.xlsx');
+  }}>
+    <span color="dark">Export Excel</span>
+  </IconButton>
      
     </div> 
        

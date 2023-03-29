@@ -58,7 +58,7 @@ function AddArticles() {
     setDate('');
     setDesc('');
     setCover('');
-    // setCommunityimg('');
+   
     
   };
 
