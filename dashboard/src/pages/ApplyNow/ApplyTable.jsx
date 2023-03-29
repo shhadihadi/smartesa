@@ -56,25 +56,25 @@ const ApplyTable= () => {
           field: 'Mobile',
           headerName: 'Mobile',
           type: 'text',
-          width: 100,
+          width: 150,
         },
         {
           field: 'ProjectCOMname',
           headerName: 'Project Name',
           type: 'text',
-          width: 100,
+          width: 150,
         },
         {
           field: 'Email',
           headerName: 'Email',
           type: 'email',
-          width: 150,
+          width: 100,
         },
         {
           field: 'CustomWebsite',
           headerName: 'Customer Website',
           type: 'text',
-          width: 150,
+          width: 100,
         },
         
         {
@@ -84,20 +84,33 @@ const ApplyTable= () => {
           width: 100,
           renderCell: (params) => {
             return (
-              <div className="cellAction">
-                   <Link to={`/applyById/${params.row.id}`}style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
+              
                 <div
                   className="deleteButton"
                   onClick={() => handledelete(params.row.id)}
                 >
                <DeleteOutlined />
                 </div>
-              </div>
+             
             );
             },
               },
+              {
+                field: 'view',
+                headerName: 'View ',
+                type: 'view',
+                width: 100,
+                renderCell: (params) => {
+                  return (
+                    <div className="cellAction">
+                         <Link to={`/applyById/${params.row.id}`}style={{ textDecoration: "none" }}>
+                    <div className="viewButton">View</div>
+                  </Link>
+                      
+                    </div>
+                  );
+                  },
+                    },
       ];
 
 
