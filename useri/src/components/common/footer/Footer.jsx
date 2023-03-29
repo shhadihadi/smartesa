@@ -1,29 +1,29 @@
-import React from "react"
-import "./footer.css"
+import React from "react";
+import "./footer.css";
 import { useState } from "react";
 const Footer = () => {
-  const [email, setemail] = useState('');
-  const [erroreEmail, seterroreEmail] = useState('');
+  const [email, setemail] = useState("");
+  const [erroreEmail, seterroreEmail] = useState("");
 
   const validateEmail = (email) => {
     const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegEx.test(email);
-  } 
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     if (!validateEmail(email)) {
-      seterroreEmail('Please enter a valid email address.');
+      seterroreEmail("Please enter a valid email address.");
     } else {
       fetch(`http://localhost:8000/subscribe/`)
-        .then(response => response.json())
-        .then(subscribers => {
-          if (subscribers.some(subscriber => subscriber.email === email)) {
-            seterroreEmail('This email is already registered.');
+        .then((response) => response.json())
+        .then((subscribers) => {
+          if (subscribers.some((subscriber) => subscriber.email === email)) {
+            seterroreEmail("This email is already registered.");
           } else {
             const subscribe = { email };
-  
+
             fetch(`http://localhost:8000/subscribe/`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -32,7 +32,7 @@ const Footer = () => {
               .then(() => {
                 setemail("");
                 seterroreEmail(""); // Reset error message
-                e.target.reset(); 
+                e.target.reset();
                 // Success handling code here
               })
               .catch((error) => {
@@ -48,49 +48,61 @@ const Footer = () => {
     }
   };
   const handleFacebookClick = () => {
-    window.open('https://www.facebook.com/SmartESABooster', '_blank');
-  }
+    window.open("https://www.facebook.com/SmartESABooster", "_blank");
+  };
   const handleinstaClick = () => {
-    window.open("https://www.instagram.com/smart.esa/", '_blank');
-  }
+    window.open("https://www.instagram.com/smart.esa/", "_blank");
+  };
   const handleTwitterClick = () => {
-    window.open("https://twitter.com/smart_esa", '_blank');
-  }
+    window.open("https://twitter.com/smart_esa", "_blank");
+  };
   return (
     <>
-      <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
+      <section className="newletter">
+        <div className="container flexSB">
+          <div className="left row">
             <h1>SUBSCRIBE</h1>
-            <span className="spanfooterstyle">Would you like to learn more about the news of Smart ESA</span>
+            <span className="spanfooterstyle">
+              Would you like to learn more about the news of Smart ESA
+            </span>
           </div>
           {/* <div className="eroormessagehadi"> */}
-          <span  className="eroormessagehadi">{erroreEmail}</span>
+          <span className="eroormessagehadi">{erroreEmail}</span>
           {/* </div> */}
-          <div className='right row'>
-          
-          <input
-  type='email'
-  placeholder='Enter email address'
-  value={email}
-  onChange={(e) => setemail(e.target.value)}
-/>
-<i className='fa fa-paper-plane' onClick={handleSubmit}></i>
+          <div className="right row">
+            <input
+              type="email"
+              placeholder="Enter email address"
+              value={email}
+              onChange={(e) => setemail(e.target.value)}
+            />
+            <i className="fa fa-paper-plane" onClick={handleSubmit}></i>
           </div>
         </div>
       </section>
       <footer>
-        <div className='container padding' >
-          <div className='box logo'>
-            <h1 style={{marginLeft:'10px'}}>SMART ESA</h1>
-            <span style={{marginLeft:'18px'}}>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div className="container padding">
+          <div className="box logo">
+            <h1 style={{ marginLeft: "10px" }}>SMART ESA</h1>
+            <span style={{ marginLeft: "18px" }}>
+              ONLINE EDUCATION & LEARNING
+            </span>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
 
-            <a onClick={handleFacebookClick}><i className='fab fa-facebook-f icon'></i></a>
-            <a onClick={handleinstaClick}><i className='fab fa-instagram icon'></i></a>
-            <a onClick={handleTwitterClick}><i className='fab fa-twitter icon'></i></a>
+            <a onClick={handleFacebookClick}>
+              <i className="fab fa-facebook-f icon"></i>
+            </a>
+            <a onClick={handleinstaClick}>
+              <i className="fab fa-instagram icon"></i>
+            </a>
+            <a onClick={handleTwitterClick}>
+              <i className="fab fa-twitter icon"></i>
+            </a>
           </div>
-          <div className='box link'>
+          <div className="box link">
             <h3>Explore</h3>
             <ul>
               <li>About Us</li>
@@ -100,28 +112,40 @@ const Footer = () => {
               <li>Contact us</li>
             </ul>
           </div>
-      
-          <div className='box'>
-  <h3> MADE BY</h3>
-  <img src='/images/made.png' alt='Made by'style={{marginTop:'-20px'}}></img>
-  <h3 style={{marginTop:'10px'}}> SUPPORTED BY </h3>
-  <img src='/images/s1.png' alt='Supported by' style={{paddingBottom:'10px'}}></img>
-  <img src='/images/s2.png' alt='Supported by'  style={{marginTop:'-100px',paddingLeft:'5px'}} ></img>
-</div>
-          
-          <div className='box last'>
+
+          <div className="box">
+            <h3> MADE BY</h3>
+            <img
+              src="/images/made.png"
+              alt="Made by"
+              style={{ marginTop: "-20px" }}
+            ></img>
+            <h3 style={{ marginTop: "10px" }}> SUPPORTED BY </h3>
+            <img
+              src="/images/s1.png"
+              alt="Supported by"
+              style={{ paddingBottom: "10px" }}
+            ></img>
+            <img
+              src="/images/s2.png"
+              alt="Supported by"
+              style={{ marginTop: "-100px", paddingLeft: "5px" }}
+            ></img>
+          </div>
+
+          <div className="box last">
             <h3>Have a Questions?</h3>
             <ul>
               <li>
-                <i className='fa fa-map'></i>
+                <i className="fa fa-map"></i>
                 289 rue Clemenceau, Beirut, Lebanon
               </li>
               <li>
-                <i className='fa fa-phone-alt'></i>
+                <i className="fa fa-phone-alt"></i>
                 +961 76 837 264
               </li>
               <li>
-                <i className='fa fa-paper-plane'></i>
+                <i className="fa fa-paper-plane"></i>
                 info@yourdomain.com
               </li>
             </ul>
@@ -134,7 +158,7 @@ const Footer = () => {
         </p>
       </div> */}
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
