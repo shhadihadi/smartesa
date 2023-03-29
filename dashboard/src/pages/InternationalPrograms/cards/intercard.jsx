@@ -19,12 +19,13 @@ function Intercard() {
   };
   return (
     <>
-      <div className="datatableTitle">
+      <div className="datatable">
+        <div className="datatableTitle">
               Add New Item
               <Link to="/intro/new" className="link">
                 Add New
               </Link>
-            </div>
+           </div>
      {/* <Icon baseClassName="fas" className="fa-plus-circle" fontSize="small" /> */}
     <div className='intercardallinone'>
     
@@ -119,6 +120,7 @@ function Intercard() {
 
       
       
+    </div>
     </div>
     </>
   )

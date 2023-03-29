@@ -29,6 +29,14 @@ const Articles = () => {
   };
  
   return (
+
+    <div className="datatable">
+    <div className="datatableTitle">
+      Add New Articles
+      <Link to="/addArticles" className="link">
+        Add New
+      </Link>
+    </div>
     <ImageList sx={{ width: "100%", gap: 40, maxHeight: 500}}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div" background="red">Events </ListSubheader>
@@ -66,6 +74,7 @@ const Articles = () => {
         </ImageListItem>
       ))}
     </ImageList>
+    </div>
   )
 }
 

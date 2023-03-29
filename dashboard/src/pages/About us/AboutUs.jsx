@@ -35,10 +35,10 @@ const AboutUs = () => {
        <AboutHome />
        </div>
     
-       <div className='details'> 
+      
        
-       <div>
-        
+      
+         <div className='details'> 
         
       <Grid container   spacing={5} >
         
@@ -93,7 +93,7 @@ const AboutUs = () => {
 
     
      </div>
-     </div> 
+   
      
    
   )
