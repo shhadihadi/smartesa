@@ -4,7 +4,7 @@
 // function LoginForm() {
 //   const [email, setEmail] = useState('');
 //   const [password, setPassword] = useState('');
-//   const { post, loading, error } = useFetch('http://localhost:8000');
+//   const { post, loading, error } = useFetch('http://localhost:8000/login');
 
 //   const handleEmailChange = (event) => {
 //     setEmail(event.target.value);
@@ -21,7 +21,7 @@
 
 //     if (data) {
 //       localStorage.setItem('authToken', data.authToken);
-//       window.location.href = '/dashboard';
+//       window.location.href = '/users';
 //     }
 //   };
 

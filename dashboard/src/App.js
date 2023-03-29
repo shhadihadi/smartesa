@@ -46,6 +46,7 @@ import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
 import CreateVideo from "./pages/smartTalk/CreateVideo";
 import ApplyById from "./pages/ApplyNow/ApplyById";
 import FaqCreate from "./pages/FAQ/FaqCreate";
+import LoginForm from "./pages/login/Login";
 
 
 
@@ -87,6 +88,10 @@ function App() {
             </Route>
             <Route path="community">
               <Route index element={<Community />} />
+
+              </Route>
+            <Route path="login">
+              <Route index element={<LoginForm />} />
 
               </Route>
             <Route path="faqCreate">
