@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import { Link } from 'react-router-dom';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 
 function AddArticles() {
@@ -61,6 +63,22 @@ function AddArticles() {
    
     
   };
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
+  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
 
   return (
     <>
@@ -88,14 +106,7 @@ function AddArticles() {
                       onChange={(e) => setDate(e.target.value)}
                     />
                   </div>
-                <div>
-             <label>Paragraph</label>
-              
-                <textarea
-                  value={desc}
-                  onChange={(e) => setDesc(e.target.value)}
-                ></textarea>
-              </div>
+            
               <div className="createmetho">
                 <div className="textoutputdisplay" style={{ marginTop: '-28px' }}>
                   <p>Cover</p>
@@ -103,6 +114,16 @@ function AddArticles() {
                 onChange={handleCoverChange}
                  />
                 </div>
+                <div>
+             <label>Paragraph</label>
+              
+             <ReactQuill
+                      value={desc}
+     onChange={setDesc}
+     modules={modules}
+     formats={formats}
+   />
+              </div>
                 
               </div>
               <button>Save</button>

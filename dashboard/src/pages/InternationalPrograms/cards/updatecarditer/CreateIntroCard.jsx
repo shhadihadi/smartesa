@@ -5,6 +5,8 @@ import Navbar from '../../../../components/navbar/Navbar';
 import Sidebar from '../../../../components/sidebar/Sidebar';
 import { useState, useEffect } from "react"
 import './updatecard.css'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 function CreateIntroCard() {
   const [coursesName, setcoursesName] = useState(""); 
@@ -18,6 +20,27 @@ function CreateIntroCard() {
   const [TYPE, setTYPE] = useState("");
   const [text, settext] = useState("");
   const [AboutALL, setAboutALL] = useState("");
+  
+
+  
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
+  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
+     
+
   
 
   const handleCoverChange = (e) => {
@@ -184,19 +207,31 @@ function CreateIntroCard() {
                 </div>
                 <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
-                <textarea  cols="30" rows="10" placeholder="Message" 
+                {/* <textarea  cols="30" rows="10" placeholder="Message" 
                 value={text}
                 onChange={(e) =>settext(e.target.value)}
                 
-                ></textarea>
+                ></textarea> */}
+                               <ReactQuill
+     value={text}
+     onChange={settext}
+     modules={modules}
+     formats={formats}
+   />
                 </div>
-                <div className="asoneRowHadi">
-                <h3>Details</h3>
-                <textarea  cols="30" rows="10" placeholder="Message" 
+                <div className="asoneRowHadi " style={{marginTop:"150px"}}>
+                <h3 >Details</h3>
+                {/* <textarea  cols="30" rows="10" placeholder="Message" 
                 value={AboutALL}
                 onChange={(e) =>setAboutALL(e.target.value)}
                 
-                ></textarea>
+                ></textarea> */}
+                 <ReactQuill
+               value={AboutALL}
+              onChange={setAboutALL}
+               modules={modules}
+     formats={formats}
+   />
                 </div>
                 
 

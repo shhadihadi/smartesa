@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { useState } from "react";
+import { Link } from "react-router-dom"
 const Footer = () => {
   const [email, setemail] = useState("");
   const [erroreEmail, seterroreEmail] = useState("");
@@ -8,9 +9,22 @@ const Footer = () => {
   const validateEmail = (email) => {
     const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegEx.test(email);
-  };
+
+  } 
+  function makeCall() {
+    const phoneNumber = '+961 1 373 373';
+    window.location.href = `tel:${phoneNumber}`;
+  }
+  const mapURL =
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6620.587516439213!2d35.525072!3d33.8923635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1738dcd7eb75%3A0xd684276ebcee3b26!2s289%20Rue%20Clemenceau%2C%20Beirut%2C%20Lebanon!5e0!3m2!1sen!2sus!4v1656364449134!5m2!1sen!2sus";
+
+const handleEmailClick = () => {
+  window.open(mapURL, "_blank");
+};
+
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
 
     if (!validateEmail(email)) {
@@ -54,8 +68,23 @@ const Footer = () => {
     window.open("https://www.instagram.com/smart.esa/", "_blank");
   };
   const handleTwitterClick = () => {
-    window.open("https://twitter.com/smart_esa", "_blank");
-  };
+
+    window.open("https://twitter.com/smart_esa", '_blank');
+  }
+  const handleESABClick = () => {
+    window.open("https://www.esa.edu.lb/french/home", '_blank');
+  }
+  const handleBankClick = () => {
+    window.open("https://www.bdl.gov.lb/", '_blank');
+  }
+  const handleLBFClick = () => {
+    window.open("https://lb.ambafrance.org/", '_blank');
+  }
+  function sendEmail() {
+    const email = 'smartesa@esa.edu.lb';
+    window.location.href = `mailto:${email}`;
+  }
+
   return (
     <>
       <section className="newletter">
@@ -69,14 +98,24 @@ const Footer = () => {
           {/* <div className="eroormessagehadi"> */}
           <span className="eroormessagehadi">{erroreEmail}</span>
           {/* </div> */}
-          <div className="right row">
-            <input
-              type="email"
-              placeholder="Enter email address"
-              value={email}
-              onChange={(e) => setemail(e.target.value)}
-            />
-            <i className="fa fa-paper-plane" onClick={handleSubmit}></i>
+
+          <div className='right row'>
+          
+          <input
+  type='email'
+  placeholder='Enter email address'
+  value={email}
+  onChange={(e) => setemail(e.target.value)}
+  onKeyDown={(e) => {
+    // if (e.keyCode === 13) 
+    if (e.key === 'Enter')
+    {
+      handleSubmit(e);
+    }
+  }}
+/>
+<i className='fa fa-paper-plane' onClick={handleSubmit}></i>
+
           </div>
         </div>
       </section>
@@ -104,49 +143,58 @@ const Footer = () => {
           </div>
           <div className="box link">
             <h3>Explore</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+            <ul style={{marginTop:"-30px"}}>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+          
+            <li >
+              {/* <Link to='/courses'>All Courses</Link> */}
+                <Link  to='/PROGRAMS'>PROGRAMS</Link>
+              
+            </li>
+            <li>
+              <Link to='/about'>About</Link>
+            </li>
+            <li>
+              <Link to='/SmarTalk'>SmarTalk</Link>
+            </li>
+            <li>
+              <Link to='/OurCommunity'>Community</Link>
+            </li>
+            <li>
+              <Link to='/events'>Events</Link>
+            </li>
+            <li>
+              <Link to='/contact'>Contact</Link>
+            </li>
             </ul>
           </div>
 
-          <div className="box">
-            <h3> MADE BY</h3>
-            <img
-              src="/images/made.png"
-              alt="Made by"
-              style={{ marginTop: "-20px" }}
-            ></img>
-            <h3 style={{ marginTop: "10px" }}> SUPPORTED BY </h3>
-            <img
-              src="/images/s1.png"
-              alt="Supported by"
-              style={{ paddingBottom: "10px" }}
-            ></img>
-            <img
-              src="/images/s2.png"
-              alt="Supported by"
-              style={{ marginTop: "-100px", paddingLeft: "5px" }}
-            ></img>
-          </div>
-
-          <div className="box last">
+      
+          <div className='box'>
+  <h3> MADE BY</h3>
+  <img src='/images/made.png' alt='Made by'style={{marginTop:'-20px',cursor:"pointer"}} onClick={handleESABClick}></img>
+  <h3 style={{marginTop:'10px'}}> SUPPORTED BY </h3>
+  <img src='/images/s1.png' alt='Supported by' style={{paddingBottom:'10px',cursor:"pointer"}} onClick={handleBankClick}></img>
+  <img src='/images/s2.png' alt='Supported by'  style={{marginTop:'-100px',paddingLeft:'5px',cursor:"pointer"}}  onClick={handleLBFClick}></img>
+</div>
+          
+          <div className='box last'>
             <h3>Have a Questions?</h3>
             <ul>
-              <li>
-                <i className="fa fa-map"></i>
+              <li style={{cursor:"pointer"}} onClick={handleEmailClick}>
+                <i className='fa fa-map' style={{cursor:"pointer"}}></i>
                 289 rue Clemenceau, Beirut, Lebanon
               </li>
-              <li>
-                <i className="fa fa-phone-alt"></i>
-                +961 76 837 264
+              <li onClick={makeCall} style={{cursor:"pointer"}}>
+                <i className='fa fa-phone-alt'></i>
+                +961 1 373 373
               </li>
-              <li>
-                <i className="fa fa-paper-plane"></i>
-                info@yourdomain.com
+              <li  onClick={sendEmail} style={{cursor:"pointer"}}>
+                <i className='fa fa-paper-plane'></i>
+                smartesa@esa.edu.lb
+
               </li>
             </ul>
           </div>

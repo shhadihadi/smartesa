@@ -14,8 +14,9 @@ const PriceCard = () => {
             {/*<span>$</span>*/}
             {val.nb}
           </h1>
-          <p>{val.paragraphs?.substring(0,130) + '...'}</p>
-          <button className='outline-btn'>KNOW MORE</button>
+          {/* <p>{val.paragraphs?.substring(0,130) + '...'}</p> */}
+          <p><div dangerouslySetInnerHTML={{ __html: val.paragraphs?.substring(0, 130) + '...' }}></div>  </p>   
+               <button className='outline-btn'>KNOW MORE</button>
         </div>
       ))}
     </>
