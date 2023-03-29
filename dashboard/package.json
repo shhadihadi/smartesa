@@ -25,6 +25,7 @@
     "react-pdf": "^6.2.2",
     "react-router-dom": "^6.9.0",
     "react-scripts": "^5.0.1",
+    "react-toastify": "^9.1.2",
     "recharts": "^2.1.9",
     "sass": "^1.49.9",
     "use-http": "^1.0.27",

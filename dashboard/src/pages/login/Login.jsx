@@ -1,45 +1,44 @@
-import React, { useState } from 'react';
-import { useFetch } from 'use-http';
+import { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import useFetch from '../../useFetch';
+import './login.scss'
 
-function LoginForm() {
-  const [email, setEmail] = useState('');
+const Login= () => {
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const { post, loading, error } = useFetch('http://localhost:8000/login');
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
+  const usenavigate=useNavigate();
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
+  const { loading, error, data } = useFetch('http://localhost:8000/users');
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const loginData = { email, password };
-    const data = await post('/login', loginData);
-
-    if (data) {
-      localStorage.setItem('authToken', data.authToken);
-      window.location.href = '/users';
+  const handleLogin = () => {
+    const user = data.find(user => user.username === username && user.password === password);
+    if (user) {
+      alert('Login successful!');
+      usenavigate('/')
+    } else {
+      alert('Invalid username or password');
     }
-  };
+  }
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" value={email} onChange={handleEmailChange} />
-
-      <label htmlFor="password">Password:</label>
-      <input type="password" id="password" value={password} onChange={handlePasswordChange} />
-
-      <button type="submit" disabled={loading}>
-        {loading ? 'Logging in...' : 'Login'}
-      </button>
-
-      {error && <div className="error-message">{error.message}</div>}
+    
+    <form onSubmit={handleLogin}>
+        <h2>Login</h2>
+      <label>
+        Username:
+        <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
+      </label>
+      <label>
+        Password:
+        <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+      </label>
+      <button type="submit">Login</button>
     </form>
   );
-}
+};
 
-export default LoginForm;
+export default Login;
