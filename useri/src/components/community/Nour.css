@@ -5,9 +5,10 @@
     margin: auto;
   width: 70%;
   height: 400px;
-  margin-bottom: 0%;
+  margin-bottom: 20px;
   padding-top: 100px;
   background-color: #F2F2F2 !important;
+  margin-top: -100px;
 }
 /* .header{
   margin: 50px auto;

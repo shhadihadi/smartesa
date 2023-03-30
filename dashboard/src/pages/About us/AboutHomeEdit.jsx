@@ -55,6 +55,16 @@ const AboutHomeEdit = () => {
    
 
     }
+    const handleKeyDown = (e) => {
+      const maxLines = 8; // set the maximum number of lines
+      const newLineCharCode = 13; // the char code for new line
+  
+      const lineCount = (e.target.value.match(/\n/g) || []).length + 1; // count the number of lines in the textarea
+      if (lineCount >= maxLines && e.keyCode === newLineCharCode) {
+        e.preventDefault(); // prevent adding a new line if the maximum number of lines has been reached
+      }
+    };
+  
     return ( 
         
 
@@ -77,7 +87,13 @@ const AboutHomeEdit = () => {
 
                                
        <label>Paragraph</label>
-      <textarea width="100%" value={Paragraphs} onChange={e=>paragraphchange(e.target.value)}></textarea>
+      <textarea width="100%"  cols="30"
+rows="8" // set the number of rows to 8
+placeholder="Message"
+value={Paragraphs}
+onChange={(e) => paragraphchange(e.target.value)}
+onKeyDown={handleKeyDown} 
+></textarea>
        <button  type="submit">Save</button>
       <Link to="/">Back</Link>                                                        
                                         

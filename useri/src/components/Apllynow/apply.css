@@ -276,13 +276,15 @@ font-size: 16px;
 
     .exitformApplysmallSCREEN{
       display: block;
-      /* position: absolute; */
-      margin-right: 50PX;
+      position: absolute;
+      margin-left: 400PX;
       text-align: right;
       margin-top: -10px;
       justify-content: right;
       align-items:end;
       cursor: pointer;
+      z-index: -2px;
+      text-align: right;
     }
     .subMainFormApplyHadi{
       width: 89%;

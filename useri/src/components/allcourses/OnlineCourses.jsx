@@ -19,7 +19,7 @@ const OnlineCourses = () => {
           { error && <div>{ error }</div> }
           { isPending && <div>Loading...</div> }
           { online && <>
-            {online.map((val) => (
+            {online.slice(0).reverse().map((val) => (  // Call slice(0) to create a copy of the array
               <div className='box' key={online.id}>
               <div className='img'>
                 <img src={val.cover} />

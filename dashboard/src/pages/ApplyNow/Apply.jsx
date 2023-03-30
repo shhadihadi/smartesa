@@ -20,49 +20,7 @@ const Apply = () => {
       <div className="listContainer">
         <Navbar/>
         <h2>Apply Now</h2>
-        <div className='Apply'>
 
-        <Grid container elevation={3}  spacing={5}>
-        
-        { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-        {homeApply &&
-            homeApply.map(val =>(
-              
-              <Grid item key={val.id} xs={12} md={12} lg={12}>
-           
-               <Paper>
-               <CardHeader 
-          action={
-            <IconButton >
-            
-              <Link to={`/aboutEdit/${val.id}`}>
-          < EditOutlined />
-           </Link>
-            </IconButton>
-          }
-          title={val.title}
-        //   subheader={val.Paragraph}
-        />
-                
-               
-                <h4>{val.Paragraphs?.split('\n').map((line, index) => (
-                          <React.Fragment key={index}>
-                            {line}
-                            <br />
-                          </React.Fragment>
-                        ))} 
-                        </h4>
-          
-            </Paper>
-          </Grid>
-          
-         
-            ))
-        
-            }  
-           </Grid>
-           </div>
           <div className='Apply1'>
           <ApplyTable />
         </div>

@@ -35,7 +35,7 @@ function Intercard() {
         { isPending && <div>Loading...</div> }
         { coursesCard &&
         
-        coursesCard.map((val) => (
+        coursesCard.slice().reverse().map((val) => (
       <div className="suball"  key={val.id}>
         <div className="fisrtupone">
         <div className='imggetted'>

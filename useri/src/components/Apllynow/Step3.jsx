@@ -21,8 +21,8 @@ function Step3({ nextStep, prevStep,handleSubmit,CustomWebsite,MediaLink,MediaLi
   
   return (
     <div className="applyformAMain">
-    <div className="exitformApply">close</div>
-    <div className="exitformApplysmallSCREEN">close</div>
+      <div className="exitformApply" onClick={goBack}>close </div>
+      <div className="exitformApplysmallSCREEN"  onClick={goBack}>close </div>
     <div className="Formapplysetall">
     <div className="morefordesidn">
       
@@ -93,9 +93,10 @@ function Step3({ nextStep, prevStep,handleSubmit,CustomWebsite,MediaLink,MediaLi
       
     </div>
     <div className="applyHadidissplayAsonline">
-      <input type="file" id="images"accept="image/pdf"
+    <input type="file" accept="application/pdf" 
                     required
                     onChange={handleHoverCoverChange} />
+                    {PDFUpload && <p>Selected file: {PDFUpload.name}</p>}
       
     </div>
 

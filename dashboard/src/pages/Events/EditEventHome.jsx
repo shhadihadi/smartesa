@@ -55,6 +55,16 @@ const EditEventHome = () => {
    
 
     }
+          // handle the onKeyDown event to prevent adding new lines after the maximum number of lines is reached
+  const handleKeyDown = (e) => {
+    const maxLines = 8; // set the maximum number of lines
+    const newLineCharCode = 13; // the char code for new line
+
+    const lineCount = (e.target.value.match(/\n/g) || []).length + 1; // count the number of lines in the textarea
+    if (lineCount >= maxLines && e.keyCode === newLineCharCode) {
+      e.preventDefault(); // prevent adding a new line if the maximum number of lines has been reached
+    }
+  };
     return ( 
         
 
@@ -77,7 +87,12 @@ const EditEventHome = () => {
 
                                
        <label>Paragraph</label>
-      <textarea width="100%" value={Paragraphs} onChange={e=>paragraphchange(e.target.value)}></textarea>
+      <textarea ccols="30"
+rows="8" // set the number of rows to 8
+placeholder="Message"
+value={Paragraphs}
+onChange={(e) => paragraphchange(e.target.value)}
+onKeyDown={handleKeyDown} />
        <button  type="submit">Save</button>
       <Link to="/events">Back</Link>                                                        
                                         

@@ -1578,7 +1578,7 @@ p {
     font-size: 30px;
     margin: 20px 0;
     text-transform: capitalize;
-    color: rgb(42,98,147);
+    color: rgb(42,98,147) !important;
     width:111%;
   }
 
@@ -1694,8 +1694,9 @@ p {
     font-size: 27px;
     margin: 20px 0;
     text-transform: capitalize;
-    color: #1eb2a6;
+    color: rgb(42,98,147);
     width:111%;
+    /* #1eb2a6; */
   }
   .button{
     width: 200%;

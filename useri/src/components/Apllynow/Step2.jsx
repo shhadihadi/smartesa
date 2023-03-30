@@ -2,6 +2,8 @@ import React from 'react';
 import "./apply.css";
 import { useState,useContext } from "react";
 import {ApplyFormDataContext} from "../../UseContext"
+import { useLocation, useNavigate } from 'react-router-dom';
+
 
 function Step2({ nextStep, prevStep, SelectfundStatus,SelectfundStatusBB,handleSelectfundStatusChange,handleSelectfundStatusBBChange }) {
 
@@ -10,7 +12,14 @@ function Step2({ nextStep, prevStep, SelectfundStatus,SelectfundStatusBB,handleS
   // const {SelectfundStatus, setSelectfundStatus, SelectfundStatusBB, setSelectfundStatusBB}=useContext(ApplyFormDataContext)
 
 
+  const location = useLocation();
 
+  const navigate = useNavigate();
+
+  // function to go back to previous page
+  const goBack = () => {
+    navigate(-1);
+  }
 
     // const hadelcheckBOXX  =(event) =>{
 
@@ -45,8 +54,8 @@ function Step2({ nextStep, prevStep, SelectfundStatus,SelectfundStatusBB,handleS
     // };
   return (
     <div className="applyformAMain">
-    <div className="exitformApply">close</div>
-    <div className="exitformApplysmallSCREEN">close</div>
+  <div className="exitformApply" onClick={goBack}>close </div>
+      <div className="exitformApplysmallSCREEN"  onClick={goBack}>close </div>
     <div className="Formapplysetall">
     <div className="morefordesidn">
       
