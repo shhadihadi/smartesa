@@ -52,7 +52,14 @@ function Internationalcard() {
                     <strong>Type:</strong> {val.TYPE}
                   </p>
                   <span><div dangerouslySetInnerHTML={{ __html: val.text }}></div></span>
-                  
+                  <span><div>
+                      {val.detailsimg.map((imgd) => (
+                        <>
+                          <img className="imgSc" src={imgd} />
+                        </>
+                      ))}
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>

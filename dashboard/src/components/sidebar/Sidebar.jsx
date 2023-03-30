@@ -14,7 +14,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
-import { AuthContext } from '../../context/AuthContext';
+import { AuthContext } from "../../context/AuthContext";
 
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
@@ -29,93 +29,89 @@ const Sidebar = () => {
       <hr />
       <div className="center">
         <ul>
-        
           <p className="title">LISTS</p>
-          
-          <Link to="/products" style={{ textDecoration: "none" }}>
+
+          <Link to="/CoverImages" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Home</span>
             </li>
           </Link>
           <Link to="/aboutus" style={{ textDecoration: "none" }}>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>ABOUT US</span>
-          </li>
+            <li>
+              <CreditCardIcon className="icon" />
+              <span>ABOUT US</span>
+            </li>
           </Link>
-          
-          
-          
+
           {/* <li>
             <NotificationsNoneIcon className="icon" />
             <span>OUR COMMUINTY</span>
           </li> */}
           <p className="title">SERVICE</p>
           <Link to="/events" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>EVENTS</span>
-          </li>
+            <li>
+              <SettingsSystemDaydreamOutlinedIcon className="icon" />
+              <span>EVENTS</span>
+            </li>
           </Link>
           <Link to="/community" style={{ textDecoration: "none" }}>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>OUR COMMUINTY</span>
-          </li></Link>
-          <Link to="/smartTalk" style={{ textDecoration: "none" }}>
-          <li>
-            <PsychologyOutlinedIcon className="icon" />
-            <span>SMARTTALK</span>
-          </li>
+            <li>
+              <InsertChartIcon className="icon" />
+              <span>OUR COMMUINTY</span>
+            </li>
           </Link>
-        
-          
+          <Link to="/smartTalk" style={{ textDecoration: "none" }}>
+            <li>
+              <PsychologyOutlinedIcon className="icon" />
+              <span>SMARTTALK</span>
+            </li>
+          </Link>
+
           <Link to="/methotology" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Methotogy</span>
-          </li>
+            <li>
+              <SettingsSystemDaydreamOutlinedIcon className="icon" />
+              <span>Methotogy</span>
+            </li>
           </Link>
           <Link to="/international" style={{ textDecoration: "none" }}>
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>INTERNATIONAL</span>
-          </li>
+            <li>
+              <LocalShippingIcon className="icon" />
+              <span>INTERNATIONAL</span>
+            </li>
           </Link>
           <Link to="/allinnone" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Teams</span>
-          </li>
+            <li>
+              <SettingsSystemDaydreamOutlinedIcon className="icon" />
+              <span>Teams</span>
+            </li>
           </Link>
           <Link to="/faq" style={{ textDecoration: "none" }}>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>FAQ</span>
-          </li></Link>
-          
+            <li>
+              <AccountCircleOutlinedIcon className="icon" />
+              <span>FAQ</span>
+            </li>
+          </Link>
 
-          
           <p className="title">USER</p>
           <Link to="/apply" style={{ textDecoration: "none" }}>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>APPLY NOW</span>
-          </li>
+            <li>
+              <AccountCircleOutlinedIcon className="icon" />
+              <span>APPLY NOW</span>
+            </li>
           </Link>
           <Link to="/contactUs" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>CONTACT US</span>
-          </li>
+            <li>
+              <SettingsApplicationsIcon className="icon" />
+              <span>CONTACT US</span>
+            </li>
           </Link>
-        
+
           <Link to="/subscribe" style={{ textDecoration: "none" }}>
-          <li>
-          <AccountCircleOutlinedIcon className="icon" />
-            <span>Subscribe</span>
-          </li>
+            <li>
+              <AccountCircleOutlinedIcon className="icon" />
+              <span>Subscribe</span>
+            </li>
           </Link>
           <li>
             <ExitToAppIcon className="icon" />

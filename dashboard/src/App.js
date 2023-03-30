@@ -55,44 +55,48 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-            <Route exact path="/" element={!user ? <Login /> : <Navigate to="/products" />} />
-            <Route path="/login" element={!user ? <Login /> : <Navigate to="/products" />} />
+
+            <Route index  path="/" element={!user ? <Login /> : <Navigate to="/products" />} />
+            <Route index path="/login" element={!user ? <Login /> : <Navigate to="/products" />} />
             <Route path="/products" element={user ? <List /> : <Navigate to="/login" />}/>
-            <Route path="/international" element={user ? <International /> : <Navigate to="/login" />}/>
-            <Route path="/community" element={user ? <Community /> : <Navigate to="/login" />}/>
-            <Route path="/faqCreate" element={user ? <FaqCreate /> : <Navigate to="/login" />}/>
-            <Route path="/events" element={user ? <Events /> : <Navigate to="/login" />}/>
-            <Route path="/smartTalk" element={user ? <SmartTalk /> : <Navigate to="/login" />}/>
-            <Route path="/contactUs" element={user ? <ContactUs /> : <Navigate to="/login" />}/>
-            <Route path="/methotology" element={user ? <Methotology /> : <Navigate to="/login" />}/>
-            <Route path="/international/:id" element={user ? <Internationalid /> : <Navigate to="/login" />}/>
-            <Route path="/updateMainPics/:id" element={user ? <UpdateMainPics /> : <Navigate to="/login" />}/>
-            <Route path="/applyById/:id" element={user ? <ApplyById /> : <Navigate to="/login" />}/>
-            <Route path="/comunity/:id" element={user ? <ComunityById /> : <Navigate to="/login" />}/>
-            <Route path="/metho/new" element={user ? <Createmetho /> : <Navigate to="/login" />}/>
-            <Route path="/allinnone" element={user ? <Allinone /> : <Navigate to="/login" />}/>
-            <Route path="/apply" element={user ? <Apply /> : <Navigate to="/login" />}/>
-            <Route path="/faq" element={user ? <FAQ /> : <Navigate to="/login" />}/>
-            <Route path="/aboutEdit/:id" element={user ? <AboutEdit /> : <Navigate to="/login" />}/>
-            <Route path="/aboutHomeEdit/:id" element={user ? <AboutHomeEdit /> : <Navigate to="/login" />}/>
-            <Route path="/smartEditVideo/:id" element={user ? <SmartEditVideo /> : <Navigate to="/login" />}/>
-            <Route path="/MethoEdit/:id" element={user ? <UpdateformMetho /> : <Navigate to="/login" />}/>
-            <Route path="/editEventHome/:id" element={user ? <EditEventHome /> : <Navigate to="/login" />}/>
-            <Route path="/createVideo" element={user ? <CreateVideo /> : <Navigate to="/login" />}/>
-            <Route path="/smartEdit/:id" element={user ? <SmartEdit /> : <Navigate to="/login" />}/>
-            <Route path="/editContact/:id" element={user ? <EditContact /> : <Navigate to="/login" />}/>
-            <Route path="/updateCard/:id" element={user ? <Updatecardinter /> : <Navigate to="/login" />}/>
-            <Route path="/updateCommers/:id" element={user ? <Updatecom /> : <Navigate to="/login" />}/>
-            <Route path="/intro/new" element={user ? <CreateIntroCard /> : <Navigate to="/login" />}/>
-            <Route path="/team/new" element={user ? <AddTeam /> : <Navigate to="/login" />}/>
-            <Route path="/updateTeam/:id" element={user ? <EditTeamProfile /> : <Navigate to="/login" />}/>
-            <Route path="/createcom" element={user ? <Createcom /> : <Navigate to="/login" />}/>
-            <Route path="/faqEdit/:id" element={user ? <FaqEdit /> : <Navigate to="/login" />}/>
-            <Route path="/articleEdit/:id" element={user ? <ArticleEdit /> : <Navigate to="/login" />}/>
-            <Route path="/addArticles" element={user ? <AddArticles /> : <Navigate to="/login" />}/>
-            <Route path="/smartVideo" element={user ? <SmartVideo /> : <Navigate to="/login" />}/>
-            <Route path="/subscribe" element={user ? <Subscribe /> : <Navigate to="/login" />}/>
-            <Route path="/AboutUs" element={user ? <AboutUs /> : <Navigate to="/login" />} />
+            <Route index path="/international" element={user ? <International /> : <Navigate to="/login" />}/>
+
+            <Route index path="/community" element={user ? <Community /> : <Navigate to="/login" />}/>
+            <Route index path="/faqCreate" element={user ? <FaqCreate /> : <Navigate to="/login" />}/>
+            <Route index path="/events" element={user ? <Events /> : <Navigate to="/login" />}/>
+            <Route index path="/smartTalk" element={user ? <SmartTalk /> : <Navigate to="/login" />}/>
+            <Route index path="/contactUs" element={user ? <ContactUs /> : <Navigate to="/login" />}/>
+            <Route index path="/methotology" element={user ? <Methotology /> : <Navigate to="/login" />}/>
+
+            <Route index path="/international/:id" element={user ? <Internationalid /> : <Navigate to="/login" />}/>
+            <Route index path="/updateMainPics/:id" element={user ? <UpdateMainPics /> : <Navigate to="/login" />}/>
+            <Route index path="/applyById/:id" element={user ? <ApplyById /> : <Navigate to="/login" />}/>
+            <Route index path="/comunity/:id" element={user ? <ComunityById /> : <Navigate to="/login" />}/>
+            <Route index path="/metho/new" element={user ? <Createmetho /> : <Navigate to="/login" />}/>
+            <Route index path="/allinnone" element={user ? <Allinone /> : <Navigate to="/login" />}/>
+            <Route index path="/apply" element={user ? <Apply /> : <Navigate to="/login" />}/>
+            <Route index path="/faq" element={user ? <FAQ /> : <Navigate to="/login" />}/>
+            <Route index path="/aboutEdit/:id" element={user ? <AboutEdit /> : <Navigate to="/login" />}/>
+            <Route index path="/aboutHomeEdit/:id" element={user ? <AboutHomeEdit /> : <Navigate to="/login" />}/>
+            <Route index path="/smartEditVideo/:id" element={user ? <SmartEditVideo /> : <Navigate to="/login" />}/>
+            <Route index path="/MethoEdit/:id" element={user ? <UpdateformMetho /> : <Navigate to="/login" />}/>
+            <Route index path="/editEventHome/:id" element={user ? <EditEventHome /> : <Navigate to="/login" />}/>
+            <Route index path="/createVideo" element={user ? <CreateVideo /> : <Navigate to="/login" />}/>
+            <Route index path="/smartEdit/:id" element={user ? <SmartEdit /> : <Navigate to="/login" />}/>
+            <Route index path="/editContact/:id" element={user ? <EditContact /> : <Navigate to="/login" />}/>
+            <Route index path="/updateCard/:id" element={user ? <Updatecardinter /> : <Navigate to="/login" />}/>
+            <Route index path="/updateCommers/:id" element={user ? <Updatecom /> : <Navigate to="/login" />}/>
+            <Route index path="/intro/new" element={user ? <CreateIntroCard /> : <Navigate to="/login" />}/>
+            <Route index path="/team/new" element={user ? <AddTeam /> : <Navigate to="/login" />}/>
+            <Route index path="/updateTeam/:id" element={user ? <EditTeamProfile /> : <Navigate to="/login" />}/>
+            <Route index path="/createcom" element={user ? <Createcom /> : <Navigate to="/login" />}/>
+            <Route index path="/faqEdit/:id" element={user ? <FaqEdit /> : <Navigate to="/login" />}/>
+            <Route index path="/articleEdit/:id" element={user ? <ArticleEdit /> : <Navigate to="/login" />}/>
+            <Route index path="/addArticles" element={user ? <AddArticles /> : <Navigate to="/login" />}/>
+            <Route index path="/smartVideo" element={user ? <SmartVideo /> : <Navigate to="/login" />}/>
+            <Route index path="/subscribe" element={user ? <Subscribe /> : <Navigate to="/login" />}/>
+            <Route index path="/AboutUs" element={user ? <AboutUs /> : <Navigate to="/login" />} />
+
             
         </Routes>
       </BrowserRouter>
