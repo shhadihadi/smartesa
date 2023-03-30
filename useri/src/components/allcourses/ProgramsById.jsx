@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 import "./ProgramId.scss";
 import useFetch from "../useFetch";
 import BackID from "../common/back/backByID";
 import { useParams } from "react-router-dom";
+
+function ImagePopup({ selectedImage, setSelectedImage }) {
+  return (
+    <div className="popup">
+      <div className="popup-content">
+        <span className="close-btn" onClick={() => setSelectedImage(null)}>
+          &times;
+        </span>
+        <img src={selectedImage} alt="not showing" />
+      </div>
+    </div>
+  );
+}
 
 function InternationalId() {
   const { id } = useParams();
@@ -12,6 +25,8 @@ function InternationalId() {
     data: Programs,
   } = useFetch(`http://localhost:8000/coursesCard/${id}`);
   const paragraphs = Programs ? Programs.text : null;
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <>
       {paragraphs && (
@@ -54,13 +69,23 @@ function InternationalId() {
                   <strong>Type:</strong> {Programs.TYPE}
                 </p>
                 <br />
-                {/* <p>
-                  {Programs.AboutALL.split("\n").map((line, index) => (
-                    <span key={index}>{line}</span>
-                  ))}
-                </p> */}
-                <div dangerouslySetInnerHTML={{ __html: Programs.AboutALL }}></div>
+
+                <div
+                  dangerouslySetInnerHTML={{ __html: Programs.AboutALL }}
+                ></div>
+
               </div>
+              {Programs.detailsimg.map((imgd, index) => (
+                <div key={index} onClick={() => setSelectedImage(imgd)}>
+                  <img src={imgd} alt="not showing" className="small-image" />
+                </div>
+              ))}
+              {selectedImage && (
+                <ImagePopup
+                  selectedImage={selectedImage}
+                  setSelectedImage={setSelectedImage}
+                />
+              )}
             </div>
           </div>
         )}

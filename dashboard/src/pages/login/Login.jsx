@@ -6,10 +6,9 @@ import BadgeIcon from "@mui/icons-material/Badge";
 import useFetch from "../../useFetch";
 import bcrypt from "bcryptjs";
 import { AuthContext } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const navigate = useNavigate();
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -49,7 +48,7 @@ function Login() {
           setErrorMessage("");
           console.log("Successful login!");
           login(user);
-          navigate("/AboutUs");
+          
         }
       }
     }
@@ -58,7 +57,7 @@ function Login() {
 
   return (
     <div className="main">
-      {!isAuthenticated && <p>Please log in to access the page.</p>}
+      {/* {!isAuthenticated && <p>Please log in to access the page.</p>} */}
       <div className="sub-main">
         <div>
           <div className="imgs">

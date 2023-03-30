@@ -22,6 +22,44 @@
     border-right: 1px solid;
     
   }
+
+
+.small-image {
+  max-width: 40%;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+.popup-content {
+  position: relative;
+  background-color: white;
+  margin-left: 3%;
+  max-width: 94%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
   .firstcontentcomunityId h4{
   padding-left:10px;
   }
