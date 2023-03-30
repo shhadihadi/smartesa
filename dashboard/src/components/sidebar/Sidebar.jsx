@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/products" style={{ textDecoration: "none" }}>
           <span className="logo">ESA SMART ADMIN</span>
         </Link>
       </div>
