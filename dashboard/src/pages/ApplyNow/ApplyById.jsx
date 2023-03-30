@@ -13,15 +13,18 @@ import './apply.scss'
 
 function ApplyById() {
   const { id } = useParams();
-  const { error, isPending, data: Apply } = useFetch('http://localhost:8000/Apply/' + id);
+  const { error, isPending, data: Apply } = useFetch(`http://localhost:8000/Apply/${id}`);
 
-
-
-  const downloadPdf = async () => {
-    const response = await fetch('http://localhost:8000/Apply/PDFUpload');
-    const base64data = await response.text();
-    const blob = b64toBlob(base64data, 'application/pdf');
-    saveAs(blob, 'PDFUpload.pdf');
+  const downloadPdfById = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:8000/Apply/PDFUpload/${id}`);
+      const jsonData = await response.json();
+      const base64data = jsonData.pdfBase64;
+      const blob = b64toBlob(base64data, 'application/pdf');
+      saveAs(blob, `PDFUpload_${id}.pdf`);
+    } catch (error) {
+      console.error(error);
+    }
   };
   
   // Helper function to convert base64 string to Blob object
@@ -41,7 +44,6 @@ function ApplyById() {
     return blob;
   }
   
-
   return (
     <>
       <div className="list">
@@ -53,24 +55,44 @@ function ApplyById() {
             { error && <div>{ error }</div> }
             { isPending && <div>Loading...</div> }
             { Apply &&
-            <form className="aplyyypy">
-            <p style={{ display: 'inline-block' }}><strong>First Name: </strong>{Apply.FN}</p>
-            <p style={{ display: 'inline-block' }}><strong>Last Name: </strong>{Apply.LN}</p>
-            <p style={{ display: 'inline-block' }}><strong>Mobile: </strong>{Apply.Mobile}</p>
-            <p style={{ display: 'inline-block' }}><strong>Email: </strong>{Apply.Email}</p>
-            <p style={{ display: 'inline-block' }}><strong>ProjectCOMname: </strong>{Apply.ProjectCOMname}</p>
-            <p style={{ display: 'inline-block' }}><strong>FunStatus: </strong>{Apply.fundStatus}</p>
+            <form className="Apply">
+              <div className="mainwalaabigclass">
+              
+              <div className="displayonOnleLineWalaa">
+            <p style={{ display: 'inline-block' }}><strong>First Name: </strong>{Apply.FN}</p> 
+             <p style={{ display: 'inline-block' }}><strong>Mobile: </strong>{Apply.Mobile}</p>
+            <p style={{ display: 'inline-block' }}><strong>ProjectCOMname: </strong>{Apply.ProjectCOMname}</p> 
             <p style={{ display: 'inline-block' }}><strong>FunSStatusBB: </strong>{Apply.fundSStatusBB}</p>
-            <p style={{ display: 'inline-block' }}><strong>Text: </strong>{Apply.text}</p>
-            <p style={{ display: 'inline-block' }}><strong>Custom Website: </strong>{Apply.CustomWebsite}</p>
-            <p style={{ display: 'inline-block' }}><strong>Media Link: </strong>{Apply.MediaLink}</p>
-            <p style={{ display: 'inline-block' }}><strong>Media Link1: </strong>{Apply.MediaLink1}</p>
-            <p style={{ display: 'inline-block' }}><strong>Pdf Upload: </strong><Button onClick={downloadPdf}>Download PDF</Button></p>
-            <p style={{ display: 'inline-block' }}><strong>Text1: </strong>{Apply.text1}</p>
+           <p style={{ display: 'inline-block' }}><strong>Custom Website: </strong>{Apply.CustomWebsite}</p>
+           <p style={{ display: 'inline-block' }}><strong>Media Link1: </strong>{Apply.MediaLink1}</p> 
            
+         
+            </div>
+            <div className="displayonOnleLineWalaa">
+
+           
+         
+            </div>
+            <div className="displayonOnleLineWalaa">
+           <p style={{ display: 'inline-block' }}><strong>Last Name: </strong>{Apply.LN}</p>
+            <p style={{ display: 'inline-block' }}><strong>Email: </strong>{Apply.Email}</p>
+            <p style={{ display: 'inline-block' }}><strong>FunStatus: </strong>{Apply.fundStatus}</p>
+              <p style={{ display: 'inline-block' }}><strong>Text: </strong>{Apply.text}</p>
+              <p style={{ display: 'inline-block' }}><strong>Media Link: </strong>{Apply.MediaLink}</p>
+                <p style={{ display: 'inline-block' }}><strong>Text1: </strong>{Apply.text1}</p>
+                 </div>
+                 <div className="displayonOnleLineWalaa" style={{width:"100%",justifyContent:"center",textAlign:"center"}}>
+                 <p style={{ display: 'inline-block' }}><strong>Pdf Upload: </strong><Button onClick={ downloadPdfById}>Download PDF</Button></p>
+                  <Link to="/apply">Back</Link>
+                  </div>
+                 
+          
+          
+           
+          
      
-    
-            <Link to="/apply">Back</Link>
+                 </div>
+           
           </form>
           
             }
