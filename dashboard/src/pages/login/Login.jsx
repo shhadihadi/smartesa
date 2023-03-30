@@ -97,7 +97,7 @@ function Login() {
                 />
               </div>
               <div className="login-button">
-                <button disabled={isPending}>Login</button>
+                <button className="buttonL" disabled={isPending}>Login</button>
               </div>
               {errorMessage && (
                 <p className="error-message">{errorMessage}</p>
