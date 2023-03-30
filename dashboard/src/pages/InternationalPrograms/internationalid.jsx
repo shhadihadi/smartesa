@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-  
+
 
 
 function Internationalid() {
@@ -26,22 +24,7 @@ function Internationalid() {
       });
   }, [id]);
 
-  const modules = {
-    toolbar: [
-      [{ header: [1, 2, false] }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-      [{ list: 'ordered' }, { list: 'bullet' }],
-      ['link', 'image'],
-      [{ size: ['small', false, 'large', 'huge'] }],
-      [{ color: [] }, { background: [] }],
-      [{ font: [] }],
-      [{ align: [] }],
-      ['clean'],
-    ],
-  };
 
-  const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
-     'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
 
 
     // handle the form submit event
@@ -69,6 +52,16 @@ function Internationalid() {
         console.error(err);
       }
     };
+      // handle the onKeyDown event to prevent adding new lines after the maximum number of lines is reached
+  const handleKeyDown = (e) => {
+    const maxLines = 8; // set the maximum number of lines
+    const newLineCharCode = 13; // the char code for new line
+
+    const lineCount = (e.target.value.match(/\n/g) || []).length + 1; // count the number of lines in the textarea
+    if (lineCount >= maxLines && e.keyCode === newLineCharCode) {
+      e.preventDefault(); // prevent adding a new line if the maximum number of lines has been reached
+    }
+  };
 
   return (
     <>
@@ -92,17 +85,18 @@ function Internationalid() {
               </div>
               <div className="asoneRowHadi">
                 <h3>Paragraph</h3>
-                <textarea id="message" cols="30" rows="10" placeholder="Message"
-                 value={Paragraphs}
-                onChange={(e) => setParagraphs(e.target.value)}
                 
-                ></textarea>
-                                           {/* <ReactQuill
-                      value={Paragraphs}
-     onChange={setParagraphs}
-     modules={modules}
-     formats={formats}
-   />  */}
+                <textarea
+
+id="message"
+cols="30"
+rows="7" // set the number of rows to 8
+placeholder="Message"
+value={Paragraphs}
+onChange={(e) => setParagraphs(e.target.value)}
+onKeyDown={handleKeyDown} 
+></textarea>
+
                 </div>
               </div>
               </form>

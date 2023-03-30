@@ -32,7 +32,7 @@ const SmartEdit = () => {
   const [aboutEdit, aboutChange] = useState("");
   // const[id,idchange]=useState("");
   const [title, titlechange] = useState();
-  const [Paragraphs, paragraphchange] = useState("stdyfugihopo089t78");
+  const [Paragraphs, paragraphchange] = useState("");
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -51,6 +51,16 @@ const SmartEdit = () => {
         console.log(err.message);
       });
   };
+        // handle the onKeyDown event to prevent adding new lines after the maximum number of lines is reached
+        const handleKeyDown = (e) => {
+          const maxLines = 8; // set the maximum number of lines
+          const newLineCharCode = 13; // the char code for new line
+      
+          const lineCount = (e.target.value.match(/\n/g) || []).length + 1; // count the number of lines in the textarea
+          if (lineCount >= maxLines && e.keyCode === newLineCharCode) {
+            e.preventDefault(); // prevent adding a new line if the maximum number of lines has been reached
+          }
+        };
   return (
     <div className="list">
       <Sidebar />
@@ -77,6 +87,11 @@ const SmartEdit = () => {
               width="100%"
               value={Paragraphs}
               onChange={(e) => paragraphchange(e.target.value)}
+              cols="30"
+rows="8" // set the number of rows to 8
+placeholder="Message"
+
+onKeyDown={handleKeyDown} 
             ></textarea>
             <button type="submit">Save</button>
             <Link to="/smartTalk">Back</Link>

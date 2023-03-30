@@ -44,7 +44,7 @@ function Methotology() {
               {error && <div>{error}</div>}
               {isPending && <div>Loading...</div>}
               {online &&
-                online.map((val) => (
+                    online.slice(0).reverse().map((val) => (  // Call slice(0) to create a copy of the array
                   <div className="methmaidev" key={val.id}>
                     <div className="imgreight">
                       <img src={val.cover} alt="Cover" />

@@ -69,12 +69,7 @@ const Sidebar = () => {
             <span>SMARTTALK</span>
           </li>
           </Link>
-          <Link to="/contactUs" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>CONTACT US</span>
-          </li>
-          </Link>
+        
           
           <Link to="/methotology" style={{ textDecoration: "none" }}>
           <li>
@@ -94,6 +89,13 @@ const Sidebar = () => {
             <span>Teams</span>
           </li>
           </Link>
+          <Link to="/faq" style={{ textDecoration: "none" }}>
+          <li>
+            <AccountCircleOutlinedIcon className="icon" />
+            <span>FAQ</span>
+          </li></Link>
+          
+
           
           <p className="title">USER</p>
           <Link to="/apply" style={{ textDecoration: "none" }}>
@@ -102,11 +104,13 @@ const Sidebar = () => {
             <span>APPLY NOW</span>
           </li>
           </Link>
-          <Link to="/faq" style={{ textDecoration: "none" }}>
+          <Link to="/contactUs" style={{ textDecoration: "none" }}>
           <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>FAQ</span>
-          </li></Link>
+            <SettingsApplicationsIcon className="icon" />
+            <span>CONTACT US</span>
+          </li>
+          </Link>
+        
           <Link to="/subscribe" style={{ textDecoration: "none" }}>
           <li>
           <AccountCircleOutlinedIcon className="icon" />

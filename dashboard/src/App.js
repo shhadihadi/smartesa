@@ -10,7 +10,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/smartTalk/smartTalk'
+import SmartTalk from './pages/SmartTalk/smartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -35,10 +35,10 @@ import EditContact from "./pages/ContactUs/EditContact";
 import AddTeam from "./pages/headsAll/AddTeam";
 import EditTeamProfile from "./pages/headsAll/EditTeamProfile";
 import UpdateMainPics from "./pages/list/UpdateMainPics";
-import SmartEditVideo from "./pages/smartTalk/SmartEditVideo";
-import CreateVideo from "./pages/smartTalk/CreateVideo";
-import SmartVideo from "./pages/smartTalk/smartVideo";
-import SmartEdit from "./pages/smartTalk/SmartEdit";
+import SmartEditVideo from "./pages/SmartTalk/SmartEditVideo";
+import CreateVideo from "./pages/SmartTalk/CreateVideo";
+import SmartVideo from "./pages/SmartTalk/smartVideo";
+import SmartEdit from "./pages/SmartTalk/SmartEdit";
 import ApplyById from "./pages/ApplyNow/ApplyById";
 import FaqCreate from "./pages/FAQ/FaqCreate";
 import Login from"./pages/login/Login";

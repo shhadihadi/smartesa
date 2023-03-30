@@ -17,7 +17,7 @@ function Internationalcard() {
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
       {Programs &&
-        Programs.map((val) => (
+        Programs.slice().reverse().map((val) => (
           <Link to={`../Programs/${val.id}`} key={val.id} style={{ textDecoration: "none" }} onClick={handleClick}>
             <div className="fathercontainercard" key={val.id}>
               <div className="headercomunity">
@@ -51,7 +51,8 @@ function Internationalcard() {
                   <p style={{ marginLeft: "0%" }}>
                     <strong>Type:</strong> {val.TYPE}
                   </p>
-                  <span>{val.text}</span>
+                  <span><div dangerouslySetInnerHTML={{ __html: val.text }}></div></span>
+                  
                 </div>
               </div>
             </div>
