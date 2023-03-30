@@ -83,13 +83,14 @@ function NOurCommunityID() {
                 {val.nb} {val.title}
               </h2>
 
-              {val.paragraphs &&
+              {/* {val.paragraphs &&
                 val.paragraphs?.split("\n").map((line, index) => (
                   <p key={index}>
                     {line}
                     <br />
                   </p>
-                ))}
+                ))} */}
+                <div dangerouslySetInnerHTML={{ __html: val.paragraphs }}></div>
             </div>
             {val.communityimg && val.communityimg.length > 0 && (
               <div style={{ marginTop: "80px" }}>

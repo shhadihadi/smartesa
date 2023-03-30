@@ -34,7 +34,7 @@ function Comunitycards() {
       {error && <div>{error}</div>}
               {isPending && <div>Loading...</div>}
               {online &&
-                online.map((val) => (
+                online.slice().reverse().map((val) => (
         <div className="fathercontainercard" key={val.id}>
           <div className="headercomunity">
           <div className="cardourcomunityrowdisplay">
@@ -54,12 +54,13 @@ function Comunitycards() {
     ))}
   </p>
 ))} */}
-  {val.paragraphs?.split('\n').map((line, index) => (
+  {/* {val.paragraphs?.split('\n').map((line, index) => (
       <React.Fragment key={index}>
         {line}
         <br />
       </React.Fragment>
-    ))}
+    ))} */}
+    <div dangerouslySetInnerHTML={{ __html: val.paragraphs }}></div>
 
             {/* <p>{val.desc}</p> */}
           </div>

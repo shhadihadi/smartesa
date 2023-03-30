@@ -48,7 +48,7 @@ const Programes = () => {
         />
                 
                
-                <h4 >{val.Paragraph} </h4>
+                <h4 style={{paddingLeft:"20px"}} >{val.Paragraph} </h4>
                 {/* <h4 >{val.Paragraph1} </h4>
                 <h4 >{val.Paragraph2} </h4>
                 <h4 >{val.Paragraph3} </h4>

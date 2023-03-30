@@ -49,12 +49,18 @@ function MultiStepForm() {
     setMediaLink2(e.target.value);
   };
 
-  const handleHoverCoverChange = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      setPDFUpload(reader.result);
-    };
-    reader.readAsDataURL(e.target.files[0]);
+  const handleHoverCoverChange = (event) => {
+    const file = event.target.files[0];
+    if (file && file.type === 'application/pdf') {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setPDFUpload(reader.result);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      setPDFUpload(null);
+      alert('Please select a PDF file.');
+    }
   };
 
   const handletext1Change = (e) => {   

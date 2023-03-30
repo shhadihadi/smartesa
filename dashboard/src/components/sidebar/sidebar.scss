@@ -43,6 +43,7 @@
         align-items: center;
         padding: 5px;
         cursor: pointer;
+        text-transform: uppercase;
 
         &:hover {
           background-color: #ece8ff;
@@ -51,6 +52,8 @@
         .icon {
           font-size: 18px;
           color: #7451f8;
+        
+
         }
 
         span{
