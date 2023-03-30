@@ -21,7 +21,7 @@ const Testimonal = () => {
           <div className='content grid2'>
             {isPending && <div>Loading...</div>}
             {testimonal &&
-              testimonal.slice(0, visibleCount).map((val) => (
+              testimonal.reverse().slice(0, visibleCount).map((val) => (
                 <div key={val.id} className='items shadow'>
                   <div className='box flex'>
                     <div className='img'>
@@ -33,7 +33,8 @@ const Testimonal = () => {
                       <span>{val.post}</span>
                     </div>
                   </div>
-                  <p>{val.desc}</p>
+                  <div dangerouslySetInnerHTML={{ __html: val.desc }}></div>
+                  {/* <p>{val.desc}</p> */}
                 </div>
               ))}
           </div>

@@ -55,16 +55,16 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-            <Route exact path="/" element={!user ? <Login /> : <Navigate to="/products" />} />
-            <Route path="/login" element={!user ? <Login /> : <Navigate to="/products" />} />
+            <Route index  path="/" element={!user ? <Login /> : <Navigate to="/products" />} />
+            <Route index path="/login" element={!user ? <Login /> : <Navigate to="/products" />} />
             <Route path="/products" element={user ? <List /> : <Navigate to="/login" />}/>
-            <Route path="/international" element={user ? <International /> : <Navigate to="/login" />}/>
-            <Route path="/community" element={user ? <Community /> : <Navigate to="/login" />}/>
-            <Route path="/faqCreate" element={user ? <FaqCreate /> : <Navigate to="/login" />}/>
-            <Route path="/events" element={user ? <Events /> : <Navigate to="/login" />}/>
-            <Route path="/smartTalk" element={user ? <SmartTalk /> : <Navigate to="/login" />}/>
-            <Route path="/contactUs" element={user ? <ContactUs /> : <Navigate to="/login" />}/>
-            <Route path="/methotology" element={user ? <Methotology /> : <Navigate to="/login" />}/>
+            <Route index path="/international" element={user ? <International /> : <Navigate to="/login" />}/>
+            <Route index path="/community" element={user ? <Community /> : <Navigate to="/login" />}/>
+            <Route index path="/faqCreate" element={user ? <FaqCreate /> : <Navigate to="/login" />}/>
+            <Route index path="/events" element={user ? <Events /> : <Navigate to="/login" />}/>
+            <Route index path="/smartTalk" element={user ? <SmartTalk /> : <Navigate to="/login" />}/>
+            <Route index path="/contactUs" element={user ? <ContactUs /> : <Navigate to="/login" />}/>
+            <Route index path="/methotology" element={user ? <Methotology /> : <Navigate to="/login" />}/>
             <Route path="/international/:id" element={user ? <Internationalid /> : <Navigate to="/login" />}/>
             <Route path="/updateMainPics/:id" element={user ? <UpdateMainPics /> : <Navigate to="/login" />}/>
             <Route path="/applyById/:id" element={user ? <ApplyById /> : <Navigate to="/login" />}/>

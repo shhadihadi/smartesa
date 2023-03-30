@@ -19,12 +19,8 @@ const Back = ({ title, paragraphs }) => {
         <h1 className='backId-title'>{title}</h1>    
         
           <p className="back-text">
-            {paragraphs.split("\n").map((line, index) => (
-              <React.Fragment key={index} >
-                {line}
-                <br />
-              </React.Fragment>
-            ))}
+        
+            <div dangerouslySetInnerHTML={{ __html: paragraphs }}></div>
           </p>        
         
       </section>

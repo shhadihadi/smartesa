@@ -54,11 +54,12 @@ function InternationalId() {
                   <strong>Type:</strong> {Programs.TYPE}
                 </p>
                 <br />
-                <p>
+                {/* <p>
                   {Programs.AboutALL.split("\n").map((line, index) => (
                     <span key={index}>{line}</span>
                   ))}
-                </p>
+                </p> */}
+                <div dangerouslySetInnerHTML={{ __html: Programs.AboutALL }}></div>
               </div>
             </div>
           </div>
