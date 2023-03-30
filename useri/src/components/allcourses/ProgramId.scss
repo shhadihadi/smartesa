@@ -25,7 +25,7 @@
 
 
 .small-image {
-  max-width: 40%;
+  max-width: 70%;
   height: auto;
   margin: 5px;
   cursor: pointer;
@@ -39,7 +39,11 @@
   background-color: rgba(0, 0, 0, 0.5);
  
 }
-
+.flexIT{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
 .popup-content {
   position: relative;
   background-color: white;
