@@ -15,10 +15,16 @@ import { Link } from 'react-router-dom';
 import ContactHome from './ContactHome';
 import { CSVLink } from "react-csv";
 import * as XLSX from 'xlsx';
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import { Navigate } from "react-router-dom";
 
-const Contact = () => {
+
+const Contact = () => {const { user } = useContext(AuthContext);
   const { error, isPending, data: contact } = useFetch('http://localhost:8000/contact');
-  
+  if (!user) {
+  return <Navigate to="/login" />;
+}
   const handledelete = (id) => {
     fetch(`http://localhost:8000/contact/${id}`, {
       method: "DELETE",
