@@ -69,9 +69,11 @@ function InternationalId() {
                   <strong>Type:</strong> {Programs.TYPE}
                 </p>
                 <br />
+
                 <div
                   dangerouslySetInnerHTML={{ __html: Programs.AboutALL }}
                 ></div>
+
               </div>
               {Programs.detailsimg.map((imgd, index) => (
                 <div key={index} onClick={() => setSelectedImage(imgd)}>
