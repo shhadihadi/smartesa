@@ -28,8 +28,10 @@ const FAQ = () => {
   return (
     <div className="list">
       <Sidebar/>
-      <div className="listContainer">
-        <Navbar/><div className="datatable">
+      <div className="listContainer">  
+        <Navbar/>
+        <h2>FAQ</h2>
+        <div className="datatable">
             <div className="datatableTitle">
               Add New FAQ
               <Link to="/faqCreate" className="link">
@@ -37,7 +39,7 @@ const FAQ = () => {
               </Link>
             </div>
         <div className='faq2'>
-          <h2>FAQ</h2>
+        
           
            
           

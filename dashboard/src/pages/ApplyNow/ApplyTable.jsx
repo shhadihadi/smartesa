@@ -111,6 +111,31 @@ const ApplyTable= () => {
                   );
                   },
                     },
+                    {
+                      field: "export",
+                      headerName: "",
+                      sortable: false,
+                      width: 100,
+                      renderCell: (params) => {
+                        const handleExport = () => {
+                          const csvData = [
+                            [params.row.id, params.row.FN, params.row.LN, params.row.Mobile, params.row.ProjectCOMname, params.row.Email, params.row.CustomWebsite]
+                          ];
+                          const csvContent = "data:text/csv;charset=utf-8," + csvData.map(row => row.join(",")).join("\n");
+                          const encodedUri = encodeURI(csvContent);
+                          const link = document.createElement("a");
+                          link.setAttribute("href", encodedUri);
+                          link.setAttribute("download", `${params.row.id}.csv`);
+                          document.body.appendChild(link);
+                          link.click();
+                        };
+                        return (
+                          <IconButton onClick={handleExport}>
+                            {/* <GetAppIcon /> */}
+                          </IconButton>
+                        );
+                      }
+                    },
       ];
 
 

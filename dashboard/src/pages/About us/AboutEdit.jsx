@@ -5,7 +5,8 @@ import useFetch from "../../useFetch";
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import './edit.scss'
-
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const AboutEdit = () => {
    
@@ -27,13 +28,30 @@ const AboutEdit = () => {
       })
     }, [id]);
 
+      
+  const modules = {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      ['link', 'image'],
+      [{ size: ['small', false, 'large', 'huge'] }],
+      [{ color: [] }, { background: [] }],
+      [{ font: [] }],
+      [{ align: [] }],
+      ['clean'],
+    ],
+  };
+
  const [aboutEdit, aboutChange] = useState('');
     // const[id,idchange]=useState("");
     const[title,titlechange]=useState();
     const[Paragraphs,paragraphchange]=useState("stdyfugihopo089t78");
 
 
-   
+
+    const formats = [    'header',    'bold',    'italic',    'underline',    'strike',    'blockquote',    'list', 
+    'bullet',    'link',    'image',    'size',    'color',    'background',    'font',    'align',  ];
 
     const handlesubmit=(e)=>{
       e.preventDefault();
@@ -86,16 +104,22 @@ const AboutEdit = () => {
 
                                
        <label>Paragraph</label>
-      <textarea width="100%"  cols="30"
+      {/* <textarea width="100%"  cols="30"
 rows="8" // set the number of rows to 8
 placeholder="Message"
-value={Paragraphs}
+value={}
 onChange={(e) => paragraphchange(e.target.value)}
-onKeyDown={handleKeyDown} 
-></textarea>
+
+></textarea> */}
+<ReactQuill
+                    value={Paragraphs}
+                    onChange={paragraphchange}
+                    modules={modules}
+                    formats={formats}onKeyDown={handleKeyDown} 
+                  />
             
-       <button  type="submit">Save</button>
-      <Link to="/">Back</Link>                                                        
+       <button className="edit111"  type="submit">Save</button>
+      <Link to="/AboutUs">Back</Link>                                                        
                                         
        </form>                          
                                   
