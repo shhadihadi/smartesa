@@ -75,11 +75,13 @@ function InternationalId() {
                 ></div>
 
               </div>
+              <div className="flexIT">
               {Programs.detailsimg.map((imgd, index) => (
                 <div key={index} onClick={() => setSelectedImage(imgd)}>
                   <img src={imgd} alt="not showing" className="small-image" />
                 </div>
               ))}
+              </div>
               {selectedImage && (
                 <ImagePopup
                   selectedImage={selectedImage}
