@@ -45,7 +45,7 @@ const FaqEdit = () => {
         body:JSON.stringify(faqdata)
       }).then((res)=>{
         alert('Saved successfully.')
-        Navigate('aboutus');
+        Navigate('faq');
       }).catch((err)=>{
         console.log(err.message)
       })
@@ -79,7 +79,8 @@ const FaqEdit = () => {
                                
        <label>Paragraph</label>
       <textarea width="100%" value={desc} onChange={e=>descchange(e.target.value)}></textarea>
-       <button  type="submit">Save</button>
+      <div className="faqqqqqqqqqqqqq"></div>
+       <button  type="submit" style={{marginRight:"150px",marginLeft:"-100px",width:"150px"}}>Save</button>
       <Link to="/">Back</Link>                                                        
                                         
        </form>                          

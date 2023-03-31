@@ -10,7 +10,7 @@ import AboutUs from "./pages/About us/AboutUs";
 import International from "./pages/InternationalPrograms/International";
 import Community from "./pages/Commuinty/Commuinty"
 import Events from './pages/Events/Events'
-import SmartTalk from './pages/smartTalk/SmartTalk'
+import SmartTalk from './pages/smartTalk/smartTalk'
 import ContactUs from './pages/ContactUs/Contact'
 import Apply from "./pages/ApplyNow/Apply";
 import FAQ from './pages/FAQ/FAQ'
@@ -56,9 +56,9 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-            <Route index  path="/" element={!user ? <Login /> : <Navigate to="/products" />} />
-            <Route index path="/login" element={!user ? <Login /> : <Navigate to="/products" />} />
-            <Route path="/products" element={user ? <List /> : <Navigate to="/login" />}/>
+            <Route index  path="/" element={!user ? <Login /> : <Navigate to="/CoverImages" />} />
+            <Route index path="/login" element={!user ? <Login /> : <Navigate to="/CoverImages" />} />
+            <Route path="/CoverImages" element={user ? <List /> : <Navigate to="/login" />}/>
             <Route index path="/international" element={user ? <International /> : <Navigate to="/login" />}/>
 
             <Route index path="/community" element={user ? <Community /> : <Navigate to="/login" />}/>

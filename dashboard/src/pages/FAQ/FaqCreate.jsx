@@ -72,10 +72,10 @@ function FaqCreate() {
               
                 
             
-              <button>Save</button>
-                 
+              <button  style={{marginRight:"150px",marginLeft:"-100px",width:"150px"}}>Save</button>
+              <Link to="/faq">Back</Link> 
             </form>
-            <Link to="/faq">Back</Link> 
+          
           </div>
        </div> </div>
     </>
