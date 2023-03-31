@@ -37,6 +37,7 @@ const ApplyTable= () => {
     });
   };
 
+ 
       const columns = [
         { field: 'id', headerName: 'ID', width: 100 },
       
@@ -56,13 +57,13 @@ const ApplyTable= () => {
           field: 'Mobile',
           headerName: 'Mobile',
           type: 'text',
-          width: 150,
+          width: 100,
         },
         {
           field: 'ProjectCOMname',
           headerName: 'Project Name',
           type: 'text',
-          width: 150,
+          width: 100,
         },
         {
           field: 'Email',
@@ -112,30 +113,18 @@ const ApplyTable= () => {
                   },
                     },
                     {
-                      field: "export",
-                      headerName: "",
+                      field: 'export',
+                      headerName: 'Export CSV',
                       sortable: false,
                       width: 100,
                       renderCell: (params) => {
-                        const handleExport = () => {
-                          const csvData = [
-                            [params.row.id, params.row.FN, params.row.LN, params.row.Mobile, params.row.ProjectCOMname, params.row.Email, params.row.CustomWebsite]
-                          ];
-                          const csvContent = "data:text/csv;charset=utf-8," + csvData.map(row => row.join(",")).join("\n");
-                          const encodedUri = encodeURI(csvContent);
-                          const link = document.createElement("a");
-                          link.setAttribute("href", encodedUri);
-                          link.setAttribute("download", `${params.row.id}.csv`);
-                          document.body.appendChild(link);
-                          link.click();
-                        };
+                        const csvData = [
+                          [params.row.id, params.row.FN, params.row.LN, params.row.Mobile, params.row.ProjectCOMname, params.row.Email, params.row.CustomWebsite]
+                        ];
                         return (
-                          <IconButton onClick={handleExport}>
-                            {/* <GetAppIcon /> */}
-                          </IconButton>
+                          <CSVLink data={csvData} filename={`${params.row.id}.csv`}>Export</CSVLink>
                         );
-                      }
-                    },
+                      }}
       ];
 
 

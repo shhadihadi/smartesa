@@ -92,7 +92,7 @@ const SmartEditVideo = () => {
      <label>Cover</label>
      <input required value={cover} onMouseDown={e=>coverChange(true)} onChange={e=>coverChange(e.target.value)}></input>
 
-     <div className="flexrowhadi">
+     <div className="textoutputdisplay" style={{ marginTop: '-28px' }}>
                   <p>Thumbail</p>
                   <input
                     type="file"

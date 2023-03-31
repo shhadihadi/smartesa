@@ -63,7 +63,7 @@ const AboutEdit = () => {
         headers:{"content-type":"application/json"},
         body:JSON.stringify(aboutdata)
       }).then((res)=>{
-        alert('Saved successfully.')
+       
         Navigate('aboutus');
       }).catch((err)=>{
         console.log(err.message)
@@ -117,15 +117,15 @@ onChange={(e) => paragraphchange(e.target.value)}
                     modules={modules}
                     formats={formats}onKeyDown={handleKeyDown} 
                   />
-            
+            <div className="asoneRowHadi">
        <button className="edit111"  type="submit">Save</button>
-      <Link to="/AboutUs">Back</Link>                                                        
+                                </div>                           
                                         
        </form>                          
-                                  
+         <Link to="/AboutUs">Back</Link>                          
            
             </div>
-        </div>
+        </div>  
         </div>
      
  

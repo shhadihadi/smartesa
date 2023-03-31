@@ -48,7 +48,7 @@ const SmartVideo = () => {
         {isPending && <div>Loading...</div>}
         {team &&
           team.map((val) => (
-            <Grid item key={val.id} xs={12} md={6} lg={4}>
+            <Grid item key={val.id} background={ "rgb(107, 190, 196)"} xs={12} md={6} lg={4} borderRadius={20}  box-shadow={"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}>
               <Paper>
                 <CardHeader
                   action={
