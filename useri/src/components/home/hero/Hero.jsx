@@ -14,10 +14,13 @@ const Hero = () => {
           <div className='row'>
             <Heading subtitle='WELCOME TO SMART ESA' title='Leading startup and corporate accelerator in Lebanon' />
             {/* <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> */}
+            
             <div className='button'>
+            <Link to="/Programs">
               <button className='primary-btn'>
                 VIEW PROGRAMS <i className='fa fa-long-arrow-alt-right'></i>
               </button>
+              </Link>
               
               <Link to="/Apply">
               <button>

@@ -73,7 +73,8 @@ function UpdateformMetho() {
       body: JSON.stringify(updatedOnline),
     })
       .then((res) => {
-        handleGoBack();
+        // handleGoBack();
+        navigate('methotology')
       })
       .catch((err) => {
         console.log(err.message);

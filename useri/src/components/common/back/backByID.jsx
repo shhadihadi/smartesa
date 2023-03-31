@@ -18,10 +18,10 @@ const Back = ({ title, paragraphs }) => {
       <section className='backId' style={{ backgroundImage: `url(${backImages[2].coverIamge})` }}>
         <h1 className='backId-title'>{title}</h1>    
         
-          <p className="back-text">
+          {/* <p className="back-text"> */}
         
-            <div dangerouslySetInnerHTML={{ __html: paragraphs }}></div>
-          </p>        
+            <div   className="back-text" dangerouslySetInnerHTML={{ __html: paragraphs }}></div>
+          {/* </p>         */}
         
       </section>
       )}
