@@ -118,14 +118,15 @@ onChange={(e) => paragraphchange(e.target.value)}
                     formats={formats}onKeyDown={handleKeyDown} 
                   />
             <div className="asoneRowHadi">
-       <button className="edit111"  type="submit">Save</button>
-                                </div>                           
+       <button  type="submit">Save</button>
+                                </div> 
+        <Link to="/AboutUs">Back</Link>                                                     
                                         
        </form>                          
-         <Link to="/AboutUs">Back</Link>                          
-           
             </div>
-        </div>  
+                                 
+           
+        </div> 
         </div>
      
  

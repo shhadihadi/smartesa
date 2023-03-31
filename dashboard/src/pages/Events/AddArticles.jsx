@@ -119,14 +119,16 @@ function AddArticles() {
               
              <ReactQuill
                       value={desc}
-     onChange={setDesc}
-     modules={modules}
-     formats={formats}
-   />
+                   onChange={setDesc}
+                  modules={modules}
+                   formats={formats}
+                  />
               </div>
                 
               </div>
-              <button>Save</button>
+              <div >
+
+              <button>Save</button></div>
                 <Link to="/events">Back</Link>  
             </form>
           </div>
