@@ -148,14 +148,14 @@ function ArticleEdit() {
                     onChange={(e) => setDesc(e.target.value)}
                   />
               
-               
+              <div className="textoutputdisplay" style={{ marginTop: '-28px' }}>
                   <p>Cover</p>
                   
                   <input type="file" multiple name="myImage" accept="image/png, image/gif, image/jpeg, image/jpeg0 "
                    
                     onChange={handleCoverChange}
                   />
-                
+                </div>
                
                 <button  type="submit">Save</button>
                 <Link to="/events">Back</Link>  

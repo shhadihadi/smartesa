@@ -93,7 +93,8 @@ placeholder="Message"
 
 onKeyDown={handleKeyDown} 
             ></textarea>
-            <button type="submit">Save</button>
+            <div className="textoutputdisplay">
+            <button type="submit">Save</button></div>
             <Link to="/smartTalk">Back</Link>
           </form>
         </div>

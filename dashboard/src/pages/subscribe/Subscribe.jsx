@@ -46,13 +46,13 @@ const Subscribe= () => {
           field: 'email',
           headerName: 'Email',
           type: 'email',
-          width: 300,
+          width: 250,
         },
         {
           field: 'actions',
           headerName: 'Actions',
           type: 'actions',
-          width: 300,
+          width: 250,
           renderCell: (params) => {
             return (
               <div className="cellAction">
@@ -67,6 +67,19 @@ const Subscribe= () => {
             );
             },
               },
+              {
+                field: 'export',
+                headerName: 'Export CSV',
+                sortable: false,
+                width: 100,
+                renderCell: (params) => {
+                  const csvData = [
+                    [params.row.id,  params.row.email]
+                  ];
+                  return (
+                    <CSVLink data={csvData} filename={`${params.row.id}.csv`}>Export</CSVLink>
+                  );
+                }}
       ];
 
 

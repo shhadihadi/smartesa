@@ -52,7 +52,7 @@ const EditContact = () => {
         headers:{"content-type":"application/json"},
         body:JSON.stringify(aboutdata)
       }).then((res)=>{
-        alert('Saved successfully.')
+    
         Navigate('aboutus');
       }).catch((err)=>{
         console.log(err.message)
