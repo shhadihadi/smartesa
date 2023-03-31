@@ -3,46 +3,48 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import { Link, useParams } from 'react-router-dom';
 import { Button } from "@mui/material";
-import jsPDF from 'jspdf';
+
 import 'jspdf-autotable';
 import React from 'react';
 import { saveAs } from 'file-saver';
 import useFetch from '../../useFetch';
 import './apply.scss'
-
+import jsPDF from 'jspdf';
 
 function ApplyById() {
   const { id } = useParams();
   const { error, isPending, data: Apply } = useFetch(`http://localhost:8000/Apply/${id}`);
 
   const downloadPdfById = async (id) => {
-    try {
-      const response = await fetch(`http://localhost:8000/Apply/PDFUpload/${id}`);
-      const jsonData = await response.json();
-      const base64data = jsonData.pdfBase64;
-      const blob = b64toBlob(base64data, 'application/pdf');
-      saveAs(blob, `PDFUpload_${id}.pdf`);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  
-  // Helper function to convert base64 string to Blob object
-  function b64toBlob(b64Data, contentType='application/octet-stream', sliceSize=512) {
-    const byteCharacters = atob(b64Data);
-    const byteArrays = [];
-    for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-      const slice = byteCharacters.slice(offset, offset + sliceSize);
-      const byteNumbers = new Array(slice.length);
-      for (let i = 0; i < slice.length; i++) {
-        byteNumbers[i] = slice.charCodeAt(i);
-      }
-      const byteArray = new Uint8Array(byteNumbers);
-      byteArrays.push(byteArray);
-    }
-    const blob = new Blob(byteArrays, {type: contentType});
-    return blob;
+    
+      const response = await fetch(`http://localhost:8000/Apply/PDFUpload/${id}`)
+      .then(response => response.json())
+      .then(data => {
+        const binaryString = atob(data.base64String);
+        const uint8Array = Uint8Array.from(binaryString, character => character.charCodeAt(0));
+        const pdf = new jsPDF();
+        pdf.addImage(uint8Array, 'PDF', 0, 0, 210, 297);
+        pdf.save('document.pdf');
+      })
+     
   }
+
+  // // Helper function to convert base64 string to Blob object
+  // function b64toBlob(b64Data, contentType='application/octet-stream', sliceSize=512) {
+  //   const byteCharacters = atob(b64Data);
+  //   const byteArrays = [];
+  //   for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+  //     const slice = byteCharacters.slice(offset, offset + sliceSize);
+  //     const byteNumbers = new Array(slice.length);
+  //     for (let i = 0; i < slice.length; i++) {
+  //       byteNumbers[i] = slice.charCodeAt(i);
+  //     }
+  //     const byteArray = new Uint8Array(byteNumbers);
+  //     byteArrays.push(byteArray);
+  //   }
+  //   const blob = new Blob(byteArrays, {type: contentType});
+  //   return blob;
+  // }
   
   return (
     <>
