@@ -32,13 +32,14 @@ open a new terminal cd into dashboard folder and run:
 npm install 
 wait till installation is done
 
-run
-npm start
+run npm start
 
 Runs the app in the development mode.
 Open http://localhost:4000 to view it in your browser.
 
 find username and password in txt file named password
 
+## Contact Us
 
-
+Create an account on formspree copy form's endpoint and
+paste it in the fetch link reserved for the formspree in the contact.jsx file in the useri folder 
