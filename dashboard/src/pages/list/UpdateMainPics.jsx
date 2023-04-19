@@ -57,7 +57,7 @@ function UpdateMainPics() {
         throw new Error("Failed to update card");
       }
 
-      navigate(`/products`);
+      navigate(`/CoverImages`);
     } catch (err) {
       console.error(err);
     }
